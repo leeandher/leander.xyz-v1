@@ -1,0 +1,51 @@
+#error {
+  margin-top: 52px;
+  background-color: var(--accent);
+  animation: rainbow 5s infinite linear;
+  padding: 0;
+}
+
+#error .content {
+  min-height: calc(100vh - 52px);
+  text-align: center;
+  font-weight: 600;
+  max-width: none;
+}
+
+#error .center {
+  width: 110%;
+  padding: 10px 0 30px 0;
+  border: 10px solid;
+}
+
+#error #code {
+  color: var(--accent);
+  font-size: 350%;
+  line-height: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#error #response {
+  text-align: center;
+}
+
+#error #response a {
+  border: 2px solid;
+  margin: 15px;
+  padding: 5px 15px;
+  font-family: inherit;
+  box-shadow: 0 0 15px var(--light);
+}
+
+#error #response a i {
+  transition: all 0s;
+}
+
+#error #response a:hover {
+  color: var(--light);
+  box-shadow: 0 0 55px var(--dark) inset;
+  background-color: var(--accent);
+}

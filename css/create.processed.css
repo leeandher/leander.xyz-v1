@@ -1,0 +1,83 @@
+#publish {
+  background-color: var(--accent);
+}
+
+#publish form {
+  border: 3px solid var(--light);
+  text-align: left;
+  background-color: var(--mid);
+  box-shadow: 0 0 15px var(--dark) inset;
+}
+
+#publish form:hover,
+#publish form:active,
+#publish form:focus {
+  border-color: var(--dark);
+}
+
+#publish form label {
+  display: block;
+  font-weight: var(--bold);
+  padding: 0 10px;
+  margin: 10px;
+}
+
+#publish form label span {
+  line-height: 1;
+  font-size: 70%;
+  font-weight: var(--reg);
+}
+
+#publish form input,
+#publish form textarea {
+  display: block;
+  margin: 15px;
+  padding: 10px;
+  font-size: 25%;
+  width: calc(100% - 30px);
+  font-family: inherit;
+  border-radius: inherit;
+  box-shadow: 0 0 5px var(--dark) inset;
+  border: 0;
+  outline: 0;
+  transition: height 0s, width 0s;
+}
+
+#publish form input:active,
+#publish form input:focus,
+#publish form textarea:active,
+#publish form textarea:focus {
+  box-shadow: 0 0 15px var(--accent) inset;
+}
+
+#publish form .flex-group {
+  padding: 5px 15px;
+}
+
+#publish form button.flex-item {
+  background-color: var(--light);
+  border-radius: 0.3rem;
+  margin: 15px 10px;
+  padding: 5px;
+  font-size: 30%;
+  border: 0;
+  box-shadow: 0 0 5px var(--dark);
+  font-family: inherit;
+  font-weight: var(--bold);
+}
+
+#publish form button.flex-item:hover {
+  cursor: pointer;
+}
+
+#publish form button.flex-item:active,
+#publish form button.flex-item:focus {
+  box-shadow: 0 0 10px var(--dark) inset;
+}
+
+#publish form button.flex-item:hover,
+#publish form button.flex-item:active,
+#publish form button.flex-item:focus {
+  background-color: var(--accent);
+  color: var(--light);
+}

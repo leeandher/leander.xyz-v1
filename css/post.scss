@@ -1,0 +1,138 @@
+@media only screen { 
+  #post-share {
+    font-size: 20px;
+    text-align: right;
+    a {
+      padding: 15px 0;
+      height: 50px;
+      width: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) { 
+  #post-share {
+    font-size: 15px;
+    text-align: center;
+    a {
+      text-align: center;
+      border-radius: 100%;
+      padding: 13px 0;
+      height: 40px;
+      width: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) { 
+  #post-share a {
+    border-radius: 100%;
+    padding: 7px 0;
+    height: 30px;
+    width: 30px;
+  }
+}
+
+body {background-color: var(--dark);}
+
+#post-head {
+  text-align: center;
+  margin-top: 52px;
+  #post-quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    margin: 0;
+    line-height: 1;
+    padding: 10px;
+    font-weight: var(--thin);
+    font-style: italic;
+    &:before, &:after {
+      content: '"';
+      font-weight: var(--bold);
+      font-style: oblique;
+      transform: translateX(-5px);
+    }
+  }
+}
+
+#page-return {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  padding: 3px 0;
+  transition: all 0.3s;
+  i {transition: all 0s;}
+  margin-bottom: 40px;
+  background-color: var(--mid);
+  &:hover {
+    background-color: var(--accent);
+    color: var(--light);
+  }
+}
+
+#post-content {
+  text-align: left;
+  background-color: var(--accent);
+    box-shadow: 0 0 10px var(--dark) inset;
+  //THIS or toggle round
+  padding: 0 30px;
+  .content {
+    box-shadow: 0 0 40px var(--dark);
+    padding: 30px 30px 60px 30px;
+    p {
+      text-indent: 30px;
+      margin: 25px 0;
+    }
+  }
+}
+
+#post-share {
+  margin: 10px 0 30px 0;
+  a {
+    text-align: center;
+    border-radius: 100%;
+    margin: 3px;
+    box-shadow: 0 0 5px var(--dark);
+    &:hover{
+      cursor: pointer;
+      box-shadow: 0 0 5px var(--dark) inset;
+    }
+    &:active, &:focus {
+      box-shadow: 0 0 5px var(--accent) inset;
+      color: var(--accent);
+    }
+  }
+}
+
+#post-title {
+  font-size: 55%;
+  line-height: 1;
+  font-weight: var(--bold);
+}
+
+#post-date {
+  font-size: 40%;
+  font-style: italic;
+  color: var(--accent);
+  font-weight: var(--reg);
+}
+
+#post-text {
+  font-size: 30%;
+  font-weight: var(--thin);
+}
+
+#post-tags {
+  font-size: 25%; 
+  margin-top: 5px;
+  font-weight: var(--reg);
+  span {
+    display: inline-block;
+    background-color: var(--mid);
+    padding: 0 15px;
+    margin: 0 5px;
+    margin: 5px;
+  }
+}

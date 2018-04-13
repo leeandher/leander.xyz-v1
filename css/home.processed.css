@@ -1,0 +1,286 @@
+.content {
+  text-align: center;
+}
+
+#home {
+  height: 100vh;
+}
+
+#home .content {
+  max-width: 1200px;
+  min-height: 100%;
+}
+
+#home #title {
+  font-weight: var(--thin);
+  text-align: left;
+  width: 100%;
+  font-size: 80%;
+}
+
+#home #title #name {
+  font-size: 125%;
+  animation: rainbow 5s linear forwards infinite;
+}
+
+#home #title #subtitle {
+  font-size: 60%;
+  margin-top: 60px;
+}
+
+#about #description-group {
+  margin: 0 15px;
+  text-indent: 20px;
+}
+
+#about #self-object {
+  background-color: var(--mid);
+  padding: 5px;
+  margin-bottom: 25px;
+  font-size: 75%;
+  overflow-x: auto;
+}
+
+#about #self-object pre {
+  margin: 3px 0;
+  font-family: monospace;
+}
+
+#about #self-object pre span {
+  color: var(--accent);
+  font-style: italic;
+}
+
+#about .subheading {
+  margin-top: 50px;
+}
+
+#about #img-group {
+  text-align: center;
+}
+
+#about #img-group #and-more:hover,
+#about #img-group #and-more:focus,
+#about #img-group #and-more:active {
+  color: var(--accent);
+}
+
+#about #img-group img {
+  height: 115px;
+  width: 115px;
+  padding: 10px;
+  margin: 10px;
+  filter: grayscale(1);
+}
+
+#about #img-group img:hover {
+  filter: grayscale(0);
+  box-shadow: 0 0 15px var(--dark) inset;
+}
+
+#projects {
+  height: 100vh;
+}
+
+#projects .content {
+  min-height: 100%;
+}
+
+#projects .bg {
+  position: absolute;
+  filter: brightness(0.5);
+  top: 0;
+  background: no-repeat center center fixed;
+  transition: background-image 3s ease-in-out;
+  height: 100%;
+  width: 100%;
+  margin-left: -20px;
+  background-size: cover;
+}
+
+#projects .heading {
+  margin: 0;
+  display: block;
+}
+
+#projects a {
+  border: 2px solid var(--light);
+  box-shadow: 0 0 15px var(--dark) inset;
+  padding: 2px 10px;
+  font-size: 35%;
+  font-weight: var(--bold);
+}
+
+#projects a:hover,
+#projects a:focus,
+#projects a:active {
+  background-color: var(--accent);
+}
+
+#media {
+  background-color: var(--accent);
+}
+
+#media .card {
+  position: relative;
+  text-align: center;
+  border: 3px solid transparent;
+  margin: 10px;
+  padding: 15px;
+  box-shadow: 0 0 10px var(--dark) inset;
+  min-width: 300px;
+}
+
+#media .card p {
+  text-align: left;
+}
+
+#media .card a {
+  box-shadow: inherit;
+  padding: 5px 10px;
+  text-shadow: none;
+}
+
+#media .card a:hover {
+  color: var(--light);
+  background-color: var(--accent);
+}
+
+#media .card:hover {
+  border-color: var(--dark);
+}
+
+#media .subheading {
+  font-size: 30%;
+  text-decoration: none;
+}
+
+#media .subheading:before {
+  font-weight: var(--thin);
+}
+
+#media #curr-proj .subheading:before {
+  content: "Current Project: ";
+}
+
+#media #curr-blog .subheading:before {
+  content: "Latest Blog: ";
+}
+
+#media #curr-note .subheading:before {
+  content: "Latest Note: ";
+}
+
+#contact {
+  background-color: var(--light);
+}
+
+#contact .heading {
+  margin: 0;
+}
+
+#contact #visitor-info div {
+  text-align: center;
+}
+
+#contact #visitor-info a {
+  font-size: 250%;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--accent);
+  margin: 30px;
+}
+
+#contact #visitor-info a:hover,
+#contact #visitor-info a:focus,
+#contact #visitor-info a:active {
+  color: var(--dark);
+}
+
+#contact #visitor-info h3,
+#contact #visitor-info h4 {
+  text-align: center;
+}
+
+#contact #visitor-info p {
+  text-align: left;
+}
+
+#contact #visitor-form {
+  border: 3px solid var(--dark);
+  margin: 15px;
+  text-align: left;
+  background-color: var(--mid);
+  box-shadow: 0 0 5px var(--dark) inset;
+  min-width: 300px;
+  padding: 30px;
+}
+
+#contact #visitor-form:hover,
+#contact #visitor-form:active,
+#contact #visitor-form:focus {
+  border-color: var(--accent);
+}
+
+#contact #visitor-form label {
+  display: block;
+  padding: 10px;
+  font-weight: var(--bold);
+}
+
+#contact #visitor-form input,
+#contact #visitor-form textarea {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  font-family: inherit;
+  font-size: 20%;
+  border-radius: inherit;
+  box-shadow: 0 0 5px var(--dark) inset;
+  border: 0;
+  outline: 0;
+  transition: height 0.0s, width 0.0s;
+}
+
+#contact #visitor-form input:active,
+#contact #visitor-form input:focus {
+  box-shadow: 0 0 15px var(--accent) inset;
+}
+
+#contact #visitor-form textarea:active,
+#contact #visitor-form textarea:focus {
+  box-shadow: 0 0 15px var(--accent) inset;
+}
+
+#contact #visitor-form button {
+  background-color: var(--light);
+  border-radius: 0.3rem;
+  margin: 15px 10px;
+  padding: 5px;
+  font-size: 30%;
+  border: 0;
+  box-shadow: 0 0 5px var(--dark);
+  font-family: inherit;
+  font-weight: var(--bold);
+}
+
+#contact #visitor-form button:hover {
+  cursor: pointer;
+}
+
+#contact #visitor-form button:active,
+#contact #visitor-form button:focus {
+  box-shadow: 0 0 10px var(--dark) inset;
+}
+
+#contact #visitor-form button:hover,
+#contact #visitor-form button:active,
+#contact #visitor-form button:focus {
+  background-color: var(--accent);
+  color: var(--light);
+}
+
+#contact #visitor-info {
+  min-width: 300px;
+  padding: 30px;
+}
