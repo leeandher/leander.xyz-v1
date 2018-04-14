@@ -4,13 +4,19 @@
   <?php
     $pageTitle = "Welcome!";
     $pageName = "home";
-    require_once "/inc/header.php";
-  ?>
+    $path = $_SERVER['DOCUMENT_ROOT'];
+    $path .= "/inc/header.php";
+    require_once($path);
+  ?>  
 
 
   <body>
     <!--NAVIGATION-->
-    <?php require_once "/inc/navbar.html"; ?>
+    <?php 
+      $path = $_SERVER['DOCUMENT_ROOT'];
+      $path .= "/inc/navbar.html";
+      require_once($path);
+    ?>
 
     <!--HOME SECTION-->
     <div class="section dark" id="home">
@@ -50,39 +56,39 @@
         <div class="subheading">Experience with</div>
         <div class="text" id="img-group">
           <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
-          <img class="round" src="/resources/images/about/html5.png" alt="HTML5 Logo"/>
+          <img class="round" src="https://leander.xyz/resources/images/about/html5.png" alt="HTML5 Logo"/>
         </a>
           <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
-          <img class="round" src="/resources/images/about/css3.png" alt="CSS3 Logo"/>
+          <img class="round" src="https://leander.xyz/resources/images/about/css3.png" alt="CSS3 Logo"/>
         </a>
           <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-          <img class="round" src="/resources/images/about/javascript.png" alt="JavaScript Logo"/>
+          <img class="round" src="https://leander.xyz/resources/images/about/javascript.png" alt="JavaScript Logo"/>
         </a>
           <a href="https://getbootstrap.com/" target="_blank">
-          <img class="round" src="/resources/images/about/bootstrap4.png" alt="Bootstrap Logo"/>
+          <img class="round" src="https://leander.xyz/resources/images/about/bootstrap4.png" alt="Bootstrap Logo"/>
         </a>
           <a href="http://www.php.net/" target="_blank">
-          <img class="round" src="/resources/images/about/php.png" alt="PHP Logo"/>
+          <img class="round" src="https://leander.xyz/resources/images/about/php.png" alt="PHP Logo"/>
         </a>
         <!--<a href="https://nodejs.org/en/" target="_blank">
-          <img class="round" src="/resources/images/about/nodejs.png" alt="Node.js Logo"/>
+          <img class="round" src="https://leander.xyz/resources/images/about/nodejs.png" alt="Node.js Logo"/>
         </a>-->
           <a href="https://reactjs.org/" target="_blank">
-          <img class="round" src="/resources/images/about/reactjs.png" alt="React.js Logo"/>
+          <img class="round" src="https://leander.xyz/resources/images/about/reactjs.png" alt="React.js Logo"/>
         </a>
           <a href="https://jquery.com/" target="_blank">
-          <img class="round" src="/resources/images/about/jquery.png" alt="JQuery Logo"/>
+          <img class="round" src="https://leander.xyz/resources/images/about/jquery.png" alt="JQuery Logo"/>
         </a>
           <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX" target="_blank">
-          <img class="round" src="/resources/images/about/ajax.png" alt="AJAX Logo"/>
+          <img class="round" src="https://leander.xyz/resources/images/about/ajax.png" alt="AJAX Logo"/>
         </a>
           <a href="https://docs.microsoft.com/en-us/sql/" target="_blank">
-          <img class="round" src="/resources/images/about/sql.png" alt="SQL Logo"/>
+          <img class="round" src="https://leander.xyz/resources/images/about/sql.png" alt="SQL Logo"/>
         </a>
           <a href="https://docs.microsoft.com/en-us/dotnet/visual-basic/getting-started/" target="_blank">
-          <img class="round" src="/resources/images/about/visual-basic.png" alt="VB Logo"/>
+          <img class="round" src="https://leander.xyz/resources/images/about/visual-basic.png" alt="VB Logo"/>
         </a><br />
-          <a href="/projects/index.php" id="and-more">and more!</a>
+          <a href="https://leander.xyz/projects/index.php" id="and-more">and more!</a>
         </div>
       </div>
     </div>
@@ -93,7 +99,7 @@
       <div class="content">
         <div class="center">
           <div class="heading">My digital showcase</div>
-          <a class="round" href="/projects/index.php">Take a look</a>
+          <a class="round" href="https://leander.xyz/projects/index.php">Take a look</a>
         </div>
       </div>
     </div>
@@ -112,12 +118,12 @@
           <div class="card light round flex-item" id="curr-blog">
             <div class="subheading">My Latest Blog Post</div>
             <p class="text-small" id="curr-blog-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-            <a class="text-small light round" href="/blog/index.php">See my <b>Blog</b></a>
+            <a class="text-small light round" href="https://leander.xyz/blog/index.php">See my <b>Blog</b></a>
           </div>
           <div class="card light round flex-item" id="curr-note">
             <div class="subheading">My Latest Note</div>
             <p class="text-small" id="curr-note-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-            <a class="text-small light round" href="/notes/index.php">See my <b>Notes</b></a>
+            <a class="text-small light round" href="https://leander.xyz/notes/index.php">See my <b>Notes</b></a>
           </div>
         </div>
       </div>
@@ -134,8 +140,8 @@
             <h3>Are you hiring?</h3><br/>
             <p class="indent">In case you'd like to know a little more about me, check out my resume! It's a nice place to see all of my school/project experience and work history in one convenient place! As per your preference, I have both a direct PDF link and you can check out my hiring page for a web version and even more information!</p>
             <div>
-              <a class='far fa-file-alt' href='resume/Leander Rodrigues - Resume.pdf' title=".pdf (0.35 MB)"></a>
-              <a class='fas fa-link' href='resume/index.php' title="Web Page"></a>
+              <a class='far fa-file-alt' href='https://leander.xyz/resume/Leander Rodrigues - Resume.pdf' title=".pdf (0.14 MB)"></a>
+              <a class='fas fa-link' href='https://leander.xyz/resume/index.php' title="Web Page"></a>
             </div>
             <h4>Thank you for your consideration!</h4>
           </div>
@@ -159,7 +165,11 @@
     </div>
 
     <!--FOOTER SECTION-->
-    <?php require_once "/inc/footer.php"; ?>
+    <?php 
+      $path = $_SERVER['DOCUMENT_ROOT'];
+      $path .= "/inc/footer.php";
+      require_once($path);
+    ?>
 
   </body>
 

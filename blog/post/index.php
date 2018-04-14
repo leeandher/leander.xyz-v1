@@ -4,13 +4,19 @@
   <?php
     $pageTitle = "__ARTICLE_TITLE__";
     $pageName = "post";
-    require_once "/inc/header.php";
+    $path = $_SERVER['DOCUMENT_ROOT'];
+    $path .= "/inc/header.php";
+    require_once($path);
   ?>  
 
 
   <body>
     <!--NAVIGATION-->
-    <?php require_once "/inc/navbar.html"; ?>
+    <?php 
+      $path = $_SERVER['DOCUMENT_ROOT'];
+      $path .= "/inc/navbar.html";
+      require_once($path);
+    ?>
 
     <!--TITLE SECTION-->
     <div class="section dark" id="post-head">
@@ -20,7 +26,7 @@
     </div>
 
     <!--RETURN SECTION-->
-    <a class="text-small light" id="page-return" href="../index.html"><i class="fas fa-arrow-left"></i> Back to Archive</a>
+    <a class="text-small light" id="page-return" href="../index.php"><i class="fas fa-arrow-left"></i> Back to Archive</a>
 
     <!--POST SECTION-->
     <div class="section" id="post-content">
@@ -52,7 +58,11 @@
     </div>
 
     <!--FOOTER SECTION-->
-    <?php require_once "/inc/footer.php"; ?>
+    <?php 
+      $path = $_SERVER['DOCUMENT_ROOT'];
+      $path .= "/inc/footer.php";
+      require_once($path);
+    ?>
 
   </body>
 

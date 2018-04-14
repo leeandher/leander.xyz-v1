@@ -4,13 +4,19 @@
   <?php
     $pageTitle = "Blog";
     $pageName = "media";
-    require_once "/inc/header.php";
-  ?>
+    $path = $_SERVER['DOCUMENT_ROOT'];
+    $path .= "/inc/header.php";
+    require_once($path);
+  ?>  
 
 
   <body>
     <!--NAVIGATION-->
-    <?php require_once "/inc/navbar.html"; ?>
+    <?php 
+      $path = $_SERVER['DOCUMENT_ROOT'];
+      $path .= "/inc/navbar.html";
+      require_once($path);
+    ?>
 
     <!--TITLE SECTION-->
     <div class="section dark" id="head">
@@ -88,7 +94,11 @@
     </div>
 
     <!--FOOTER SECTION-->
-    <?php require_once "/inc/footer.php"; ?>
+    <?php 
+      $path = $_SERVER['DOCUMENT_ROOT'];
+      $path .= "/inc/footer.php";
+      require_once($path);
+    ?>
 
   </body>
 
