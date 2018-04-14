@@ -1,4 +1,4 @@
-
+//Copy Link function
 $('.fa-link').click(function() {
   var textArea = document.createElement("textarea");
   textArea.value = location.href;

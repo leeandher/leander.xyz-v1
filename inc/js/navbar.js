@@ -3,14 +3,6 @@ $(window).scroll(function() {
   $('nav').css('top', navHeight);
 });
 
-$('nav a').click(function() {
-  softScroll(this);
-  if ($(window).width() < 650) {
-    $('#toggler').removeClass('show');
-    $('#collapse-nav').css('max-height', '0px');
-  }
-});
-
 function softScroll(selector) {
   var href = $(selector).attr('href');
   $('html, body').animate({scrollTop: $(href).offset().top}, 750);
