@@ -161,7 +161,7 @@
 body {
   position: relative;
   height: 100%;
-  font-family: 'Titillium Web';
+  font-family: 'Titillium Web', 'Helvetica', sans-serif;
 }
 
 a {

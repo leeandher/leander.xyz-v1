@@ -12,10 +12,10 @@
     <div class="text-small" id="sitemap">
       <ul>
         <a href="/index.php">Home</a> |
-        <a href="/projects/index.html">Projects</a> |
-        <a href="/blog/index.html">Blog</a> |
-        <a href="/notes/index.html">Notes</a> |
-        <a href="/resume/index.html">Resume</a>
+        <a href="/projects/index.php">Projects</a> |
+        <a href="/blog/index.php">Blog</a> |
+        <a href="/notes/index.php">Notes</a> |
+        <a href="/resume/index.php">Resume</a>
       </ul>
     </div>
     <p class="text-small"> Hand coded by: <span class="emphasis">your's truly</span> :)</p>
@@ -28,4 +28,4 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!--Navbar-->
 <script src="/inc/js/navbar.js"></script>
-<?php echo '<script src="js/' . $pageName . '.js"></script>'; ?>
+<?php echo '<script src="/resources/js/' . $pageName . '.js"></script>'; ?>
