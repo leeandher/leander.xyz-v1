@@ -18,21 +18,20 @@ $('#collapse-nav a:nth-child(4)').attr('href','#media');
 $('#collapse-nav a:nth-child(5)').attr('href','#contact');
 
 
-var screenGrabs = [
-  'https://goo.gl/Gg6WUS',
-  'https://goo.gl/BHqJDP',
-  'https://goo.gl/fdZVs1',
-  'https://goo.gl/qSSkhL',
-  'https://goo.gl/9Y35rA',
-  'https://goo.gl/AKXDXT',
-  'https://goo.gl/J74Vum',
-  'https://goo.gl/fgrRKB'
+var projectShowCase = [
+  'tictactoe',
+  'simon',
+  'fuelgauge',
+  'calculator',
+  'liveontwitch',
+  'weather',
+  'wikiview',
+  'quotes'
 ];
 
 var currLoop = 0;
 var timer = setInterval(function() {
-  $('#projects .bg').css('background-image', 'url(' + screenGrabs[currLoop] + ')');
+  $('#projects .bg').css('background-image', 'url(/resources/images/projects/' + projectShowCase[currLoop] + '.png)');
   currLoop ++;
-  currLoop = currLoop === screenGrabs.length ?
-    0: currLoop; 
+  if (currLoop === projectShowCase.length) currLoop = 0;
 }, 5000)

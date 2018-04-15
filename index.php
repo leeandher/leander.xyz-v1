@@ -48,7 +48,7 @@
             <pre>  <b>awaitingWorkTermLength</b>: 8 || 4, <span>//4 or 8 months</span></pre>
             <pre>  <b>hardWorker</b>: true,</pre>
             <pre>  <b>teamPlayer</b>: true,</pre>
-            <pre>  <b>isPerfect</b>: false, <span>//should never be true</span></pre>
+            <pre>  <b>isPerfect</b>: false, <span>//Should never be true</span></pre>
             <pre>}</pre>
           </div>
           <p>
@@ -150,7 +150,7 @@
             </div>
             <h4>Thank you for your consideration!</h4>
           </div>
-          <form class="round flex-item" id="visitor-form">
+          <form class="round flex-item" id="visitor-form" method="post" action="/sendForm.php">
             <div class="subheading">I'll get back to you ASAP.</div>
             <label class="text" for="visitor-name">Name:</label>
             <input type="text" name="sender" id="visitor-name" autocomplete="name" required>

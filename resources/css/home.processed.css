@@ -34,6 +34,18 @@
   text-indent: 20px;
 }
 
+#about #description-group a {
+  display: inline;
+  color: var(--dark);
+  text-decoration: underline;
+}
+
+#about #description-group a:hover,
+#about #description-group a:focus {
+  text-decoration-color: var(--accent);
+}
+
+
 #about #self-object {
   background-color: var(--mid);
   padding: 5px;
@@ -89,7 +101,7 @@
 
 #projects .bg {
   position: absolute;
-  filter: brightness(0.5);
+  filter: blur(3px) brightness(0.3);
   top: 0;
   background: no-repeat center center fixed;
   transition: background-image 3s ease-in-out;
