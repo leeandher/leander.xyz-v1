@@ -25,7 +25,7 @@
           <div id="code">404</div>
           <div class="text" id="response">
             <p id="reponse"> Sorry! That page was moved, removed, renamed, or might never have existed.</p><br />
-            <a href="https://leander.xyz/index.html" class="round"><i class="fas fa-arrow-left"></i> Home</a>
+            <a href="/index.php" class="round"><i class="fas fa-arrow-left"></i> Home</a>
           </div>
         </div>
       </div>

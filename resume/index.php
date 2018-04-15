@@ -119,21 +119,21 @@
             <div class="resume-item flex-item">
               <h2>Computer Science Subject</h2>
               <div class="item-location"><a href="https://www.khanacdemy.com" target="_blank">KhanAcademy.org</a></div>
-              <div class="item-date emphasis">April 2017 - Present</div>
+              <div class="item-date emphasis">April 2018 - Present</div>
               <div class="item-desc indent">My first abstract course that isn't language specific. It covers 'Algorithms', 'Cryptography', 'Information Theory' and 'The Internet', in practical explanatory articles/modules, taught by two Dartmouth College professors. In my opinion, it's the most well-rounded, free 'CS 101'-style course out there right now.</div>
             </div>
             <!--JS 30-->
             <div class="resume-item flex-item">
               <h2>JavaScript 30</h2>
               <div class="item-location"><a href="https://javascript30.com/" target="_blank">JavaScript30.com</a></div>
-              <div class="item-date emphasis">May 2017 - Present</div>
+              <div class="item-date emphasis">May 2018 - Present</div>
               <div class="item-desc indent">A 30 day JavaScript challenge course which focuses on making the most of your pure JS. The code for each challenge does not depend on libraries, frameworks, compilers or boiler plates, just you and your JavaScript abilities. it's a self-paced course but I'm currently trying to complete 1 challenge (minimum) every 2 days, simply because of school/other courses.</div>
             </div>
-            <!--JS 30-->
+            <!--React Bootcamp-->
             <div class="resume-item flex-item">
               <h2>React Bootcamp</h2>
               <div class="item-location"><a href="https://www.youtube.com/watch?v=8GXXGJRDMdQ&list=PLqrUy7kON1mfWjiu0GWQhefWSx38v0UGo" target="_blank">YouTube - TylerMcGinnis.com</a></div>
-              <div class="item-date emphasis">April 2017</div>
+              <div class="item-date emphasis">April 2018</div>
               <div class="item-desc indent">A promotional livestreamed React bootcamp that was held on YouTube walking viewers through a series of concepts, lectures and challenges having to do with ReactJS. It was taught by Tyler McGiniss, professional instructor and Google Developer Expert.</div>
             </div>
           </div>

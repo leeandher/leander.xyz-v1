@@ -1,28 +1,16 @@
-var urls = [
-  'https://goo.gl/Gg6WUS',
-  'https://goo.gl/BHqJDP',
-  'https://goo.gl/fdZVs1',
-  'https://goo.gl/qSSkhL',
-  'https://goo.gl/9Y35rA',
-  'https://goo.gl/AKXDXT',
-  'https://goo.gl/J74Vum',
-  'https://goo.gl/fgrRKB',
-];
-
-
 function arrToList(arr) {
   if (arr.length !== 1) {arr[arr.length-1] = 'and ' + arr[arr.length-1];}
   return arr.join(', ');
 }
 
-var Project = function(title, date, desc, languages, additional, concepts, imgUrl, linkUrl) {
+var Project = function(title, date, desc, languages, additional, concepts, linkUrl) {
   this.title = title;
   this.date = date;
   this.desc = desc;
   this.languages = languages;
   this.additional = additional;
   this.concepts = concepts;
-  this.bg = 'url('+ imgUrl +')';
+  this.bg = 'url("/resources/images/projects/'+ linkUrl +'.png")';
   this.link = linkUrl;//'subdir/' + linkUrl;
 }
 
@@ -49,8 +37,7 @@ var projectArr = [
     ['HTML5', 'CSS3', 'JavaScript'],
     ['Bootstrap 4', 'SCSS', 'JQuery'],
     ['Design Recreation'],
-    urls[0],
-    'quotes',
+    'quotes'
   ),
   new Project(
     'Wikipedia Viewer', 
@@ -59,7 +46,6 @@ var projectArr = [
     ['HTML5', 'CSS3', 'JavaScript'],
     ['Bootstrap 4', 'Haml', 'SCSS', 'JQuery', 'Popper.js'],
     ['String manipulation', 'Live Response'],
-    urls[1],
     'wikiview'
   ),
   new Project(
@@ -69,7 +55,6 @@ var projectArr = [
     ['HTML5', 'CSS3', 'JavaScript'],
     ['Bootstrap 4', 'Haml', 'SCSS', 'JQuery'],
     ['JSON APIs', 'HTML5 Geolocation', 'Open Source APIs'],
-    urls[2],
     'weather'
   ),
   new Project(
@@ -79,7 +64,6 @@ var projectArr = [
     ['HTML5', 'CSS3', 'JavaScript'],
     ['Bootstrap 4', 'Haml', 'SCSS', 'JQuery'],
     ['JSON APIs', 'AJAX', 'Commercial APIs', 'Live Response'],
-    urls[3],
     'liveontwitch'
   ),
   new Project(
@@ -89,17 +73,15 @@ var projectArr = [
     ['HTML5', 'CSS3', 'JavaScript'],
     ['Bootstrap 4', 'Haml', 'SCSS', 'JQuery'],
     ['Basic Mathematics'],
-    urls[4],
     'calculator'
   ),
   new Project(
     'Pomodoro Clock', 
     'March 12, 2018',
-    "A timer using the pomodoro productivity technique, of set break and work timers to regiment time spent allocated to tasks.It is styled as a fuel gauge which empties and refills on work periods and break periods respectively.",
+    "A timer using the pomodoro productivity technique, of set break and work timers to regiment time spent allocated to tasks. It is styled as a fuel gauge which empties and refills on work periods and break periods respectively.",
     ['HTML5', 'CSS3', 'JavaScript'],
     ['Bootstrap 4', 'Haml', 'SCSS', 'JQuery'],
     ['JS Timing Functions'],
-    urls[5],
     'fuelgauge'
   ),
   new Project(
@@ -109,7 +91,6 @@ var projectArr = [
     ['HTML5', 'CSS3', 'JavaScript'],
     ['Bootstrap 4', 'Haml', 'SCSS', 'JQuery'],
     ['Web Audio API'],
-    urls[6],
     'simon'
   ),
   new Project(
@@ -119,7 +100,6 @@ var projectArr = [
     ['HTML5', 'CSS3', 'JavaScript'],
     ['Bootstrap 4', 'Haml', 'SCSS', 'JQuery'],
     ['AI Algorithmic Logic'],
-    urls[7],
     'tictactoe'
   )
 ];

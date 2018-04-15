@@ -25,7 +25,7 @@
           <div id="code">403</div>
           <div class="text" id="response">
             <div id="reponse"> Sorry! You don't have permssion to access that.</div>
-            <a href="https://leander.xyz/index.html" class="round"><i class="fas fa-arrow-left"></i> Home</a>
+            <a href="/index.php" class="round"><i class="fas fa-arrow-left"></i> Home</a>
           </div>
         </div>
       </div>
