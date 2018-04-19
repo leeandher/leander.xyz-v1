@@ -22,9 +22,6 @@
   color: var(--accent);
   font-size: 350%;
   line-height: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 

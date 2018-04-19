@@ -6,7 +6,6 @@
   height: 100vh;
 }
 
-
 #home .content {
   max-width: 1200px;
   min-height: 100%;
@@ -34,18 +33,6 @@
   text-indent: 20px;
 }
 
-#about #description-group a {
-  display: inline;
-  color: var(--dark);
-  text-decoration: underline;
-}
-
-#about #description-group a:hover,
-#about #description-group a:focus {
-  text-decoration-color: var(--accent);
-}
-
-
 #about #self-object {
   background-color: var(--mid);
   padding: 5px;
@@ -72,9 +59,7 @@
   text-align: center;
 }
 
-#about #img-group #and-more:hover,
-#about #img-group #and-more:focus,
-#about #img-group #and-more:active {
+#about #img-group #and-more:hover, #about #img-group #and-more:focus, #about #img-group #and-more:active {
   color: var(--accent);
 }
 
@@ -101,7 +86,7 @@
 
 #projects .bg {
   position: absolute;
-  filter: blur(3px) brightness(0.3);
+  filter: brightness(0.5);
   top: 0;
   background: no-repeat center center fixed;
   transition: background-image 3s ease-in-out;
@@ -124,9 +109,7 @@
   font-weight: var(--bold);
 }
 
-#projects a:hover,
-#projects a:focus,
-#projects a:active {
+#projects a:hover, #projects a:focus, #projects a:active {
   background-color: var(--accent);
 }
 
@@ -204,14 +187,11 @@
   margin: 30px;
 }
 
-#contact #visitor-info a:hover,
-#contact #visitor-info a:focus,
-#contact #visitor-info a:active {
+#contact #visitor-info a:hover, #contact #visitor-info a:focus, #contact #visitor-info a:active {
   color: var(--dark);
 }
 
-#contact #visitor-info h3,
-#contact #visitor-info h4 {
+#contact #visitor-info h3, #contact #visitor-info h4 {
   text-align: center;
 }
 
@@ -229,9 +209,7 @@
   padding: 30px;
 }
 
-#contact #visitor-form:hover,
-#contact #visitor-form:active,
-#contact #visitor-form:focus {
+#contact #visitor-form:hover, #contact #visitor-form:active, #contact #visitor-form:focus {
   border-color: var(--accent);
 }
 
@@ -241,8 +219,7 @@
   font-weight: var(--bold);
 }
 
-#contact #visitor-form input,
-#contact #visitor-form textarea {
+#contact #visitor-form input, #contact #visitor-form textarea {
   display: block;
   padding: 10px;
   width: 100%;
@@ -255,13 +232,11 @@
   transition: height 0.0s, width 0.0s;
 }
 
-#contact #visitor-form input:active,
-#contact #visitor-form input:focus {
+#contact #visitor-form input:active, #contact #visitor-form input:focus {
   box-shadow: 0 0 15px var(--accent) inset;
 }
 
-#contact #visitor-form textarea:active,
-#contact #visitor-form textarea:focus {
+#contact #visitor-form textarea:active, #contact #visitor-form textarea:focus {
   box-shadow: 0 0 15px var(--accent) inset;
 }
 
@@ -281,14 +256,11 @@
   cursor: pointer;
 }
 
-#contact #visitor-form button:active,
-#contact #visitor-form button:focus {
+#contact #visitor-form button:active, #contact #visitor-form button:focus {
   box-shadow: 0 0 10px var(--dark) inset;
 }
 
-#contact #visitor-form button:hover,
-#contact #visitor-form button:active,
-#contact #visitor-form button:focus {
+#contact #visitor-form button:hover, #contact #visitor-form button:active, #contact #visitor-form button:focus {
   background-color: var(--accent);
   color: var(--light);
 }

@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600");
-
 :root {
   /*Colors*/
-  --accent: rgb(77, 204, 176); /*4DCCB0*/
-  --dark: rgb(13, 13, 13); /*#211D1C*/
-  --mid: rgb(230, 230, 230); /*#1C1C1C*/
-  --light: rgb(253, 253, 253); /*#FCFCFC*/
+  --accent: rgb(77, 204, 176);
+  --dark: rgb(13,13,13);
+  --mid: rgb(230,230,230);
+  --light: rgb(253,253,253);
   --thin: 200;
   --reg: 400;
   --bold: 600;
@@ -16,7 +15,6 @@
     font-size: 75px;
   }
   nav ul {
-    display: -ms-flexbox;
     display: flex;
   }
   nav #toggler {
@@ -115,7 +113,6 @@
   font-weight: var(--bold);
   padding: 15px;
   text-decoration: underline;
-  -webkit-text-decoration-color: var(--accent);
   text-decoration-color: var(--accent);
 }
 
@@ -136,16 +133,12 @@
 }
 
 .flex-group {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .flex-group .flex-item {
-  -ms-flex: 1;
   flex: 1;
 }
 
@@ -161,7 +154,7 @@
 body {
   position: relative;
   height: 100%;
-  font-family: 'Titillium Web', 'Helvetica', sans-serif;
+  font-family: 'Titillium Web';
 }
 
 a {
@@ -188,16 +181,13 @@ nav.anim {
 }
 
 nav ul {
-  -ms-flex-align: center;
   align-items: center;
-  -ms-flex-pack: end;
   justify-content: flex-end;
   min-height: 50px;
 }
 
 nav #logo {
   text-align: left;
-  -ms-flex: 5;
   flex: 5;
   line-height: 0;
 }
@@ -331,9 +321,7 @@ footer #links a {
   margin: 10px;
 }
 
-footer #links a:hover,
-footer #links a:active,
-footer #links a:focus {
+footer #links a:hover, footer #links a:active, footer #links a:focus {
   box-shadow: 0 0 10px var(--accent) inset;
   color: var(--accent);
   border-color: var(--accent);
@@ -348,8 +336,7 @@ footer #sitemap a {
   color: var(--accent);
 }
 
-footer #sitemap a:hover,
-footer #sitemap a:focus {
+footer #sitemap a:hover, footer #sitemap a:focus {
   color: var(--light);
 }
 

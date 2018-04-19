@@ -7,12 +7,12 @@
     $path = $_SERVER['DOCUMENT_ROOT'];
     $path .= "/inc/header.php";
     require_once($path);
-  ?>  
+  ?>
 
 
   <body>
     <!--NAVIGATION-->
-    <?php 
+    <?php
       $path = $_SERVER['DOCUMENT_ROOT'];
       $path .= "/inc/navbar.html";
       require_once($path);
@@ -54,7 +54,7 @@
           <p>
           <code>Hello world</code>, my name is Leander Rodrigues and this is my landing page! I grew up in the suburbs of Mississauga ON, but left home in 2016, after my acceptance to the <em>University of Waterloo</em>. I'm in the second year/fourth term of my <em>Nanotechnology Engineering</em> degree and trying to balance those responsibilities with my obsession for computer programming. I am constantly on the look out for new languages, frameworks and libraries to experiment with and try to take on more projects to expand my horizon. Just for the record, since I started coding, JavaScript has definitely been my favourite language, even if it has <a href="http://blog.mgechev.com/2013/02/22/javascript-the-weird-parts/" target="_blank">it's ugly bits</a>.
           </p><br />
-          <p> 
+          <p>
           In my down time, you'll pretty much always catch me with headphones on, either listening to 24/7 background music (for coding), some podcasts I love (for idle time), or my friends screaming in my ears (for gaming). If I'm not going through a mountain of homework, working on a self-imposed project, or talking to my friends online, I'm probably asleep or dead.
           </p>
         </div>
@@ -150,7 +150,7 @@
             </div>
             <h4>Thank you for your consideration!</h4>
           </div>
-          <form class="round flex-item" id="visitor-form" method="post" action="/sendForm.php">
+          <form class="round flex-item" id="visitor-form" method="post" action="/redirect.php">
             <div class="subheading">I'll get back to you ASAP.</div>
             <label class="text" for="visitor-name">Name:</label>
             <input type="text" name="sender" id="visitor-name" autocomplete="name" required>
@@ -170,7 +170,7 @@
     </div>
 
     <!--FOOTER SECTION-->
-    <?php 
+    <?php
       $path = $_SERVER['DOCUMENT_ROOT'];
       $path .= "/inc/footer.php";
       require_once($path);

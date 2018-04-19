@@ -9,9 +9,7 @@
   box-shadow: 0 0 15px var(--dark) inset;
 }
 
-#publish form:hover,
-#publish form:active,
-#publish form:focus {
+#publish form:hover, #publish form:active, #publish form:focus {
   border-color: var(--dark);
 }
 
@@ -43,8 +41,7 @@
   transition: height 0s, width 0s;
 }
 
-#publish form input:active,
-#publish form input:focus,
+#publish form input:active, #publish form input:focus,
 #publish form textarea:active,
 #publish form textarea:focus {
   box-shadow: 0 0 15px var(--accent) inset;
@@ -70,14 +67,11 @@
   cursor: pointer;
 }
 
-#publish form button.flex-item:active,
-#publish form button.flex-item:focus {
+#publish form button.flex-item:active, #publish form button.flex-item:focus {
   box-shadow: 0 0 10px var(--dark) inset;
 }
 
-#publish form button.flex-item:hover,
-#publish form button.flex-item:active,
-#publish form button.flex-item:focus {
+#publish form button.flex-item:hover, #publish form button.flex-item:active, #publish form button.flex-item:focus {
   background-color: var(--accent);
   color: var(--light);
 }

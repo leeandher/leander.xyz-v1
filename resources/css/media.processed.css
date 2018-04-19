@@ -7,7 +7,6 @@
 }
 
 #directory .media {
-  -ms-flex: 1;
   flex: 1;
   padding: 10px 15px;
   max-width: 960px;
@@ -61,7 +60,6 @@
   height: 10%;
   padding: 5px 15px;
   width: 100%;
-  position: -webkit-sticky;
   position: sticky;
   top: 52px;
   border-bottom: 2px solid var(--dark);
@@ -86,8 +84,7 @@
   cursor: pointer;
 }
 
-#utility .btn-tag:active,
-#utility .btn-tag.enabled {
+#utility .btn-tag:active, #utility .btn-tag.enabled {
   background: var(--dark);
   color: var(--mid);
 }

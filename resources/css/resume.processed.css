@@ -17,8 +17,7 @@
   transition: all 0s;
 }
 
-.resume-area .fold-head:hover,
-.resume-area .fold-head:focus {
+.resume-area .fold-head:hover, .resume-area .fold-head:focus {
   cursor: pointer;
   box-shadow: 0 0 50px var(--dark) inset;
 }
@@ -42,8 +41,7 @@
   font-family: inherit;
 }
 
-.resume-area .close-area:hover,
-.resume-area .close-area:focus {
+.resume-area .close-area:hover, .resume-area .close-area:focus {
   color: var(--light);
   box-shadow: none;
   cursor: pointer;
@@ -59,8 +57,7 @@
   color: var(--light);
 }
 
-.resume-area.enabled .fold-head:hover,
-.resume-area.enabled .fold-head:focus {
+.resume-area.enabled .fold-head:hover, .resume-area.enabled .fold-head:focus {
   box-shadow: 0 0 10px var(--light);
 }
 
@@ -75,7 +72,6 @@
 }
 
 .resume-info .flex-item {
-  -ms-flex-preferred-size: 275px;
   flex-basis: 275px;
 }
 
@@ -92,9 +88,7 @@
   letter-spacing: 2px;
 }
 
-.resume-info .subtitle a:hover,
-.resume-info .subtitle a:focus {
-  -webkit-text-decoration-color: transparent;
+.resume-info .subtitle a:hover, .resume-info .subtitle a:focus {
   text-decoration-color: transparent;
   letter-spacing: 5px;
 }
@@ -107,8 +101,7 @@
   padding: 10px;
 }
 
-.resume-item h2,
-.resume-item .item-location {
+.resume-item h2, .resume-item .item-location {
   line-height: 1;
   margin-top: 15px;
 }
@@ -117,9 +110,7 @@
   text-decoration: underline transparent;
 }
 
-.resume-item a:hover,
-.resume-item a:focus {
-  -webkit-text-decoration-color: var(--accent);
+.resume-item a:hover, .resume-item a:focus {
   text-decoration-color: var(--accent);
   letter-spacing: 1px;
 }
@@ -129,7 +120,8 @@
   margin-bottom: 15px;
 }
 
-.resume-item n .item-date {
+.resume-item n
+.item-date {
   font-style: italic;
 }
 
@@ -168,12 +160,10 @@
 }
 
 #summary #prog-qual {
-  -ms-flex: 3;
   flex: 3;
 }
 
 #summary #soft-qual {
-  -ms-flex: 4;
   flex: 4;
 }
 
@@ -185,8 +175,7 @@
   line-height: 0;
 }
 
-#projects .thumbnail-wrapper a:hover,
-#projects .thumbnail-wrapper a:focus {
+#projects .thumbnail-wrapper a:hover, #projects .thumbnail-wrapper a:focus {
   transform: scale(1.1);
 }
 

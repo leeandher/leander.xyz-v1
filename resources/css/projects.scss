@@ -1,0 +1,128 @@
+#preface {
+  background-color: var(--mid);
+  padding: 30px;
+  .subheading { text-align: center; }
+  .content { max-width: 650px; }
+  p { padding: 15px 0; }
+}
+
+#directory {
+  text-align: center;
+  .flex-item {
+    position: relative;
+    border: 2px solid transparent;
+    margin: 10px 15px;
+    box-shadow: 0 0 15px var(--dark) inset;
+    padding: 10px;
+    min-width: 250px;
+    text-align: center;
+    &:hover {
+      border-color: var(--accent);
+      box-shadow: 0 0 15px var(--accent) inset;
+      cursor: pointer;
+    }
+    &:active, &:focus {
+      background-color: var(--accent);
+      box-shadow: 0 0 15px var(--dark) inset;
+    }
+  }
+}
+
+.proj-panel {
+  position: relative;
+  display: block;
+  transition: all 0.35s, font-size 0s;
+  overflow: hidden;
+  min-height: 50%;
+  &:hover {
+    .proj-bg {
+      filter: blur(5px) brightness(0.15);
+    }
+    .proj-title {
+      color: var(--light);
+    }
+  }
+  .proj-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-attachment: fixed;
+    background-size: cover;
+    transition: inherit;
+    background-color: #555555;
+    filter: blur(2px) brightness(0.3);
+    box-shadow: 0 0 0 15px var(--dark);
+  }
+}
+
+.proj-info {
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+  color: var(--light);
+}
+
+.proj-title {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 3px solid var(--accent);
+  font-size: 60%;
+  display: block;
+  font-weight: 600;
+}
+
+.proj-date {
+  font-size: 35%;
+  font-weight: 400;
+}
+
+.proj-desc {
+  text-indent: 50px;
+  font-size: 30%;
+  font-weight: 200;
+  padding: 20px 0;
+}
+
+.proj-usage {
+  font-size: 25%;
+  font-weight: 400;
+  p:before {
+    font-weight: 400;
+    color: var(--accent);
+  }
+  .languages:before {
+    content: 'Languages: ';
+  }
+  .additional:before {
+    content: 'Additional: ';
+  }
+  .concepts:before {
+    content: 'Concepts: ';
+  }
+}
+
+.proj-link-holder {
+  display: block;
+  text-align: center;
+  margin-top: 5%;
+  font-size: 27px;
+  font-size: 35%;
+  .proj-link {
+    border: 2px solid var(--light);
+    border-radius: 100%;
+    box-shadow: 0 0 5px var(--dark) inset;
+    color: var(--light);
+    padding: 15px;
+    margin: 5px;
+    text-decoration: none;
+    text-shadow: 0 0 10px var(--dark);
+    white-space: nowrap;
+    &.fa-chevron-up {
+      padding: 15px 17px;
+    }
+    &:hover, &:focus, &:active {
+      background-color: var(--accent);
+    }
+  }
+}

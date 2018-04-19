@@ -1,0 +1,31 @@
+#home {
+  height: 100vh;
+  background-color: var(--light);
+}
+
+#home .content {
+  max-width: 1200px;
+  min-height: 100%;
+}
+
+#home .emphasis {
+  font-size: 125%;
+}
+
+#home #title {
+  font-weight: var(--thin);
+  text-align: left;
+  width: 100%;
+  font-size: 80%;
+  text-align: center;
+  padding: 35px;
+  border: 0 solid var(--accent);
+  border-width: 10px 0;
+  animation: rainbow 5s linear forwards infinite;
+  box-shadow: 0 0 0 35px var(--dark);
+}
+
+#home #title #subtitle {
+  font-size: 60%;
+  margin-top: 60px;
+}

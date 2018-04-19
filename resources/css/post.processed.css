@@ -43,11 +43,8 @@ body {
 }
 
 #post-head #post-quote {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-align: center;
   align-items: center;
   min-height: 20vh;
   margin: 0;
@@ -57,8 +54,7 @@ body {
   font-style: italic;
 }
 
-#post-head #post-quote:before,
-#post-head #post-quote:after {
+#post-head #post-quote:before, #post-head #post-quote:after {
   content: '"';
   font-weight: var(--bold);
   font-style: oblique;
@@ -117,8 +113,7 @@ body {
   box-shadow: 0 0 5px var(--dark) inset;
 }
 
-#post-share a:active,
-#post-share a:focus {
+#post-share a:active, #post-share a:focus {
   box-shadow: 0 0 5px var(--accent) inset;
   color: var(--accent);
 }
