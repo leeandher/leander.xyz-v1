@@ -6,6 +6,7 @@
   border: 3px solid var(--light);
   text-align: left;
   background-color: var(--mid);
+  -webkit-box-shadow: 0 0 15px var(--dark) inset;
   box-shadow: 0 0 15px var(--dark) inset;
 }
 
@@ -35,15 +36,18 @@
   width: calc(100% - 30px);
   font-family: inherit;
   border-radius: inherit;
+  -webkit-box-shadow: 0 0 5px var(--dark) inset;
   box-shadow: 0 0 5px var(--dark) inset;
   border: 0;
   outline: 0;
+  -webkit-transition: height 0s, width 0s;
   transition: height 0s, width 0s;
 }
 
 #publish form input:active, #publish form input:focus,
 #publish form textarea:active,
 #publish form textarea:focus {
+  -webkit-box-shadow: 0 0 15px var(--accent) inset;
   box-shadow: 0 0 15px var(--accent) inset;
 }
 
@@ -58,6 +62,7 @@
   padding: 5px;
   font-size: 30%;
   border: 0;
+  -webkit-box-shadow: 0 0 5px var(--dark);
   box-shadow: 0 0 5px var(--dark);
   font-family: inherit;
   font-weight: var(--bold);
@@ -68,6 +73,7 @@
 }
 
 #publish form button.flex-item:active, #publish form button.flex-item:focus {
+  -webkit-box-shadow: 0 0 10px var(--dark) inset;
   box-shadow: 0 0 10px var(--dark) inset;
 }
 

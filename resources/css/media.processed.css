@@ -7,12 +7,15 @@
 }
 
 #directory .media {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   padding: 10px 15px;
   max-width: 960px;
   min-width: 300px;
   border: 3px solid var(--light);
-  box-shadow: 0 0 15px var(--dark) inset;
+  -webkit-box-shadow: 0 0 15px var(--dark) inset;
+          box-shadow: 0 0 15px var(--dark) inset;
   margin: 15px;
 }
 
@@ -60,6 +63,7 @@
   height: 10%;
   padding: 5px 15px;
   width: 100%;
+  position: -webkit-sticky;
   position: sticky;
   top: 52px;
   border-bottom: 2px solid var(--dark);
@@ -75,7 +79,9 @@
   padding: 3px 10px;
   margin: 3px 5px;
   border: 1px solid var(--dark);
-  box-shadow: 0 0 3px var(--dark);
+  -webkit-box-shadow: 0 0 3px var(--dark);
+          box-shadow: 0 0 3px var(--dark);
+  -webkit-transition: all 0.35s;
   transition: all 0.35s;
 }
 

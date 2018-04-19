@@ -21,7 +21,9 @@
   padding: 35px;
   border: 0 solid var(--accent);
   border-width: 10px 0;
+  -webkit-animation: rainbow 5s linear forwards infinite;
   animation: rainbow 5s linear forwards infinite;
+  -webkit-box-shadow: 0 0 0 35px var(--dark);
   box-shadow: 0 0 0 35px var(--dark);
 }
 

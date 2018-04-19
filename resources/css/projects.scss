@@ -12,18 +12,21 @@
     position: relative;
     border: 2px solid transparent;
     margin: 10px 15px;
-    box-shadow: 0 0 15px var(--dark) inset;
+    -webkit-box-shadow: 0 0 15px var(--dark) inset;
+            box-shadow: 0 0 15px var(--dark) inset;
     padding: 10px;
     min-width: 250px;
     text-align: center;
     &:hover {
       border-color: var(--accent);
-      box-shadow: 0 0 15px var(--accent) inset;
+      -webkit-box-shadow: 0 0 15px var(--accent) inset;
+              box-shadow: 0 0 15px var(--accent) inset;
       cursor: pointer;
     }
     &:active, &:focus {
       background-color: var(--accent);
-      box-shadow: 0 0 15px var(--dark) inset;
+      -webkit-box-shadow: 0 0 15px var(--dark) inset;
+              box-shadow: 0 0 15px var(--dark) inset;
     }
   }
 }
@@ -31,12 +34,14 @@
 .proj-panel {
   position: relative;
   display: block;
+  -webkit-transition: all 0.35s, font-size 0s;
   transition: all 0.35s, font-size 0s;
   overflow: hidden;
   min-height: 50%;
   &:hover {
     .proj-bg {
-      filter: blur(5px) brightness(0.15);
+      -webkit-filter: blur(5px) brightness(0.15);
+              filter: blur(5px) brightness(0.15);
     }
     .proj-title {
       color: var(--light);
@@ -49,10 +54,13 @@
     z-index: -1;
     background-attachment: fixed;
     background-size: cover;
+    -webkit-transition: inherit;
     transition: inherit;
     background-color: #555555;
-    filter: blur(2px) brightness(0.3);
-    box-shadow: 0 0 0 15px var(--dark);
+    -webkit-filter: blur(2px) brightness(0.3);
+            filter: blur(2px) brightness(0.3);
+    -webkit-box-shadow: 0 0 0 15px var(--dark);
+            box-shadow: 0 0 0 15px var(--dark);
   }
 }
 
@@ -111,7 +119,8 @@
   .proj-link {
     border: 2px solid var(--light);
     border-radius: 100%;
-    box-shadow: 0 0 5px var(--dark) inset;
+    -webkit-box-shadow: 0 0 5px var(--dark) inset;
+            box-shadow: 0 0 5px var(--dark) inset;
     color: var(--light);
     padding: 15px;
     margin: 5px;

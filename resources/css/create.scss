@@ -4,7 +4,8 @@
     border: 3px solid var(--light);
     text-align: left;
     background-color: var(--mid);
-    box-shadow: 0 0 15px var(--dark) inset;
+    -webkit-box-shadow: 0 0 15px var(--dark) inset;
+            box-shadow: 0 0 15px var(--dark) inset;
     &:hover,
     &:active,
     &:focus {
@@ -30,13 +31,16 @@
       width: calc(100% - 30px);
       font-family: inherit;
       border-radius: inherit;
-      box-shadow: 0 0 5px var(--dark) inset;
+      -webkit-box-shadow: 0 0 5px var(--dark) inset;
+              box-shadow: 0 0 5px var(--dark) inset;
       border: 0;
       outline: 0;
+      -webkit-transition: height 0s, width 0s;
       transition: height 0s, width 0s;
       &:active,
       &:focus {
-        box-shadow: 0 0 15px var(--accent) inset;
+        -webkit-box-shadow: 0 0 15px var(--accent) inset;
+                box-shadow: 0 0 15px var(--accent) inset;
       }
     }
     .flex-group {
@@ -49,7 +53,8 @@
       padding: 5px;
       font-size: 30%;
       border: 0;
-      box-shadow: 0 0 5px var(--dark);
+      -webkit-box-shadow: 0 0 5px var(--dark);
+              box-shadow: 0 0 5px var(--dark);
       font-family: inherit;
       font-weight: var(--bold);
       &:hover {
@@ -57,7 +62,8 @@
       }
       &:active,
       &:focus {
-        box-shadow: 0 0 10px var(--dark) inset;
+        -webkit-box-shadow: 0 0 10px var(--dark) inset;
+                box-shadow: 0 0 10px var(--dark) inset;
       }
       &:hover,
       &:active,

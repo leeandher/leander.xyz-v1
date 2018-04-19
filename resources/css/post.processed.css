@@ -43,8 +43,14 @@ body {
 }
 
 #post-head #post-quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   min-height: 20vh;
   margin: 0;
@@ -58,6 +64,7 @@ body {
   content: '"';
   font-weight: var(--bold);
   font-style: oblique;
+  -webkit-transform: translateX(-5px);
   transform: translateX(-5px);
 }
 
@@ -66,12 +73,14 @@ body {
   text-align: center;
   font-weight: bold;
   padding: 3px 0;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   margin-bottom: 40px;
   background-color: var(--mid);
 }
 
 #page-return i {
+  -webkit-transition: all 0s;
   transition: all 0s;
 }
 
@@ -83,11 +92,13 @@ body {
 #post-content {
   text-align: left;
   background-color: var(--accent);
+  -webkit-box-shadow: 0 0 10px var(--dark) inset;
   box-shadow: 0 0 10px var(--dark) inset;
   padding: 0 30px;
 }
 
 #post-content .content {
+  -webkit-box-shadow: 0 0 40px var(--dark);
   box-shadow: 0 0 40px var(--dark);
   padding: 30px 30px 60px 30px;
 }
@@ -105,15 +116,18 @@ body {
   text-align: center;
   border-radius: 100%;
   margin: 3px;
+  -webkit-box-shadow: 0 0 5px var(--dark);
   box-shadow: 0 0 5px var(--dark);
 }
 
 #post-share a:hover {
   cursor: pointer;
+  -webkit-box-shadow: 0 0 5px var(--dark) inset;
   box-shadow: 0 0 5px var(--dark) inset;
 }
 
 #post-share a:active, #post-share a:focus {
+  -webkit-box-shadow: 0 0 5px var(--accent) inset;
   box-shadow: 0 0 5px var(--accent) inset;
   color: var(--accent);
 }

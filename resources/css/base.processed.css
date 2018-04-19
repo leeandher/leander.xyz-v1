@@ -15,6 +15,8 @@
     font-size: 75px;
   }
   nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   nav #toggler {
@@ -57,10 +59,12 @@
 }
 
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   outline: none;
   padding: 0;
+  -webkit-transition: inherit;
   transition: inherit;
 }
 
@@ -92,6 +96,7 @@
   position: relative;
   min-width: 300px;
   overflow: hidden;
+  -webkit-transition: all 0.35s, font-size 0.0s;
   transition: all 0.35s, font-size 0.0s;
 }
 
@@ -113,6 +118,7 @@
   font-weight: var(--bold);
   padding: 15px;
   text-decoration: underline;
+  -webkit-text-decoration-color: var(--accent);
   text-decoration-color: var(--accent);
 }
 
@@ -129,24 +135,47 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
 .flex-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .flex-group .flex-item {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
 }
 
 @keyframes rainbow {
   0% {
+    -webkit-filter: hue-rotate(0deg);
     filter: hue-rotate(0deg);
   }
   100% {
+    -webkit-filter: hue-rotate(360deg);
     filter: hue-rotate(360deg);
   }
 }
@@ -173,6 +202,7 @@ nav {
   z-index: 100;
   position: fixed;
   top: 0;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -181,13 +211,19 @@ nav.anim {
 }
 
 nav ul {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
   min-height: 50px;
 }
 
 nav #logo {
   text-align: left;
+  -webkit-box-flex: 5;
+  -ms-flex: 5;
   flex: 5;
   line-height: 0;
 }
@@ -213,6 +249,7 @@ nav #toggler #holder {
 }
 
 nav #toggler #holder .bar {
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   height: 10%;
   width: 80%;
@@ -239,6 +276,7 @@ nav #toggler.show #holder .bar {
 }
 
 nav #toggler.show #holder #bar-1 {
+  -webkit-transform: translateY(250%) rotate(315deg);
   transform: translateY(250%) rotate(315deg);
 }
 
@@ -247,6 +285,7 @@ nav #toggler.show #holder #bar-2 {
 }
 
 nav #toggler.show #holder #bar-3 {
+  -webkit-transform: translateY(-250%) rotate(-315deg);
   transform: translateY(-250%) rotate(-315deg);
 }
 
@@ -255,18 +294,21 @@ nav #toggler:hover {
 }
 
 nav #collapse-nav {
+  -webkit-transition: all 0s max-height 0.5s;
   transition: all 0s max-height 0.5s;
   overflow: hidden;
   text-align: center;
 }
 
 nav #collapse-nav a {
+  -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
   padding: 1px 10px;
   margin: 10px 15px;
 }
 
 nav #collapse-nav a .nav-link {
+  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
@@ -297,6 +339,7 @@ nav #collapse-nav a:hover#hire {
   font-size: 125%;
   color: var(--accent);
   font-weight: var(--bold);
+  -webkit-animation: rainbow 5s linear forwards infinite;
   animation: rainbow 5s linear forwards infinite;
 }
 
@@ -313,6 +356,7 @@ footer #links a {
   border: 2px solid var(--light);
   color: inherit;
   text-decoration: none;
+  -webkit-transition: all 0.35s;
   transition: all 0.35s;
   border-radius: 100%;
   height: 60px;
@@ -322,6 +366,7 @@ footer #links a {
 }
 
 footer #links a:hover, footer #links a:active, footer #links a:focus {
+  -webkit-box-shadow: 0 0 10px var(--accent) inset;
   box-shadow: 0 0 10px var(--accent) inset;
   color: var(--accent);
   border-color: var(--accent);

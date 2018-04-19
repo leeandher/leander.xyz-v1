@@ -15,7 +15,7 @@
 @media only screen {
   body {font-size: 75px;}
   nav {
-    ul {display: flex;}
+    ul {display: -webkit-box;display: -ms-flexbox;display: flex;}
     #toggler {display: none;}
     #collapse-nav {min-height: 50px;}
     .nav-link {
@@ -45,10 +45,12 @@
 @media only screen and (max-width: 400px) { body {font-size: 55px;} }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   outline: none;
   padding: 0;
+  -webkit-transition: inherit;
   transition: inherit;
 }
 
@@ -72,6 +74,7 @@
   position: relative;
   min-width: 300px;
   overflow: hidden;
+  -webkit-transition: all 0.35s, font-size 0.0s;
   transition: all 0.35s, font-size 0.0s;
 }
 .content {
@@ -90,7 +93,8 @@
   font-weight: var(--bold);
   padding: 15px;
   text-decoration: underline;
-  text-decoration-color: var(--accent);
+  -webkit-text-decoration-color: var(--accent);
+          text-decoration-color: var(--accent);
 }
 .emphasis {
   color: var(--accent);
@@ -104,20 +108,35 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .flex-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   .flex-item {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
 }
 
+@-webkit-keyframes rainbow {
+  0% {-webkit-filter: hue-rotate(0deg);filter: hue-rotate(0deg);}
+  100% {-webkit-filter: hue-rotate(360deg);filter: hue-rotate(360deg);}
+}
+
 @keyframes rainbow {
-  0% {filter: hue-rotate(0deg);}
-  100% {filter: hue-rotate(360deg);}
+  0% {-webkit-filter: hue-rotate(0deg);filter: hue-rotate(0deg);}
+  100% {-webkit-filter: hue-rotate(360deg);filter: hue-rotate(360deg);}
 }
 
 body {
@@ -143,15 +162,22 @@ nav {
   position: fixed;
   top: 0;
   &.anim {top: -500px;}
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   ul {
-    align-items: center;
-    justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     min-height: 50px;
   }
   #logo {
     text-align: left;
-    flex: 5;
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
     line-height: 0;
     img {
       height: 40px;
@@ -170,6 +196,7 @@ nav {
       height: 100%;
       width: 100%;
       .bar {
+        -webkit-transition: all 0.5s;
         transition: all 0.5s;
         height: 10%;
         width: 80%;
@@ -184,19 +211,21 @@ nav {
     }
     &.show #holder {
       .bar {background-color: var(--accent);}
-      #bar-1 {transform: translateY(250%) rotate(315deg);}
+      #bar-1 {-webkit-transform: translateY(250%) rotate(315deg);transform: translateY(250%) rotate(315deg);}
       #bar-2 {opacity: 0;}
-      #bar-3 {transform: translateY(-250%) rotate(-315deg);}
+      #bar-3 {-webkit-transform: translateY(-250%) rotate(-315deg);transform: translateY(-250%) rotate(-315deg);}
     }
     &:hover {cursor: pointer;}
   }
   #collapse-nav {
+    -webkit-transition: all 0s max-height 0.5s;
     transition: all 0s max-height 0.5s;
     overflow: hidden;
     text-align: center;
     a {
+      -webkit-transition: background-color 0.2s;
       transition: background-color 0.2s;
-      .nav-link {transition: color 0.2s;}
+      .nav-link {-webkit-transition: color 0.2s;transition: color 0.2s;}
       padding: 1px 10px;
       margin: 10px 15px;
       &#hire {
@@ -221,7 +250,8 @@ nav {
     font-size: 125%;
     color: var(--accent);
     font-weight: var(--bold);
-    animation: rainbow 5s linear forwards infinite;
+    -webkit-animation: rainbow 5s linear forwards infinite;
+            animation: rainbow 5s linear forwards infinite;
   }
 }
 
@@ -234,6 +264,7 @@ footer {
       border: 2px solid var(--light);
       color: inherit;
       text-decoration: none;
+      -webkit-transition: all 0.35s;
       transition: all 0.35s;
       border-radius: 100%;
       height: 60px;
@@ -241,7 +272,8 @@ footer {
       padding: 15px 0;
       margin: 10px;
       &:hover, &:active, &:focus {
-        box-shadow: 0 0 10px var(--accent) inset;
+        -webkit-box-shadow: 0 0 10px var(--accent) inset;
+                box-shadow: 0 0 10px var(--accent) inset;
         color: var(--accent);
         border-color: var(--accent);
       }

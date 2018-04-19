@@ -1,7 +1,8 @@
 #error {
   margin-top: 52px;
   background-color: var(--accent);
-  animation: rainbow 5s infinite linear;
+  -webkit-animation: rainbow 5s infinite linear;
+          animation: rainbow 5s infinite linear;
   padding: 0;
   .content {
     min-height: calc(100vh - 52px);
@@ -18,20 +19,25 @@
     color: var(--accent);
     font-size: 350%;
     line-height: 1;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
   }
   #response {
     text-align: center;
     a {
-      i {transition: all 0s}
+      i {-webkit-transition: all 0s;transition: all 0s}
       border: 2px solid;
       margin: 15px;
       padding: 5px 15px;
       font-family: inherit;
-      box-shadow: 0 0 15px var(--light);
+      -webkit-box-shadow: 0 0 15px var(--light);
+              box-shadow: 0 0 15px var(--light);
       &:hover {
         color: var(--light);
-        box-shadow: 0 0 55px var(--dark) inset;
+        -webkit-box-shadow: 0 0 55px var(--dark) inset;
+                box-shadow: 0 0 55px var(--dark) inset;
         background-color: var(--accent);
       }
     }

@@ -1,4 +1,4 @@
-@media only screen { 
+@media only screen {
   #post-share {
     font-size: 20px;
     text-align: right;
@@ -39,9 +39,15 @@ body {background-color: var(--dark);}
   text-align: center;
   margin-top: 52px;
   #post-quote {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     min-height: 20vh;
     margin: 0;
     line-height: 1;
@@ -52,7 +58,8 @@ body {background-color: var(--dark);}
       content: '"';
       font-weight: var(--bold);
       font-style: oblique;
-      transform: translateX(-5px);
+      -webkit-transform: translateX(-5px);
+              transform: translateX(-5px);
     }
   }
 }
@@ -62,8 +69,9 @@ body {background-color: var(--dark);}
   text-align: center;
   font-weight: bold;
   padding: 3px 0;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  i {transition: all 0s;}
+  i {-webkit-transition: all 0s;transition: all 0s;}
   margin-bottom: 40px;
   background-color: var(--mid);
   &:hover {
@@ -75,11 +83,13 @@ body {background-color: var(--dark);}
 #post-content {
   text-align: left;
   background-color: var(--accent);
-    box-shadow: 0 0 10px var(--dark) inset;
+    -webkit-box-shadow: 0 0 10px var(--dark) inset;
+            box-shadow: 0 0 10px var(--dark) inset;
   //THIS or toggle round
   padding: 0 30px;
   .content {
-    box-shadow: 0 0 40px var(--dark);
+    -webkit-box-shadow: 0 0 40px var(--dark);
+            box-shadow: 0 0 40px var(--dark);
     padding: 30px 30px 60px 30px;
     p {
       text-indent: 30px;
@@ -94,13 +104,16 @@ body {background-color: var(--dark);}
     text-align: center;
     border-radius: 100%;
     margin: 3px;
-    box-shadow: 0 0 5px var(--dark);
+    -webkit-box-shadow: 0 0 5px var(--dark);
+            box-shadow: 0 0 5px var(--dark);
     &:hover{
       cursor: pointer;
-      box-shadow: 0 0 5px var(--dark) inset;
+      -webkit-box-shadow: 0 0 5px var(--dark) inset;
+              box-shadow: 0 0 5px var(--dark) inset;
     }
     &:active, &:focus {
-      box-shadow: 0 0 5px var(--accent) inset;
+      -webkit-box-shadow: 0 0 5px var(--accent) inset;
+              box-shadow: 0 0 5px var(--accent) inset;
       color: var(--accent);
     }
   }

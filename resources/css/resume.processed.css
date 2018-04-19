@@ -8,23 +8,27 @@
   font-size: 50%;
   font-weight: var(--bold);
   background-color: var(--mid);
+  -webkit-text-decoration: underline var(--accent);
   text-decoration: underline var(--accent);
 }
 
 .resume-area .fold-head .wrap {
   max-width: 960px;
   margin: 0 auto;
+  -webkit-transition: all 0s;
   transition: all 0s;
 }
 
 .resume-area .fold-head:hover, .resume-area .fold-head:focus {
   cursor: pointer;
+  -webkit-box-shadow: 0 0 50px var(--dark) inset;
   box-shadow: 0 0 50px var(--dark) inset;
 }
 
 .resume-area .content {
   max-height: 0;
   overflow: hidden;
+  -webkit-transition: all 0.35s max-height 0.5s;
   transition: all 0.35s max-height 0.5s;
 }
 
@@ -34,6 +38,7 @@
   margin: 15px auto;
   background-color: transparent;
   color: var(--dark);
+  -webkit-box-shadow: 0 0 20px var(--dark);
   box-shadow: 0 0 20px var(--dark);
   padding: 5px 20px;
   font-weight: var(--bold);
@@ -43,6 +48,7 @@
 
 .resume-area .close-area:hover, .resume-area .close-area:focus {
   color: var(--light);
+  -webkit-box-shadow: none;
   box-shadow: none;
   cursor: pointer;
 }
@@ -58,6 +64,7 @@
 }
 
 .resume-area.enabled .fold-head:hover, .resume-area.enabled .fold-head:focus {
+  -webkit-box-shadow: 0 0 10px var(--light);
   box-shadow: 0 0 10px var(--light);
 }
 
@@ -67,11 +74,13 @@
 
 .resume-info {
   padding: 15px;
+  -webkit-box-shadow: 0 0 25px var(--dark);
   box-shadow: 0 0 25px var(--dark);
   margin: 15px;
 }
 
 .resume-info .flex-item {
+  -ms-flex-preferred-size: 275px;
   flex-basis: 275px;
 }
 
@@ -89,6 +98,7 @@
 }
 
 .resume-info .subtitle a:hover, .resume-info .subtitle a:focus {
+  -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
   letter-spacing: 5px;
 }
@@ -107,10 +117,12 @@
 }
 
 .resume-item a {
+  -webkit-text-decoration: underline transparent;
   text-decoration: underline transparent;
 }
 
 .resume-item a:hover, .resume-item a:focus {
+  -webkit-text-decoration-color: var(--accent);
   text-decoration-color: var(--accent);
   letter-spacing: 1px;
 }
@@ -140,6 +152,7 @@
 
 .resume-item .item-list li b {
   background-color: var(--accent);
+  -webkit-box-shadow: 7.5px 0 var(--accent), -7.5px 0 var(--accent);
   box-shadow: 7.5px 0 var(--accent), -7.5px 0 var(--accent);
   margin-right: 15px;
   position: relative;
@@ -160,10 +173,14 @@
 }
 
 #summary #prog-qual {
+  -webkit-box-flex: 3;
+  -ms-flex: 3;
   flex: 3;
 }
 
 #summary #soft-qual {
+  -webkit-box-flex: 4;
+  -ms-flex: 4;
   flex: 4;
 }
 
@@ -176,12 +193,14 @@
 }
 
 #projects .thumbnail-wrapper a:hover, #projects .thumbnail-wrapper a:focus {
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
 #projects img {
   height: 134px;
   width: 208px;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   padding: 2px;
   margin: 10px;
