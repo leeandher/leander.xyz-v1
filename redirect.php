@@ -1,45 +1,57 @@
 <?php
-    $to = 'me@leander.xyz';
-    $from = 'no-reply@leander.xyz';
 
-   // namespace SendMail;
 
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
 
     if ( isset( $_POST['sender'] ) ) {
-    $path = $_SERVER['DOCUMENT_ROOT'];
-    require $path . '/inc/PHPMailer/Exception.php';
-    require $path . '/inc/PHPMailer/PHPMailer.php';
-    require $path . '/inc/PHPMailer/SMTP.php';
-    require '../etc/mail-config.php';
-    require '../etc/mail-template.php';
+      $path = $_SERVER['DOCUMENT_ROOT'];
+      require $path . '/inc/PHPMailer/Exception.php';
+      require $path . '/inc/PHPMailer/PHPMailer.php';
+      require $path . '/inc/PHPMailer/SMTP.php';
+      require '../etc/mail-config.php';
+      require '../etc/mail-template.php';
 
-    $mail = new PHPMailer(true);
-    try {
-        //Server settings
-        $mail->isSMTP();
-        $mail->Host = __MAILHOST__;
-        $mail->SMTPAuth = true;
-        $mail->Username = __MAILER__;
-        $mail->Password = __MAILPASS__;
-        $mail->SMTPSecure = __MAILSECURE__;
-        $mail->Port = __MAILPORT__;
+      //Sending my copy of the email
+      $to = 'me@leander.xyz';
 
-        //Recipients
-        $mail->setFrom($from);
-        $mail->addAddress($to, 'Leander Rodrigues');
+      $mail = new PHPMailer();
+      $mail->isSMTP();
+      $mail->Host = __MAILHOST__;
+      $mail->SMTPAuth = true;
+      $mail->Username = __MAILER__;
+      $mail->Password = __MAILPASS__;
+      $mail->SMTPSecure = __MAILSECURE__;
+      $mail->Port = __MAILPORT__;
 
-        //Content
-        $mail->isHTML(true);
-        $mail->Subject = $_POST['sender'].' sent you a message!';
-        $mail->Body = "test";
+      $mail->setFrom('no-reply@leander.xyz');
+      $mail->addAddress($to, 'Leander Rodrigues');
+      $mail->isHTML(true);
+      $mail->Subject = $_POST['sender'].' sent you a message!';
+      $mail->Body = mail_body($to);
 
-        //$mail->send();
-    } catch (Exception $e) {
-        //echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
+      $mail->send();
+
+
+      //Sending recipient copy of the email
+      $to = $_POST['email'];
+
+      $mail = new PHPMailer();
+      $mail->isSMTP();
+      $mail->Host = __MAILHOST__;
+      $mail->SMTPAuth = true;
+      $mail->Username = __MAILER__;
+      $mail->Password = __MAILPASS__;
+      $mail->SMTPSecure = __MAILSECURE__;
+      $mail->Port = __MAILPORT__;
+
+      $mail->setFrom('no-reply@leander.xyz');
+      $mail->addAddress($to, $_POST['sender']);
+      $mail->isHTML(true);
+      $mail->Subject = 'Thanks for your message on leander.xyz!';
+      $mail->Body = mail_body($to);
+      $mail->send();
     }
-  }
 ?>
 
 
