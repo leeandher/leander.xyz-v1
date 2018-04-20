@@ -1,18 +1,22 @@
+<?php
+  require '../../etc/classes/DB.php';
+?>
+
 <!DOCTYPE html>
 <html>
 
-  <?php 
-    $pageTitle = "Create"; 
-    $pageName = "home";
+  <?php
+    $pageTitle = "Create";
+    $pageName = "create";
     $path = $_SERVER['DOCUMENT_ROOT'];
     $path .= "/inc/header.php";
     require_once($path);
-  ?>  
+  ?>
 
 
   <body>
     <!--NAVIGATION-->
-    <?php 
+    <?php
       $path = $_SERVER['DOCUMENT_ROOT'];
       $path .= "/inc/navbar.html";
       require_once($path);
@@ -47,7 +51,7 @@
     </div>
 
     <!--FOOTER SECTION-->
-    <?php 
+    <?php
       $path = $_SERVER['DOCUMENT_ROOT'];
       $path .= "/inc/footer.php";
       require_once($path);
