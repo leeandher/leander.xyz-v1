@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Random Quote Machine</title>
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Slabo+27px|Pacifico|Quicksand'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+  <!--Phone container-->
+<div class="phone">
+  <!--Superficial components-->
+  <div class="camera center">
+    <div class="lens center"></div>
+  </div>
+  <div class="mic center"></div>
+  <div class="home center"></div>
+  <!--Default screen content-->
+  <div class="screen default">
+    <div class="title">tin<span>Directory</span></div>
+    <!--Pick-up line content-->
+    <div class="content">
+      <p class="quote"></p>
+    </div>
+    <div class="info">
+      <p class="user"></p>
+      <p class="location"></p>
+    </div>
+    <!--Action buttons-->
+    <div class="button-area">
+      <a href=#>
+        <div class="like center major-btn "><i class="fas fa-heart center"></i></div>
+      </a><!--Like Quote-->
+      <a href=#>
+        <div class="dislike center major-btn"><i class="fas fa-3x fa-times center"></i></div>
+      </a><!--Disike Quote-->
+      <a href=#>
+        <div class="refresh center minor-btn"><i class="fas fa-2x fa-redo center"></i></div>
+      </a><!--New Quote-->
+      <a href=#>
+        <div class="tweet center minor-btn"><i class="fab fa-2x fa-twitter center"></i></div>
+      </a><!--Tweet Quote-->
+    </div>
+  </div>
+  <!--Overlay screen content-->
+  <div class="screen overlay hide">
+    <div class="title">like<span>List</span></div>
+    <!--Liked content-->
+    <div class="content">
+      <p class="quote">You don't have any likes!</p>
+    </div>
+    <div class="info">
+      <p class="user">Tap the green heart to 'like' profiles!</p>
+      <p class="location">They'll be saved here for your viewing!</p>
+    </div>
+    <!--Scroll through likes-->
+<!--     <div class="select-area center">
+      <input type="range" min="1" value="1" id="selector">
+    </div> -->
+    <div class="prev select fas fa-chevron-left fa-4x fade"></div>
+    <div class="next select fas fa-chevron-right fa-4x show"></div>
+  </div>
+  <!--Screen display toggle-->
+  <div class="screen-toggle fas fa-heart"></div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

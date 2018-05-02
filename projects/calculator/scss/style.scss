@@ -1,0 +1,163 @@
+//Colour Schemes
+$dark: rgba(15, 15, 15, 1);
+//ON
+$pale-green: rgba(238, 255, 238, 1);
+$soft-green: rgba(162, 255, 146, 1);
+$mid-green: rgba(88, 232, 62, 1);
+$strong-green: rgba(43, 209, 14, 1);
+$dark-green: rgba(15, 75, 15, 1);
+//OFF
+$pale-red: rgba(255, 238, 238, 1);
+$soft-red: rgba(255, 146, 162, 1);
+$mid-red: rgba(232, 62, 88, 1);
+$strong-red: rgba(209, 14, 43, 1);
+$dark-red: rgba(75, 15, 15, 1);
+
+//Screen size queries
+@media only screen and (max-width: 2000px){body {font-size: 85px;}} //Monitor XL
+@media only screen and (max-width: 1200px){body {font-size: 70px;}} //Monitor L
+@media only screen and (max-width: 900px) {body {font-size: 65px;}} //Monitor MD
+
+//Page setup
+html, body {
+  background: $dark;
+  height: 100%;
+  font-family: 'Work Sans';
+}
+
+//Faded backgrouns
+.bg {
+  background: {
+    attachment: fixed;
+    color: $dark;
+    position: 50% 50%;
+    repeat: no-repeat;
+    size: cover;
+  }
+  height: 100%;
+  filter: brightness(0.3);
+  position: absolute;
+  width: 100%;
+} 
+
+//Formatting for display
+.display {
+  font-size: 100%;
+  font-weight: 200;
+  height: 15%;
+  padding: 0 15px;
+}
+
+//Formatting for history
+.history {
+  font-size: 30%;
+  font-weight: 400;
+  height: 5%;
+  padding: 0 15px;
+}
+
+//Styling and formatting calculator
+.calculator {
+  //the colour scheme if on
+  &.on {
+    box-shadow: 0 0 1rem $pale-green;
+    .btn-num {background-color: $pale-green;}
+    .btn-oper {background-color: $mid-green;}
+    .btn-func {background-color: $soft-green;}
+    .display {
+      background-color: $dark-green;
+      color: $pale-green;
+    }
+    .history {
+      background-color: $dark-green;
+      color: $strong-green;
+    }
+  }
+  //the colour scheme if off
+  &.off {
+    box-shadow: 0 0 1rem $pale-red;
+    .btn-num {background-color: $pale-red;}
+    .btn-oper {background-color: $mid-red;}
+    .btn-func {background-color: $soft-red;}
+    .display {
+      background-color: $dark-red;
+      color: $pale-red;
+    }
+    .history {
+      background-color: $dark-red;
+      color: $strong-red;
+    }
+  }
+  border: 3px solid $dark;
+  border-radius: 25px;
+  height: 85%;
+  margin: 0 auto;
+  min-height: 500px;
+  min-width: 400px;
+  opacity: 0.85;
+  overflow: hidden;
+  position: relative;
+  top: 2.5%;
+  transition: all 0.5s;
+  width: 95%;
+  .button-area {
+    height: 80%;
+    margin: 0; 
+    padding: 0;
+    width: 100%;
+  }
+  .row {
+    height: 20%;
+    margin: 0;
+    padding: 0;
+    &:nth-child(4) {
+      height: 40%;
+      .btn {
+        height: 50%;
+        &#add {height: 100%;}
+      }
+    }
+  }
+  .col-3 {
+    line-height: 0;
+    padding: 0;
+  }
+  .btn {
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 0;
+    box-sizing: border-box;
+    color: $dark;
+    font-family: 'Work Sans';
+    font-weight: 100;
+    font-size: 60%;
+    height: 100%;
+    margin: 0;
+    transition: all 0s;
+    width: 100%;
+    &:hover {
+      filter: brightness(0.90);
+    }
+    &:focus, &:hover {
+      border: 1px solid rgba(0,0,0,0.2);
+      box-shadow: none;
+      outline:none;
+    }
+  }
+}
+
+//Styling and formatting for bottom credits
+.creds {
+  &.on {
+    color: $pale-green;
+    a {color: $strong-green;}
+  }
+  &.off {
+    color: $pale-red;
+    a {color: $strong-red;}
+  }
+  font-weight: 400;
+  font-size: 25%;
+  margin: 10px auto;
+  position: relative;
+  top: 2.5%;
+}

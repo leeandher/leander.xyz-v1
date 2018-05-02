@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Twitch.tv JSON API</title>
+  <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+<title>Live on Twitch</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Iceland|Russo+One'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+  <div class='container-fluid'>
+  <div class='row'>
+    <!-- Page title -->
+    <div class='title'>
+      <div class='fas fa-circle'>
+        <span>LIVE</span>
+      </div>
+      on twitch
+    </div>
+  </div>
+  <div class='row'>
+    <!-- Menu button area -->
+    <div class='utility col-md-3'>
+      <div class='wrapper sticky-top'>
+        <h2>MENU</h2>
+        <!-- Filter button set -->
+        <h5>FILTERS</h5>
+        <div class='row' id='filters'>
+          <div class='col-md-12 col-sm-6'>
+            <button class='btn btn-outline-info active' id='filter-all'>ALL</button>
+            <button class='btn btn-outline-success' id='filter-online'>ONLINE</button>
+          </div>
+          <div class='col-md-12 col-sm-6'>
+            <button class='btn btn-outline-danger' id='filter-offline'>OFFLINE</button>
+            <input autocomplete='off' class='btn' id='filter-search' placeholder='SEARCH' type='search'>
+          </div>
+        </div>
+        <!-- Sort button set -->
+        <h5>SORT</h5>
+        <div class='row' id='sorts'>
+          <div class='col-md-12 col-sm-4'>
+            <button class='btn btn-outline-warning active' id='sort-az'>A - Z</button>
+          </div>
+          <div class='col-md-12 col-sm-4'>
+            <button class='btn btn-outline-warning' id='sort-live'>LIVE</button>
+          </div>
+          <div class='col-md-12 col-sm-4'>
+            <button class='btn btn-outline-warning' id='sort-pop'>POPULARITY</button>
+          </div>
+        </div>
+        <!-- Add button set -->
+        <h5>ADD</h5>
+        <div class='row' id='add'>
+          <form class='col-md-12'>
+            <input autocomplete='off' class='btn' id='add-streamer' placeholder='ADD STREAMER' type='text'>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Streamer content area -->
+    <div class='data col-md-9'>
+      <div class='wrapper'>
+        <!-- Loading icon -->
+        <div id='hold-loading'>
+          <div class='loading-icon'>
+            <div class='load-anim'></div>
+          </div>
+        </div>
+        <!-- Loop to create streamerDivs -->
+        <a class='card d-none' href='#' id='result0' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result1' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result2' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result3' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result4' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result5' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result6' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result7' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result8' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result9' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result10' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result11' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result12' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result13' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result14' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result15' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result16' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result17' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result18' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result19' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result20' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result21' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result22' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result23' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result24' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result25' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result26' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result27' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result28' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result29' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result30' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result31' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result32' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result33' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result34' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result35' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result36' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result37' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result38' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result39' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result40' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result41' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result42' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result43' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result44' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result45' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result46' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result47' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result48' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result49' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+        <a class='card d-none' href='#' id='result50' target='_blank'>
+          <img class='card-img-top'>
+          <h3 class='card-header'>
+            <img class='logo'>
+            <div class='head'></div>
+          </h3>
+          <div class='card-body'>
+            <h5 class='card-title'></h5>
+            <h6 class='card-subtitle'></h6>
+            <p class='card-text'></p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <a class='footer' href='https://dev.twitch.tv/' target='_blank'>
+    POWERED BY
+    <div class='fab fa-twitch fa-sm'></div>
+    API
+  </a>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
+
+
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

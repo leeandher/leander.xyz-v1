@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Wikipedia Viewer</title>
+
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Catamaran|Lora'>
+  <link rel='stylesheet prefetch' href='https://use.fontawesome.com/releases/v5.0.6/css/all.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+  <div class='modal fade' id='selectedModal'>
+  <div class='modal-dialog modal-lg'>
+    <div class='modal-content'>
+      <div class='modal-header'>
+        <a class='modal-title' target='_blank'></a>
+        <button class='close' data-dismiss='modal' type='button'>×</button>
+      </div>
+      <div class='modal-body'>
+        <p class='justify-content'></p>
+      </div>
+      <div class='modal-footer'>
+        <a class='btn fab fa-lg fa-facebook-f' target='_blank'></a>
+        <a class='btn fab fa-lg fa-twitter' target='_blank'></a>
+        <a class='btn fab fa-lg fa-google-plus-g' target='_blank'></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class='header'>
+  <label>
+    <span>sans-serif</span>
+    <input class='d-none' type='checkbox'>
+    <div class='switch float-left'></div>
+  </label>
+</div>
+<div class='container-fluid'>
+  <div class='head location'>
+    <form action=''>
+      <div class='title'>
+        <div class='center-text'>WikiView</div>
+      </div>
+      <input autocomplete='off' class='center' id='searchBar' placeholder='Search' type='text'>
+      <div class='rand'>
+        <div class='center-text'>
+          <a href='https://en.wikipedia.org/wiki/Special:Random' target='_blank'>or try your luck.</a>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class='row d-none' id='noResults'>
+    <a class='col-md' href='https://en.wikipedia.org/wiki/Special:Search' target='_blank'>
+      <div class='sub'>No search results found!</div>
+      <div class='desc'>Click here to use the Wikipedia Native Search.</div>
+    </a>
+  </div>
+  <div class='row'>
+    <!-- Add target blank -->
+    <a class='col-md d-none' data-target='#selectedModal' data-toggle='modal' href='#' id='result1'>
+      <div class='sub'></div>
+      <div class='desc'></div>
+    </a>
+    <!-- Add target blank -->
+    <a class='col-md d-none' data-target='#selectedModal' data-toggle='modal' href='#' id='result2'>
+      <div class='sub'></div>
+      <div class='desc'></div>
+    </a>
+    <!-- Add target blank -->
+    <a class='col-md d-none' data-target='#selectedModal' data-toggle='modal' href='#' id='result3'>
+      <div class='sub'></div>
+      <div class='desc'></div>
+    </a>
+  </div>
+  <div class='row'>
+    <!-- Add target blank -->
+    <a class='col-md d-none' data-target='#selectedModal' data-toggle='modal' href='#' id='result4'>
+      <div class='sub'></div>
+      <div class='desc'></div>
+    </a>
+    <!-- Add target blank -->
+    <a class='col-md d-none' data-target='#selectedModal' data-toggle='modal' href='#' id='result5'>
+      <div class='sub'></div>
+      <div class='desc'></div>
+    </a>
+    <!-- Add target blank -->
+    <a class='col-md d-none' data-target='#selectedModal' data-toggle='modal' href='#' id='result6'>
+      <div class='sub'></div>
+      <div class='desc'></div>
+    </a>
+  </div>
+  <div class='row'>
+    <!-- Add target blank -->
+    <a class='col-md d-none' data-target='#selectedModal' data-toggle='modal' href='#' id='result7'>
+      <div class='sub'></div>
+      <div class='desc'></div>
+    </a>
+    <!-- Add target blank -->
+    <a class='col-md d-none' data-target='#selectedModal' data-toggle='modal' href='#' id='result8'>
+      <div class='sub'></div>
+      <div class='desc'></div>
+    </a>
+    <!-- Add target blank -->
+    <a class='col-md d-none' data-target='#selectedModal' data-toggle='modal' href='#' id='result9'>
+      <div class='sub'></div>
+      <div class='desc'></div>
+    </a>
+  </div>
+  <div class='row'>
+    <!-- Add target blank -->
+    <a class='col-md d-none' data-target='#selectedModal' data-toggle='modal' href='#' id='result10'>
+      <div class='sub'></div>
+      <div class='desc'></div>
+    </a>
+    <!-- Add target blank -->
+    <a class='col-md d-none' data-target='#selectedModal' data-toggle='modal' href='#' id='result11'>
+      <div class='sub'></div>
+      <div class='desc'></div>
+    </a>
+    <!-- Add target blank -->
+    <a class='col-md d-none' data-target='#selectedModal' data-toggle='modal' href='#' id='result12'>
+      <div class='sub'></div>
+      <div class='desc'></div>
+    </a>
+  </div>
+  <div class='row'>
+    <!-- Add target blank -->
+    <a class='col-md d-none' data-target='#selectedModal' data-toggle='modal' href='#' id='result13'>
+      <div class='sub'></div>
+      <div class='desc'></div>
+    </a>
+    <!-- Add target blank -->
+    <a class='col-md d-none' data-target='#selectedModal' data-toggle='modal' href='#' id='result14'>
+      <div class='sub'></div>
+      <div class='desc'></div>
+    </a>
+    <!-- Add target blank -->
+    <a class='col-md d-none' data-target='#selectedModal' data-toggle='modal' href='#' id='result15'>
+      <div class='sub'></div>
+      <div class='desc'></div>
+    </a>
+  </div>
+  <div class='row'>
+    <!-- Add target blank -->
+    <a class='col-md d-none' data-target='#selectedModal' data-toggle='modal' href='#' id='result16'>
+      <div class='sub'></div>
+      <div class='desc'></div>
+    </a>
+    <!-- Add target blank -->
+    <a class='col-md d-none' data-target='#selectedModal' data-toggle='modal' href='#' id='result17'>
+      <div class='sub'></div>
+      <div class='desc'></div>
+    </a>
+    <!-- Add target blank -->
+    <a class='col-md d-none' data-target='#selectedModal' data-toggle='modal' href='#' id='result18'>
+      <div class='sub'></div>
+      <div class='desc'></div>
+    </a>
+  </div>
+  <div class='row'>
+    <!-- Add target blank -->
+    <a class='col-md d-none' data-target='#selectedModal' data-toggle='modal' href='#' id='result19'>
+      <div class='sub'></div>
+      <div class='desc'></div>
+    </a>
+    <!-- Add target blank -->
+    <a class='col-md d-none' data-target='#selectedModal' data-toggle='modal' href='#' id='result20'>
+      <div class='sub'></div>
+      <div class='desc'></div>
+    </a>
+    <!-- Add target blank -->
+    <a class='col-md d-none' data-target='#selectedModal' data-toggle='modal' href='#' id='result21'>
+      <div class='sub'></div>
+      <div class='desc'></div>
+    </a>
+  </div>
+</div>
+<a class='footer text-center' href='https://www.mediawiki.org/wiki/API:Main_page' target='_blank'>
+  Powered by
+  <div class='fab fa-wikipedia-w fa-lg'></div>
+  API
+</a>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://unpkg.com/popper.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+
+
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

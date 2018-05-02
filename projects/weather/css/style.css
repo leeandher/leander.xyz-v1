@@ -1,0 +1,178 @@
+@media screen {
+  .error,
+  .temperature {
+    font-size: 90px;
+  }
+
+  .title,
+  .description {
+    font-size: 34px;
+  }
+
+  btn,
+  .location {
+    font-size: 18px;
+  }
+}
+@media (max-width: 750px) {
+  .error,
+  .temperature {
+    font-size: 75px;
+  }
+
+  .title,
+  .description {
+    font-size: 30px;
+  }
+
+  p,
+  btn,
+  .location {
+    font-size: 14px;
+  }
+
+  .info {
+    font-size: 12px;
+  }
+}
+@media (max-width: 475px) {
+  .error,
+  .temperature {
+    font-size: 60px;
+  }
+
+  .title {
+    font-size: 26px;
+    padding-top: 5px;
+  }
+
+  p,
+  btn,
+  .location {
+    font-size: 12px;
+  }
+
+  .info {
+    font-size: 10px;
+  }
+}
+body {
+  height: 100%;
+  color: whitesmoke;
+  font-family: 'Montserrat', sans-serif;
+  min-width: 350px;
+  background: #191919 url("") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-text {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.content {
+  height: 476px;
+  width: 80%;
+  max-width: 796px;
+  min-width: 320px;
+  margin: 50px auto;
+  text-align: center;
+}
+.content.error {
+  font-style: italic;
+}
+
+.title {
+  width: 100%;
+  height: 10%;
+  font-weight: bold;
+  background-color: #191919;
+  border-radius: 25px 25px 0px 0px;
+}
+
+.col-3, .col-md-6 {
+  padding: 0;
+}
+
+.row {
+  margin: 0 auto;
+}
+
+.hover-inset {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  background-color: rgba(25, 25, 25, 0.7);
+  transition: all 0.5s;
+}
+.hover-inset:hover {
+  box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.9);
+}
+
+.left-info .temperature {
+  width: 100%;
+  display: block;
+}
+.left-info .btn {
+  margin: 20px auto;
+  margin-top: 0px;
+}
+.left-info .btn:hover {
+  cursor: pointer;
+  color: #191919;
+}
+
+.right-info .center-text {
+  padding: 20px;
+}
+.right-info .center-text .description {
+  font-style: italic;
+}
+
+.transition {
+  -webkit-transition: all .35s ease-out;
+  -moz-transition: all .35s ease-out;
+  -ms-transition: all .35s ease-out;
+  -o-transition: all .35s ease-out;
+  transition: all .35s ease-out;
+}
+
+.details {
+  padding: 0 10px;
+  z-index: 1;
+  max-height: 10%;
+  border-radius: 0px 0px 25px 25px;
+  background: #191919;
+  overflow: hidden;
+}
+.details p {
+  margin: 5px auto;
+}
+.details .head {
+  font-weight: bold;
+}
+.details .row {
+  padding: 5px 0;
+}
+.details .transition.enable {
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+.details .transition:hover {
+  cursor: pointer;
+}
+.details.override {
+  max-height: 40%;
+}

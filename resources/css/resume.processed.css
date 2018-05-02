@@ -36,7 +36,7 @@
   border: 2px solid;
   display: block;
   margin: 15px auto;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.75);
   color: var(--dark);
   -webkit-box-shadow: 0 0 20px var(--dark);
   box-shadow: 0 0 20px var(--dark);
@@ -50,6 +50,7 @@
   color: var(--light);
   -webkit-box-shadow: none;
   box-shadow: none;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -105,6 +106,7 @@
 
 .resume-info .subtitle span {
   padding: 0 10px;
+  background-color: var(--light);
 }
 
 .resume-item {
@@ -159,13 +161,9 @@
   left: 7.5px;
 }
 
-#summary .flex-group h3 {
-  text-align: center;
-}
-
 #summary .flex-group .flex-item {
   min-width: 250px;
-  margin: 10px;
+  margin: 0 10px;
 }
 
 #summary ul {

@@ -52,6 +52,8 @@
       $mail->Body = mail_body($to);
       $mail->send();
     }
+    //Clear the POST variable
+    $_POST = array();
 ?>
 
 
@@ -74,7 +76,7 @@
       $path .= "/inc/navbar.html";
       require_once($path);
       $location = '/index.php';
-      //header( "refresh: 1.5; url=".$location );
+      header( "refresh: 1; url=".$location );
     ?>
 
     <!--HOME SECTION-->

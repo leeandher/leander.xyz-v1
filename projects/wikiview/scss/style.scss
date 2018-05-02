@@ -1,0 +1,230 @@
+//Color variables
+$text-dark: rgb(25, 25, 25);
+$fade-dark: rgba(25, 25, 25, 0.75);
+$text-light: rgb(255, 255, 255);
+$fade-light: rgba(255, 255, 255, 0.75);
+//Font variables
+$head-size: 45px;
+$sub-size: 24px;
+$text-size: 16px;
+//Formatting variables
+$break-h: 200px;
+$break-w: 320px;
+
+//Absolute centering
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+//Text centering
+.center-text {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+//Applies sans-serif font
+.sans-serif {
+  font-family: Catamaran, sans-serif;
+}
+//Modal design
+.modal-dialog {
+  min-width: 350px;
+  .modal-header {
+    .modal-title {
+      font-size: 20px; 
+    }
+    .close {
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .modal-body {
+    p {
+      img {
+        margin: 10px 20px;
+        max-width: 250px;
+      }
+      margin: 0px 15px;
+    }
+  }
+  .modal-footer {
+    .btn {
+      transition: all 0.2s;
+    }
+    .fa-facebook-f {
+      &:focus, &:hover {
+        color: #3B5998 !important;
+      }
+    }
+    .fa-twitter {
+      &:focus, &:hover {
+        color: #1DA1F2 !important;
+      }
+    }
+    .fa-google-plus-g {
+      &:focus, &:hover {
+        color: #DB4437 !important;
+      }
+    }
+  }
+}
+
+
+//Header design
+.header {
+  display: block;
+  padding: 5px;
+  margin-bottom: 15px;
+  height: 4%;
+  min-height: 42px;
+  label {
+    background: $fade-light;
+    border-radius: 25px;
+    min-width: 160px;
+    padding: 6px;
+    span {
+      color: $text-dark;
+      margin-left: 7px;
+    }
+    input:checked {
+      + .switch {
+        background: #00C851;
+      }
+      + .switch:before {
+        transform: translateX(32px);
+      }
+    }
+    .switch {
+      background: $fade-dark;
+      border: 2px solid black;
+      border-radius: 34px;
+      display: block;
+      height: 26px;
+      position: relative;
+      transition: all 0.5s;
+      width: 60px;
+      &:before{
+        background: $text-light;
+        border-radius: 100%;
+        content: '';
+        display: block;
+        height: 17px;
+        left: 3px;
+        position: absolute;
+        transition: all 0.5s;
+        top: 2.5px;
+        width: 17px;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+//Page design
+.container-fluid {
+  min-height: 89%;
+}
+//Footer design
+.footer {
+  background-color: $fade-light;
+  display: block;
+  height: 4%;
+  padding: 5px;
+}
+
+//Page setup
+html,
+body{
+  height: 100%;
+  outline: none;
+  font-family: Lora, serif;
+  background: transparent;
+  transition: all 0.4s;
+}
+//Link setup
+a {
+  color: $text-dark !important;
+  &:focus {
+    text-decoration: underline;
+  }
+}
+//Content head design
+.head {
+  background-color: $fade-light;
+  border-radius: 10px;
+  height: $break-h;
+  margin: 15px auto;
+  max-width: 768px;
+  min-width: $break-w;
+  padding: 10px;
+  position: relative;
+  text-decoration: none !important;
+  transition: all 0.7s;
+  width: 90%;
+  &.location {
+    transform: translateY(100%);
+  }
+}
+//Direct formatting for the title, search and random
+form {
+  background: transparent;
+  color: $text-dark;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+  .title {
+    font-size: $head-size;
+    height: 40%;
+  }
+  input {
+    border: 2px solid $text-dark;
+    border-radius: 50px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.2s;
+    width: 60%;
+    &:focus {
+      box-shadow: 0px 0px 5px $text-dark;
+      outline: none;
+    }
+  }
+  .rand {
+    display: block;
+    font-size: $sub-size;
+    font-style: italic;
+    height: 70%;
+  }
+}
+//Result display design
+.col-md {
+  background-color: $fade-dark;
+  border: 1.5px solid transparent;
+  border-radius: 7.5px;
+  color: $text-light !important;
+  margin: 15px;
+  min-width: $break-w;
+  padding: 10px;
+  transition: all 0.35s;
+  .sub {
+    font-size: $sub-size;
+    margin: 10px;
+  }
+  &:hover,
+  &:focus,{
+    outline: none;
+    border: 1.5px solid $text-light;
+    box-shadow: 3px 3px 5px $text-dark;
+    text-decoration: none;
+    transform: scale(1.05);
+  }
+}

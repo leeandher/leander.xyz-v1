@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tic-Tac-Toe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+  <form class='menu'>
+  <div class='select center'>
+    <h1>Tic-Tac-Toe</h1>
+    <h5>Who's playing?</h5>
+    <div class='row'>
+      <div class='col-sm-6 offset-sm-0 col-8 offset-2'>
+        <button class='btn btn-versus' id='vsAI' type='button'>Player vs. AI</button>
+      </div>
+      <div class='col-sm-6 offset-sm-0 col-8 offset-2'>
+        <button class='btn btn-versus enable' id='vsPlayer' type='button'>Player vs. Player</button>
+      </div>
+    </div>
+    <div class='ifAI d-none'>
+      <h5>AI Difficulty</h5>
+      <div class='row'>
+        <div class='col-sm-4 offset-sm-0 col-8 offset-2'>
+          <button class='btn btn-difficulty enable' id='simpleAI' type='button'>Simple</button>
+        </div>
+        <div class='col-sm-4 offset-sm-0 col-8 offset-2'>
+          <button class='btn btn-difficulty' id='moderateAI' type='button'>Moderate</button>
+        </div>
+        <div class='col-sm-4 offset-sm-0 col-8 offset-2'>
+          <button class='btn btn-difficulty' id='impossibleAI' type='button'>Impossible</button>
+        </div>
+      </div>
+    </div>
+    <h5>Player Info</h5>
+    <div class='row'>
+      <div class='col-sm-6 offset-sm-0 col-8 offset-2'>
+        <button class='btn' id='pinfo-1' tabindex='-1' type='button'>
+          <input id='pname-1' placeholder='Player 1 Name' type='text'>
+          <div class='btn-float btn-char x-select enable'>
+            <div class='center'>X</div>
+          </div>
+          <div class='btn-float btn-char o-select'>
+            <div class='center'>O</div>
+          </div>
+          <label>
+            <div class='btn-float color-sample' id='pcolor-1'></div>
+            <input class='d-none' type='color' value='#F08080'>
+          </label>
+        </button>
+      </div>
+      <div class='col-sm-6 offset-sm-0 col-8 offset-2'>
+        <button class='btn' id='pinfo-2' tabindex='-1' type='button'>
+          <input id='pname-2' placeholder='Player 2 Name' type='text'>
+          <div class='btn-float btn-char x-select'>
+            <div class='center'>X</div>
+          </div>
+          <div class='btn-float btn-char o-select enable'>
+            <div class='center'>O</div>
+          </div>
+          <label>
+            <div class='btn-float color-sample' id='pcolor-2'></div>
+            <input class='d-none' type='color' value='#87CEEB'>
+          </label>
+        </button>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-6 offset-3'>
+        <button class='btn' type='submit'>Start Game</button>
+      </div>
+    </div>
+  </div>
+</form>
+<div class='game d-none'>
+  <div class='display'></div>
+  <div class='board'>
+    <table>
+      <tr id='row-0'>
+        <td class='cell' id='cell-0'>
+          <div class='nought center' id='nought-0'></div>
+          <div class='cross' id='cross-0'>
+            <div class='center cross-bar c1'></div>
+            <div class='center cross-bar c2'></div>
+          </div>
+        </td>
+        <td class='cell' id='cell-1'>
+          <div class='nought center' id='nought-1'></div>
+          <div class='cross' id='cross-1'>
+            <div class='center cross-bar c1'></div>
+            <div class='center cross-bar c2'></div>
+          </div>
+        </td>
+        <td class='cell' id='cell-2'>
+          <div class='nought center' id='nought-2'></div>
+          <div class='cross' id='cross-2'>
+            <div class='center cross-bar c1'></div>
+            <div class='center cross-bar c2'></div>
+          </div>
+        </td>
+      </tr>
+      <tr id='row-1'>
+        <td class='cell' id='cell-3'>
+          <div class='nought center' id='nought-3'></div>
+          <div class='cross' id='cross-3'>
+            <div class='center cross-bar c1'></div>
+            <div class='center cross-bar c2'></div>
+          </div>
+        </td>
+        <td class='cell' id='cell-4'>
+          <div class='nought center' id='nought-4'></div>
+          <div class='cross' id='cross-4'>
+            <div class='center cross-bar c1'></div>
+            <div class='center cross-bar c2'></div>
+          </div>
+        </td>
+        <td class='cell' id='cell-5'>
+          <div class='nought center' id='nought-5'></div>
+          <div class='cross' id='cross-5'>
+            <div class='center cross-bar c1'></div>
+            <div class='center cross-bar c2'></div>
+          </div>
+        </td>
+      </tr>
+      <tr id='row-2'>
+        <td class='cell' id='cell-6'>
+          <div class='nought center' id='nought-6'></div>
+          <div class='cross' id='cross-6'>
+            <div class='center cross-bar c1'></div>
+            <div class='center cross-bar c2'></div>
+          </div>
+        </td>
+        <td class='cell' id='cell-7'>
+          <div class='nought center' id='nought-7'></div>
+          <div class='cross' id='cross-7'>
+            <div class='center cross-bar c1'></div>
+            <div class='center cross-bar c2'></div>
+          </div>
+        </td>
+        <td class='cell' id='cell-8'>
+          <div class='nought center' id='nought-8'></div>
+          <div class='cross' id='cross-8'>
+            <div class='center cross-bar c1'></div>
+            <div class='center cross-bar c2'></div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class='row'>
+    <div class='col-sm-6 offset-sm-0 col-8 offset-2'>
+      <button class='btn btn-ingame' id='back'>Back to menu</button>
+    </div>
+    <div class='col-sm-6 offset-sm-0 col-8 offset-2'>
+      <button class='btn btn-ingame' id='reset'>Reset</button>
+    </div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

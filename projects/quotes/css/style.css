@@ -1,0 +1,277 @@
+@font-face {
+  font-family: "ChaletNewYork";
+  src: url("https://dl.dropboxusercontent.com/s/vos5g2nm4f6izwt/ChaletNewYorkNineteenSeventy.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#DB6D37, #EF2F7A) no-repeat center center fixed;
+  background-size: cover;
+  margin: 0px;
+}
+
+.center {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hide {
+  display: none;
+}
+
+.phone {
+  position: relative;
+  margin: 50px auto;
+  background: #111111;
+  border-bottom: 4px solid #4A4A4A;
+  border-left: 4px solid #4A4A4A;
+  border-radius: 35px;
+  height: 620px;
+  width: 350px;
+  transform: scale(1);
+}
+.phone .home {
+  border: 2px solid #4A4A4A;
+  border-radius: 15px;
+  height: 5%;
+  top: 94%;
+  width: 25%;
+}
+.phone .camera {
+  border: 1px solid #4A4A4A;
+  border-radius: 50%;
+  height: 3.6%;
+  left: 30%;
+  top: 6%;
+  width: 6.4%;
+}
+.phone .camera .lens {
+  border: 0.5px solid #707070;
+  border-radius: 50%;
+  height: 70%;
+  opacity: 0.3;
+  width: 70%;
+}
+.phone .mic {
+  background-color: #111211;
+  border: 1px solid #4a4a4a;
+  border-radius: 15px;
+  height: 1%;
+  top: 6%;
+  width: 20%;
+}
+
+.screen {
+  height: 76%;
+  left: 50%;
+  position: absolute;
+  top: 12%;
+  transform: translateX(-50%);
+  width: 90%;
+}
+
+.default {
+  background: #FFFFFF;
+}
+.default .title,
+.default .info {
+  border-bottom: 1px solid #E5E5E5;
+}
+.default .button-area {
+  height: 23%;
+  left: 50%;
+  position: absolute;
+  top: 77%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+.default .button-area a {
+  color: inherit;
+  text-decoration: none;
+}
+.default .button-area div {
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  border: 8px solid #E5E5E5;
+  text-align: center;
+  text-shadow: 2px 2px #E5E5E5;
+}
+.default .button-area div:active {
+  background-color: #E5E5E5;
+}
+.default .button-area div:hover {
+  z-index: 1;
+}
+.default .button-area .major-btn {
+  height: 75%;
+  width: 25%;
+}
+.default .button-area .minor-btn {
+  height: 50%;
+  width: 17%;
+}
+.default .button-area .like {
+  color: #4CCC93;
+  font-size: 2.5em;
+  left: 64%;
+}
+.default .button-area .like:active, .default .button-area .like:hover {
+  border-color: #4CCC93;
+}
+.default .button-area .dislike {
+  color: #FA6D6D;
+  left: 36%;
+}
+.default .button-area .dislike:active, .default .button-area .dislike:hover {
+  border-color: #FA6D6D;
+}
+.default .button-area .refresh {
+  color: #FCCE68;
+  left: 12.5%;
+  top: 40%;
+}
+.default .button-area .refresh:active, .default .button-area .refresh:hover {
+  border-color: #FCCE68;
+}
+.default .button-area .tweet {
+  color: #2DB4CA;
+  left: 87.5%;
+  top: 40%;
+}
+.default .button-area .tweet:active, .default .button-area .tweet:hover {
+  border-color: #2DB4CA;
+}
+
+.overlay {
+  background: #FF626B;
+}
+.overlay .title {
+  color: #FFFFFF;
+}
+.overlay .content {
+  border: 5px solid #FFFFFF;
+  border-bottom: 0px;
+  border-radius: 5px 5px 0px 0px;
+  box-sizing: border-box;
+}
+.overlay .select {
+  color: #FFFFFF;
+  position: absolute;
+  text-align: center;
+  top: 80%;
+  transition: transform 0.5s;
+  width: 30%;
+}
+.overlay .select.next {
+  left: 55%;
+}
+.overlay .select.prev {
+  right: 55%;
+}
+.overlay .fade {
+  opacity: 0.3;
+}
+.overlay .fade:hover {
+  cursor: default;
+}
+.overlay .show {
+  opacity: 1;
+}
+.overlay .show:active {
+  color: #E5E5E5 !important;
+}
+.overlay .show:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+}
+
+.title {
+  color: #FF626B;
+  font-family: ChaletNewYork, sans-serif;
+  font-size: 36px;
+  margin-top: 2%;
+  text-align: center;
+}
+.title span {
+  font-family: "Slabo 27px", monospace;
+}
+
+.content {
+  background-color: #111111;
+  background-image: url();
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  height: 53%;
+  left: 50%;
+  position: absolute;
+  top: 12%;
+  transform: translateX(-50%);
+  width: 96%;
+}
+.content .quote {
+  color: #FFFFFF;
+  font-family: Pacifico;
+  font-size: 24px;
+  margin: 0px 20px 0px 20px;
+  position: absolute;
+  text-align: center;
+  text-shadow: 2px 2px black;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.info {
+  background-color: #FFFFFF;
+  border-radius: 0px 0px 5px 5px;
+  font-family: Quicksand;
+  height: 10%;
+  left: 50%;
+  position: absolute;
+  text-align: left;
+  text-indent: 10px;
+  top: 65%;
+  transform: translateX(-50%);
+  width: 96%;
+}
+.info .user {
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  top: -25%;
+}
+.info .user span {
+  font-weight: normal;
+}
+.info .location {
+  color: #707070;
+  font-size: 13px;
+  position: absolute;
+  top: 25%;
+}
+
+.screen-toggle {
+  font-size: 1.5em;
+  left: 8%;
+  position: absolute;
+  text-align: center;
+  top: 14.5%;
+  z-index: 2;
+}
+.screen-toggle.fa-heart {
+  color: #FF626B;
+}
+.screen-toggle.fa-times {
+  color: #FFFFFF;
+  margin-left: -2px;
+}
+.screen-toggle:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}

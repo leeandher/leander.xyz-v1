@@ -7,12 +7,12 @@
     $path = $_SERVER['DOCUMENT_ROOT'];
     $path .= "/inc/header.php";
     require_once($path);
-  ?>  
+  ?>
 
 
   <body>
     <!--NAVIGATION-->
-    <?php 
+    <?php
       $path = $_SERVER['DOCUMENT_ROOT'];
       $path .= "/inc/navbar.html";
       require_once($path);
@@ -35,7 +35,7 @@
       <button class="btn-tag">react</button>
     </div>
     <!--ARTICLE SECTION-->
-    <div class="section" id="directory">
+    <div class="section" id="archive">
       <div class="content">
         <div class="flex-group">
           <a class="media light round" id="note-1" href="#">
@@ -93,7 +93,7 @@
     </div>
 
     <!--FOOTER SECTION-->
-    <?php 
+    <?php
       $path = $_SERVER['DOCUMENT_ROOT'];
       $path .= "/inc/footer.php";
       require_once($path);

@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Varela+Round|Share+Tech+Mono");
+
+//Responsiveness, mainly scaling absolue elements
+@media only screen {body {font-size: 60px;}}
+@media only screen and (max-width: 650px){body {font-size: 50px;}}
+@media only screen and (max-width: 550px){body {font-size: 45px;}}
+@media only screen and (max-width: 500px){body {font-size: 40px;}}
+@media only screen and (max-width: 450px){body {font-size: 35px;}}
+@media only screen and (max-width: 400px){body {font-size: 30px;}}
+@media only screen and (max-width: 375px){body {font-size: 25px;}}
+
+//Variables
+$light: #CCCCCC;
+$pale: #AAAAAA;
+$mid: #696969;
+$dark: #070707;
+
+//Page Setup
+body {
+  background: url(http://cdn.backgroundhost.com/backgrounds/subtlepatterns/carbon_fibre.png);
+  color: $dark;
+  font-family: "Varela Round";
+  height: 100vh;
+  line-height: 1;
+  min-width: 320px;
+  padding: 30px;
+  text-align: center;
+  width: 100vw;
+}
+
+//Absolute centering
+.center {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//Game contiainers
+.game {
+  background-color: $dark;
+  border: 5px solid $dark;
+  border-radius: 100%;
+  box-shadow: 0 0 50px white;
+  margin: 0 auto;
+  max-width: 650px;
+  overflow: hidden;
+  position: relative;
+}
+.btn-game-container {height: 100%; width: 100%;}
+.spin {animation: spin 2s infinite linear;}
+@keyframes spin {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+//Game buttons
+.btn-game {
+  filter: brightness(0.5);
+  float: left;
+  height: 50%;
+  width: 50%;
+  transition: all 0.25s;
+  &.brighten {filter: brightness(1);}
+  &#btn-1 {background-color: #32CD32;}
+  &#btn-2 {background-color: #FF3030;}
+  &#btn-3 {background-color: #FFFF20;}
+  &#btn-4 {background-color: #1E90FF;}
+  &:hover {
+    cursor: pointer;
+    &.disabled {cursor: auto;}
+  }
+}
+
+//Center panel
+.module {
+  margin: 0 auto;
+  background: $mid;
+  border-radius: 100%;
+  height: 70%;
+  width: 70%;
+  border: 5px solid $dark;
+  overflow: hidden;
+}
+
+//Game title display
+.title {
+  color: $light;
+  font-size: 150%;
+  font-weight: bold;
+  margin-top: 10%;
+  text-shadow: -3px 0 $dark, 0 -3px $dark, 3px 0 $dark, 0 3px $dark;
+  span:hover {cursor: pointer;}
+}
+
+//Score display
+.score {
+  color: $dark;
+  background-color: $pale;
+  border: 2px solid $dark;
+  border-radius: 15px;
+  line-height: 1;
+  font-family: "Share Tech Mono";
+  font-size: 100%;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  padding: 0 3%;
+  width: 30%;
+}
+
+//Containers for modifier buttons
+.row {
+  line-height: 0;
+  margin: 2% auto;
+  width: 70%; 
+  .col-6 {padding: 0 3px;}
+}
+
+//Modification buttons
+.btn-mod {
+  background-color: $light;
+  border: 2px solid $dark;
+  border-radius: 1000px;
+  box-shadow: 0 3px 1px #333;
+  color: $dark;
+  font-size: 25%;
+  font-weight: bold;
+  height: 100%;
+  margin: 0;
+  padding: 3%;
+  transform: translateY(-3px);
+  transition: all 0s;
+  width: 100%;
+  &:focus{
+    box-shadow: 0 0 10px $dark;
+  }
+  &:active,
+  &.enabled {
+    background-color: $pale;
+    box-shadow: 0 0 10px $dark;
+    color: $dark;
+    transform: translateY(0px);
+  }
+}

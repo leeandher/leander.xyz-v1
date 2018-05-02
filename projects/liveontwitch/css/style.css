@@ -1,0 +1,196 @@
+body {
+  color: #ffffff;
+  background: #1E1E1E;
+  font-family: "Iceland", "Trebuchet MS";
+  text-align: center;
+}
+
+.container-fluid {
+  max-width: 992px;
+  min-width: 320px;
+}
+
+.title {
+  font-size: 64px;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+.title .fa-circle {
+  color: red;
+  display: relative;
+  font-size: 43px;
+  -webkit-animation: blink 1s infinite;
+  -moz-animation: blink 1s infinite;
+  -o-animation: blink 1s infinite;
+  animation: blink 1s infinite;
+}
+.title .fa-circle span {
+  font-family: "Russo One", "Courier";
+  letter-spacing: 3px;
+}
+
+@keyframes blink {
+  0% {
+    color: red;
+  }
+  50% {
+    color: maroon;
+  }
+  100% {
+    color: red;
+  }
+}
+.wrapper {
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  min-height: 300px;
+  padding: 10px;
+  top: 1%;
+}
+
+.utility h5 {
+  margin: 0 auto;
+}
+.utility input {
+  background: transparent;
+  border-radius: 0.25rem;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px auto;
+  padding-left: 15px;
+  width: 100%;
+}
+.utility .btn {
+  border-width: 2px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px auto;
+  width: 100%;
+}
+.utility .btn:hover {
+  cursor: pointer;
+}
+.utility .btn-outline-warning.active, .utility .btn-outline-warning:hover {
+  color: #1E1E1E !important;
+}
+.utility #filter-search {
+  border: 2px solid #7252AC;
+  color: #ffffff;
+}
+.utility #filter-search:hover, .utility #filter-search:focus {
+  background-color: #7252AC;
+}
+.utility #filter-search:hover::placeholder, .utility #filter-search:focus::placeholder {
+  color: #ffffff;
+}
+.utility #filter-search:focus {
+  box-shadow: 0 0 0 0.2rem rgba(100, 65, 164, 0.5);
+  outline: none;
+}
+.utility #filter-search::placeholder {
+  color: #7252AC;
+}
+.utility #add-streamer {
+  border: 2px solid #FF6D00;
+  color: #ffffff;
+}
+.utility #add-streamer:hover, .utility #add-streamer:focus {
+  background-color: #FF6D00;
+}
+.utility #add-streamer:hover::placeholder, .utility #add-streamer:focus::placeholder {
+  color: #ffffff;
+}
+.utility #add-streamer:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 109, 0, 0.5);
+  outline: none;
+}
+.utility #add-streamer::placeholder {
+  color: #FF6D00;
+}
+
+.data #hold-loading {
+  position: relative;
+  min-height: 300px;
+}
+.data #hold-loading .loading-icon {
+  border-radius: 100%;
+  display: block;
+  height: 150px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+}
+.data #hold-loading .loading-icon .load-anim {
+  animation: spin 2s infinite ease;
+  border: 3px solid #ffffff;
+  border-radius: 100%;
+  border-top: 3px solid #7252AC;
+  height: 50%;
+  left: 25%;
+  position: absolute;
+  top: 20%;
+  width: 50%;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.data .card {
+  color: #7252AC;
+  margin: 10px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.data .card .card-header {
+  font-weight: bold;
+  padding-left: 10px;
+}
+.data .card .card-header .logo {
+  border: 1px solid #7252AC;
+  border-radius: 100%;
+  float: left;
+  max-height: 40px;
+  max-width: 40px;
+  padding: 2px;
+}
+.data .card .card-header .head {
+  padding-left: 45px;
+  padding-top: 2px;
+}
+.data .card .card-header .head span {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: normal;
+}
+.data .card:hover {
+  cursor: pointer;
+  transform: translateX(5px);
+}
+.data .card:focus {
+  outline: none;
+}
+
+.footer {
+  color: #ffffff;
+  display: block;
+  font-size: 20px;
+  padding: 10px;
+}
+.footer .fab {
+  margin: 0px 3px 0px 6px;
+}
+.footer:hover, .footer:focus {
+  color: #7252AC;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+}

@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css?family=Varela+Round|Iceland");
+@media only screen {
+  body {
+    font-size: 60px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  body {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  body {
+    font-size: 45px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  body {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  body {
+    font-size: 35px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  body {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  body {
+    font-size: 25px;
+  }
+}
+body {
+  background: url(http://cdn.backgroundhost.com/backgrounds/subtlepatterns/carbon_fibre.png);
+  color: #070707;
+  font-family: "Varela Round";
+  height: 100vh;
+  line-height: 1;
+  min-width: 320px;
+  padding: 30px;
+  text-align: center;
+  width: 100vw;
+}
+
+.center {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.game {
+  background-color: #070707;
+  border: 5px solid #070707;
+  border-radius: 100%;
+  box-shadow: 0 0 50px white;
+  margin: 0 auto;
+  max-width: 650px;
+  overflow: hidden;
+  position: relative;
+}
+
+.btn-game-container {
+  height: 100%;
+  width: 100%;
+}
+
+.spin {
+  animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.btn-game {
+  filter: brightness(0.5);
+  float: left;
+  height: 50%;
+  width: 50%;
+  transition: all 0.25s;
+}
+.btn-game.brighten {
+  filter: brightness(1);
+}
+.btn-game#btn-1 {
+  background-color: #32CD32;
+}
+.btn-game#btn-2 {
+  background-color: #FF3030;
+}
+.btn-game#btn-3 {
+  background-color: #FFFF20;
+}
+.btn-game#btn-4 {
+  background-color: #1E90FF;
+}
+.btn-game:hover {
+  cursor: pointer;
+}
+.btn-game:hover.disabled {
+  cursor: auto;
+}
+
+.module {
+  margin: 0 auto;
+  background: #696969;
+  border-radius: 100%;
+  height: 70%;
+  width: 70%;
+  border: 5px solid #070707;
+  overflow: hidden;
+}
+
+.title {
+  color: #CCCCCC;
+  font-size: 150%;
+  font-weight: bold;
+  margin-top: 10%;
+  text-shadow: -3px 0 #070707, 0 -3px #070707, 3px 0 #070707, 0 3px #070707;
+}
+.title span:hover {
+  cursor: pointer;
+}
+
+.score {
+  color: #070707;
+  background-color: #AAAAAA;
+  border: 2px solid #070707;
+  border-radius: 15px;
+  line-height: 1;
+  font-family: "Iceland";
+  font-size: 100%;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  padding: 0 3%;
+  width: 30%;
+}
+
+.row {
+  line-height: 0;
+  margin: 2% auto;
+  width: 70%;
+}
+.row .col-6 {
+  padding: 0 3px;
+}
+
+.btn-mod {
+  background-color: #CCCCCC;
+  border: 2px solid #070707;
+  border-radius: 1000px;
+  box-shadow: 0 3px 1px #333;
+  color: #070707;
+  font-size: 25%;
+  font-weight: bold;
+  height: 100%;
+  margin: 0;
+  padding: 3%;
+  transform: translateY(-3px);
+  transition: all 0s;
+  width: 100%;
+}
+.btn-mod:focus {
+  box-shadow: 0 0 10px #070707;
+}
+.btn-mod:active, .btn-mod.enabled {
+  background-color: #AAAAAA;
+  box-shadow: 0 0 10px #070707;
+  color: #070707;
+  transform: translateY(0px);
+}

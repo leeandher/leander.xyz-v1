@@ -7,12 +7,12 @@
     $path = $_SERVER['DOCUMENT_ROOT'];
     $path .= "/inc/header.php";
     require_once($path);
-  ?>  
+  ?>
 
 
   <body>
     <!--NAVIGATION-->
-    <?php 
+    <?php
       $path = $_SERVER['DOCUMENT_ROOT'];
       $path .= "/inc/navbar.html";
       require_once($path);
@@ -34,7 +34,7 @@
         <div class="resume-info round light text-small flex-group">
           <div class="flex-item" id="prog-qual">
             <h2>Language Overview</h2>
-            <b><br />Proficienct with:</b>
+            <b>Proficienct with:</b>
             <ul>
               <li>HTML <em class="small">(Haml, HTML5)</em></li>
               <li>CSS <em class="small">(Bootstrap, Flexbox, Responsiveness)</em></li>
@@ -58,7 +58,7 @@
           </div>
           <div class="flex-item" id="soft-qual">
             <h2>Notable Qualifications</h2>
-            <ul><br />
+            <ul>
               <li>Well-versed in <b>writing clear documentation</b></li>
               <li>Academic lab experience in <b>circuit construction</b>, and related electrical components</li>
               <li>Fluent in <b>French</b>, both written and oral</li>
@@ -223,16 +223,17 @@
           <div class="resume-item">
             <div class="subtitle"><span class="light">My Top Picks</span></div>
             <div class="thumbnail-wrapper">
-              <a href="../projects/index.html#proj-0" target="_blank"><img src="https://goo.gl/9Y35rA" alt="Tic Tac Toe Thumbnail"/></a>
-              <a href="../projects/index.html#proj-3" target="_blank"><img src="https://goo.gl/9Y35rA" alt="JavaScript Calculator Thumbnail"/></a>
-              <a href="../projects/index.html#proj-6" target="_blank"><img src="https://goo.gl/9Y35rA" alt="Wikipedia Viewer Thumbnail"/></a>
-              <a class="hide-on-resize" href="../projects/index.html#proj-1" target="_blank"><img src="https://goo.gl/9Y35rA" alt="Simon Game Thumbnail"/></a>
-              <a class="hide-on-resize" href="../projects/index.html#proj-4" target="_blank"><img src="https://goo.gl/9Y35rA" alt="Twitch.tv Stream Client Thumbnail"/></a>
-              <a class="hide-on-resize" href="../projects/index.html#proj-2" target="_blank"><img src="https://goo.gl/9Y35rA" alt="Pomodoro Clock Thumbnail"/></a>
+              <a href="../projects/index.html#proj-0" target="_blank"><img src="../resources/images/projects/tictactoe.png" alt="Tic Tac Toe Thumbnail"/></a>
+              <a href="../projects/index.html#proj-3" target="_blank"><img src="../resources/images/projects/wikiview.png" alt="JavaScript Calculator Thumbnail"/></a>
+              <a href="../projects/index.html#proj-6" target="_blank"><img src="../resources/images/projects/liveontwitch.png" alt="Wikipedia Viewer Thumbnail"/></a>
+              <a class="hide-on-resize" href="../projects/index.html#proj-1" target="_blank"><img src="../resources/images/projects/simon.png" alt="Simon Game Thumbnail"/></a>
+              <a class="hide-on-resize" href="../projects/index.html#proj-4" target="_blank"><img src="../resources/images/projects/calculator.png" alt="Twitch.tv Stream Client Thumbnail"/></a>
+              <a class="hide-on-resize" href="../projects/index.html#proj-2" target="_blank"><img src="../resources/images/projects/fuelgauge.png" alt="Pomodoro Clock Thumbnail"/></a>
             </div>
-            <div class="subtitle"><span class="light"><i><a href="../projects/index.html" target="_blank">See More</a></i></span></div>
+            <div class="subtitle"><span class="light"><i><a href="../projects/index.php" target="_blank">See More</a></i></span></div>
           </div>
         </div>
+        <button class="close-area text-small round">Close Section</button>
       </div>
     </div>
 
@@ -269,7 +270,7 @@
 
 
     <!--FOOTER SECTION-->
-    <?php 
+    <?php
       $path = $_SERVER['DOCUMENT_ROOT'];
       $path .= "/inc/footer.php";
       require_once($path);

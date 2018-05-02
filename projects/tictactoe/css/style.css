@@ -1,0 +1,191 @@
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  min-width: 300px;
+  max-width: 100%;
+  padding: 30px;
+  background-color: #191919;
+  color: #ebebeb;
+  text-align: center;
+  font-size: 45px;
+}
+
+.select {
+  max-width: 600px;
+  width: 90%;
+}
+.select .col-sm-6, .select .col-sm-4, .select .ifAI {
+  line-height: 0;
+  padding: 6px;
+}
+.select h1 {
+  font-size: 150%;
+}
+.select h5 {
+  font-size: 50%;
+  padding: 25px 0 5px 0;
+}
+.select .btn-float {
+  position: absolute;
+  height: 100%;
+  bottom: 0;
+  width: 10%;
+  border-left: 1px solid #ebebeb;
+}
+.select .btn-float.enable {
+  border-left: 1px solid #191919;
+  color: #191919;
+  background-color: #ebebeb;
+}
+.select .btn-float.x-select {
+  right: 20%;
+}
+.select .btn-float.o-select {
+  right: 10%;
+}
+.select .btn-float.color-sample {
+  right: 0%;
+  border: 0;
+}
+.select .btn-float.color-sample#pcolor-1 {
+  background-color: lightcoral;
+}
+.select .btn-float.color-sample#pcolor-2 {
+  background-color: skyblue;
+}
+.select input[type="text"] {
+  padding: 6px 8px;
+  width: 70%;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  transition: all 0.25s;
+  color: #ebebeb;
+}
+.select input[type="text"]:active, .select input[type="text"]:focus {
+  background: #ebebeb;
+  color: #191919;
+}
+.select input[type="text"]::placeholder {
+  opacity: 0.7;
+}
+
+.btn {
+  position: relative;
+  width: 100%;
+  background-color: transparent;
+  color: #ebebeb;
+  border: 2px solid #ebebeb;
+  transition: all 0.25s;
+}
+.btn.enable, .btn:focus {
+  background: #ebebeb;
+  color: #191919;
+}
+.btn[tabindex="-1"] {
+  padding: 0;
+  text-align: left;
+}
+.btn[tabindex="-1"]:focus {
+  background-color: transparent;
+  color: #ebebeb;
+}
+
+.game {
+  max-width: 500px;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  position: relative;
+}
+.game .display {
+  font-size: 100%;
+  padding: 20px;
+  transition: all 0.5s;
+}
+.game .board {
+  overflow: hidden;
+  position: inherit;
+}
+.game .board table {
+  height: calc(100% + 10px*2);
+  width: calc(100% + 10px*2);
+  border-collapse: separate;
+  border-spacing: 10px;
+  background-color: #ebebeb;
+  justify-content: center;
+  margin: -10px;
+}
+.game .board .gameover {
+  display: none;
+  transition: all 1s;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  color: #191919;
+  background-color: #ebebeb;
+}
+.game .board .gameover.appear {
+  display: initial;
+  opacity: 0.3;
+}
+
+.nought {
+  transition: all 0.5s;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  border-radius: 100%;
+  border: 15px solid;
+}
+.nought.appear {
+  height: 80%;
+  width: 80%;
+  opacity: 1;
+}
+
+.cross {
+  transition: all 0.5s;
+  position: relative;
+  opacity: 0;
+}
+.cross .cross-bar {
+  position: absolute;
+  width: 90%;
+  height: 15px;
+  background-color: inherit;
+}
+.cross .cross-bar.c1 {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.cross .cross-bar.c2 {
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+.cross.appear {
+  transform: rotate(180deg);
+  opacity: 1;
+}
+
+.cell {
+  transition: all 1s;
+  background-color: #191919;
+  text-align: center;
+  position: relative;
+}
+.cell:hover {
+  cursor: pointer;
+}
+.cell.disabled {
+  background-color: #191919;
+}
+.cell.disabled:hover {
+  cursor: auto;
+}

@@ -1,10 +1,10 @@
-<!--FOOTER--> 
+<!--FOOTER-->
 <footer class="section dark">
   <div class="content">
     <div class="subheading">Find me online</div>
     <div id="links">
       <a class="fab fa-github" href="https://github.com/leeandher"></a>
-      <a class="far fa-envelope" href="mailto:leander.rodrigues@uwaterloo.ca"></a>
+      <a class="far fa-envelope" href="mailto:me@leander.xyz"></a>
       <a class="fab fa-linkedin-in" href="https://www.linkedin.com/in/leander-rodrigues"></a>
       <a class="fab fa-codepen" href="https://codepen.io/leeandher"></a>
       <a class="fab fa-free-code-camp" href="https://www.freecodecamp.org/leeandher"></a>
@@ -23,11 +23,11 @@
 </footer>
 
 
-<!--SCRIPTS-->  
+<!--SCRIPTS-->
 <!--jQuery-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!--Navbar-->
 <script src="/inc/js/navbar.js"></script>
-<?php 
+<?php
   echo '<script src="/resources/js/'.$pageName.'.js"></script>';
 ?>

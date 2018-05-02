@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:500");
+@media only screen {
+  body {
+    font-size: 70px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  body {
+    font-size: 40px;
+  }
+}
+body {
+  background: #192021 url(https://goo.gl/46Q9wn) no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Roboto';
+  height: 100vh;
+  line-height: 1;
+  min-width: 375px;
+  padding: 30px;
+  text-align: center;
+  width: 100vw;
+}
+
+.center {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  color: white;
+  font-size: 95%;
+  line-height: 0.65;
+  text-shadow: -3px 3px #192021;
+}
+
+.main {
+  color: #7EA6AA;
+  background-color: #192021;
+  border: 3px solid #7EA6AA;
+  border-radius: 100%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 600px;
+  position: relative;
+}
+
+.section {
+  color: white;
+  display: block;
+  font-size: 85%;
+  line-height: 0.5;
+  position: absolute;
+  width: 100%;
+}
+.section#work {
+  bottom: 52.5%;
+}
+.section#break {
+  top: 52.5%;
+}
+.section p {
+  font-size: 60%;
+}
+.section input {
+  background-color: transparent;
+  border: 0;
+  color: white;
+  max-width: 21%;
+  outline: none;
+  text-align: center;
+}
+.section input::placeholder {
+  color: #7EA6AA;
+}
+.section input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.timer:hover {
+  cursor: pointer;
+}
+.timer .base {
+  background-color: #7EA6AA;
+  border-radius: 100%;
+  height: 4%;
+  top: 50%;
+  width: 4%;
+}
+.timer .needle {
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-30deg);
+  transition: all 1s;
+  width: 100%;
+}
+.timer .needle:after {
+  background: #9CE5ED;
+  content: "";
+  height: 100%;
+  left: 10%;
+  position: absolute;
+  width: 45%;
+}
+.timer .bar {
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.timer .bar:nth-of-type(4n+1):after {
+  width: 10%;
+}
+.timer .bar:after {
+  background: #7EA6AA;
+  content: "";
+  height: 100%;
+  left: 3%;
+  position: absolute;
+  width: 6%;
+}
+.timer .bar:nth-of-type(1) {
+  transform: rotate(-30deg);
+}
+.timer .bar:nth-of-type(2) {
+  transform: rotate(-25deg);
+}
+.timer .bar:nth-of-type(3) {
+  transform: rotate(-20deg);
+}
+.timer .bar:nth-of-type(4) {
+  transform: rotate(-15deg);
+}
+.timer .bar:nth-of-type(5) {
+  transform: rotate(-10deg);
+}
+.timer .bar:nth-of-type(6) {
+  transform: rotate(-5deg);
+}
+.timer .bar:nth-of-type(7) {
+  transform: rotate(0deg);
+}
+.timer .bar:nth-of-type(8) {
+  transform: rotate(5deg);
+}
+.timer .bar:nth-of-type(9) {
+  transform: rotate(10deg);
+}
+.timer .bar:nth-of-type(10) {
+  transform: rotate(15deg);
+}
+.timer .bar:nth-of-type(11) {
+  transform: rotate(20deg);
+}
+.timer .bar:nth-of-type(12) {
+  transform: rotate(25deg);
+}
+.timer .bar:nth-of-type(13) {
+  transform: rotate(30deg);
+}
+.timer .bar:nth-of-type(14) {
+  transform: rotate(35deg);
+}
+.timer .bar:nth-of-type(15) {
+  transform: rotate(40deg);
+}
+.timer .bar:nth-of-type(16) {
+  transform: rotate(45deg);
+}
+.timer .bar:nth-of-type(17) {
+  transform: rotate(50deg);
+}
+.timer .bar:nth-of-type(18) {
+  transform: rotate(55deg);
+}
+.timer .bar:nth-of-type(19) {
+  transform: rotate(60deg);
+}
+.timer .bar:nth-of-type(20) {
+  transform: rotate(65deg);
+}
+.timer .bar:nth-of-type(21) {
+  transform: rotate(70deg);
+}
+.timer .bar:nth-of-type(22) {
+  transform: rotate(75deg);
+}
+.timer .bar:nth-of-type(23) {
+  transform: rotate(80deg);
+}
+.timer .bar:nth-of-type(24) {
+  transform: rotate(85deg);
+}
+.timer .bar:nth-of-type(25) {
+  transform: rotate(90deg);
+}
+.timer .bar:nth-of-type(26) {
+  transform: rotate(95deg);
+}
+.timer .bar:nth-of-type(27) {
+  transform: rotate(100deg);
+}
+.timer .bar:nth-of-type(28) {
+  transform: rotate(105deg);
+}
+.timer .bar:nth-of-type(29) {
+  transform: rotate(110deg);
+}
+.timer .bar:nth-of-type(30) {
+  transform: rotate(115deg);
+}
+.timer .bar:nth-of-type(31) {
+  transform: rotate(120deg);
+}
+.timer .bar:nth-of-type(32) {
+  transform: rotate(125deg);
+}
+.timer .bar:nth-of-type(33) {
+  transform: rotate(130deg);
+}
+.timer .bar:nth-of-type(34) {
+  transform: rotate(135deg);
+}
+.timer .bar:nth-of-type(35) {
+  transform: rotate(140deg);
+}
+.timer .bar:nth-of-type(36) {
+  transform: rotate(145deg);
+}
+.timer .bar:nth-of-type(37) {
+  transform: rotate(150deg);
+}
+.timer .bar:nth-of-type(38) {
+  transform: rotate(155deg);
+}
+.timer .bar:nth-of-type(39) {
+  transform: rotate(160deg);
+}
+.timer .bar:nth-of-type(40) {
+  transform: rotate(165deg);
+}
+.timer .bar:nth-of-type(41) {
+  transform: rotate(170deg);
+}
+.timer .bar:nth-of-type(42) {
+  transform: rotate(175deg);
+}
+.timer .bar:nth-of-type(43) {
+  transform: rotate(180deg);
+}
+.timer .bar:nth-of-type(44) {
+  transform: rotate(185deg);
+}
+.timer .bar:nth-of-type(45) {
+  transform: rotate(190deg);
+}
+.timer .bar:nth-of-type(46) {
+  transform: rotate(195deg);
+}
+.timer .bar:nth-of-type(47) {
+  transform: rotate(200deg);
+}
+.timer .bar:nth-of-type(48) {
+  transform: rotate(205deg);
+}
+.timer .bar:nth-of-type(49) {
+  transform: rotate(210deg);
+}
+
+.label {
+  font-size: 195%;
+  opacity: 0.2;
+}
+
+.time {
+  font-size: 100%;
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  width: 100%;
+}
+
+.btn-reset {
+  background: #192021;
+  border: 3px solid #7EA6AA;
+  color: #7EA6AA;
+  display: inline-block;
+  margin-top: 10px;
+  outline: none;
+}
+.btn-reset:active, .btn-reset:focus {
+  box-shadow: 0 0 0 0.2rem rgba(126, 166, 170, 0.5);
+}
+.btn-reset:hover {
+  color: white;
+  border-color: white;
+}

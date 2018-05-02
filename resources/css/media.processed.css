@@ -1,54 +1,67 @@
-#directory {
+@media only screen {
+  #utility {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #utility {
+    position: relative;
+  }
+}
+
+#archive {
   background-color: var(--accent);
 }
 
-#directory .content {
+#archive .content {
   max-width: 1280px;
 }
 
-#directory .media {
+#archive .media {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   padding: 10px 15px;
   max-width: 960px;
   min-width: 300px;
   border: 3px solid var(--light);
   -webkit-box-shadow: 0 0 15px var(--dark) inset;
-          box-shadow: 0 0 15px var(--dark) inset;
+  box-shadow: 0 0 15px var(--dark) inset;
   margin: 15px;
 }
 
-#directory .media .title {
+#archive .media .title {
   font-weight: var(--bold);
   font-size: 35%;
 }
 
-#directory .media .date {
+#archive .media .date {
   font-weight: var(--reg);
 }
 
-#directory .media .summary {
+#archive .media .summary {
   font-weight: var(--thin);
 }
 
-#directory .media .tags {
+#archive .media .tags {
   margin-top: 5px;
   font-weight: var(--reg);
 }
 
-#directory .media .tags span {
+#archive .media .tags span {
   display: inline-block;
   background-color: var(--mid);
   padding: 0 15px;
   margin: 3px 5px;
 }
 
-#directory .media:hover {
+#archive .media:hover {
   border-color: var(--dark);
 }
 
-#directory #error {
+#archive #error {
   display: none;
   text-align: center;
   font-size: 60%;
@@ -63,8 +76,6 @@
   height: 10%;
   padding: 5px 15px;
   width: 100%;
-  position: -webkit-sticky;
-  position: sticky;
   top: 52px;
   border-bottom: 2px solid var(--dark);
 }
@@ -80,7 +91,7 @@
   margin: 3px 5px;
   border: 1px solid var(--dark);
   -webkit-box-shadow: 0 0 3px var(--dark);
-          box-shadow: 0 0 3px var(--dark);
+  box-shadow: 0 0 3px var(--dark);
   -webkit-transition: all 0.35s;
   transition: all 0.35s;
 }

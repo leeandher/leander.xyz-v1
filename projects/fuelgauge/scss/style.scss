@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:500');
+
+//Colour variables
+$accents: #7EA6AA;
+$labels : #587B7F;
+$needle : #9CE5ED;
+$bg: #192021;
+
+//Responsive sizing
+@media only screen {body {font-size: 70px;}} //Monitor L
+@media only screen and (max-width: 600px) {body {font-size: 50px;}} //Monitor MD
+@media only screen and (max-width: 450px) {body {font-size: 40px;}} //Monitor SM
+
+//Page setup
+body {
+  background: $bg url(https://goo.gl/46Q9wn) no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Roboto';
+  height: 100vh;
+  line-height: 1;
+  min-width: 375px;
+  padding: 30px;
+  text-align: center;
+  width: 100vw;
+}
+//Absolute centering
+.center {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+//Page title
+.title {
+  color: white;
+  font-size: 95%;
+  line-height: 0.65;
+  text-shadow: -3px 3px $bg;
+}
+
+//Circular widgets
+.main {
+  color: $accents;
+  background-color: $bg;
+  border: 3px solid $accents;
+  border-radius: 100%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 600px;
+  position: relative;
+}
+
+//Setter form components
+.section {
+  color: white;
+  display: block;
+  font-size: 85%;
+  line-height: 0.5;
+  position: absolute;
+  width: 100%;
+  //Work section positiioning
+  &#work {
+    bottom: 52.5%;
+  }
+  //Break section positioning
+  &#break {
+    top: 52.5%;
+  }
+  //Letter sizing
+  p {
+    font-size: 60%;
+  }
+  //Number input areas
+  input {
+    background-color: transparent;
+    border: 0;
+    color: white;
+    max-width: 21%;
+    outline: none;
+    text-align: center;
+    //Default text
+    &::placeholder {
+      color: $accents;
+    }
+    //Up down notches
+    &::-webkit-inner-spin-button {
+      display: none;
+    }
+  }
+}
+
+//Timer visual setup
+.timer {
+  &:hover {
+    cursor: pointer;
+  }
+  //Center knob
+  .base {
+    background-color: $accents;
+    border-radius: 100%;
+    height: 4%;
+    top: 50%;
+    width: 4%;
+  }
+  //Rotating needle
+  .needle {
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-30deg);
+    transition: all 1s;
+    width: 100%;
+    //Visible part of the needle
+    &:after {
+      background: $needle;
+      content: "";
+      height: 100%;
+      left: 10%;
+      position: absolute;
+      width: 45%;
+    }
+  }
+  //Notches for speedometer
+  .bar {
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    &:nth-of-type(4n+1):after {
+      width: 10%;
+    }
+    &:after {
+    //Visible part of the notches
+      background: $accents;
+      content:"";
+      height: 100%;
+      left: 3%;
+      position: absolute;
+      width: 6%;
+    }
+  }
+  //Looping through rotating notches
+  @for $i from 1 through 49 {
+    .bar:nth-of-type(#{$i}) {
+      transform: rotate(-30deg + ($i - 1)*5);
+    }
+  }
+}
+//Dial background
+.label {
+  font-size: 195%;
+  opacity: 0.2;
+}
+//Countdown display
+.time {
+  font-size: 100%;
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  width: 100%;
+}
+
+
+//Reset button
+.btn-reset {
+  background: $bg;
+  border: 3px solid $accents;
+  color: $accents;
+  display: inline-block;
+  margin-top: 10px;
+  outline: none;
+  &:active, &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(126,166,170,0.5);
+  }
+  &:hover {
+    color: white;
+    border-color: white;
+  }
+}

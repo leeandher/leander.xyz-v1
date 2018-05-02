@@ -43,11 +43,11 @@
     <div class="section" id="post-content">
       <div class="content light">
         <div id="post-share">
-          <a class="fab fa-facebook-f" href="#"></a>
-          <a class="fab fa-twitter" href=""></a>
-          <a class="fab fa-google-plus-g" href="#"></a>
-          <a class="fab fa-linkedin-in" href="#"></a>
-          <a class="fas fa-link"></a>
+          <?php
+
+            $blog_post->createShareLinks ();
+
+          ?>
         </div>
         <?php
 
@@ -78,7 +78,7 @@
       <button class="btn-tag">tv/movies</button>
     </div>
     <!--ARTICLE SECTION-->
-    <div class="section" id="directory">
+    <div class="section" id="archive">
       <div class="content">
         <div class="flex-group">
           <?php

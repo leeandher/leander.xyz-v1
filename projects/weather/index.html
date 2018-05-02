@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Local Weather App</title>
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Montserrat:300'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+  <div class='center error text-center'>loading...</div>
+<div class='content d-none'>
+  <div class='title'>Outside from the Inside</div>
+  <div class='row'>
+    <div class='col-md-6'>
+      <div class='left-info hover-inset'>
+        <div class='blur'></div>
+        <div class='temperature'></div>
+        <button class='btn btn-outline-light'>Convert Units</button>
+      </div>
+    </div>
+    <div class='col-md-6'>
+      <div class='right-info hover-inset'>
+        <div class='center-text'>
+          <div class='description'></div>
+          <div class='location'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='details transition'>
+    <div class='fas fa-3x fa-angle-down transition'></div>
+    <div class='row'>
+      <div class='col-3 offset-3'>
+        <p class='head'>Latitude</p>
+        <p class='info lat'></p>
+      </div>
+      <div class='col-3'>
+        <p class='head'>Longitude</p>
+        <p class='info lon'></p>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-3'>
+        <p class='head'>Wind Speed</p>
+        <p class='info ws'></p>
+      </div>
+      <div class='col-3'>
+        <p class='head'>Wind Direction</p>
+        <p class='info wd'></p>
+      </div>
+      <div class='col-3'>
+        <p class='head'>Humidity</p>
+        <p class='info hum'></p>
+      </div>
+      <div class='col-3'>
+        <p class='head'>Pressure</p>
+        <p class='info pres'></p>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

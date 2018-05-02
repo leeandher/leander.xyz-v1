@@ -1,0 +1,297 @@
+//Import tinder-like font
+@font-face {
+  font-family: "ChaletNewYork";
+  src: url("https://dl.dropboxusercontent.com/s/vos5g2nm4f6izwt/ChaletNewYorkNineteenSeventy.ttf")
+    format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+//Colour variables
+$accent: #FF626B;
+$light: #FFFFFF;
+$pale-grey: #E5E5E5;
+$mid-grey: #707070;
+$dark-grey: #4A4A4A;
+$dark: #111111;
+$refresh: #FCCE68;
+$dislike: #FA6D6D;
+$like: #4CCC93;
+$tweet: #2DB4CA;
+
+//Page setup
+body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#DB6D37, #EF2F7A) no-repeat center center fixed;
+  background-size: cover;
+  margin: 0px;
+}
+
+//Absolute centering
+.center {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+//Hide component
+.hide {
+  display: none;
+}
+
+//Superficial components
+.phone {
+  position: relative;
+  margin: 50px auto;
+  background: $dark;
+  border-bottom: 4px solid $dark-grey;
+  border-left: 4px solid $dark-grey;
+  border-radius: 35px;
+  height: 620px;//930
+  width: 350px;//525
+  transform: scale(1.0);
+  .home {
+    border: 2px solid $dark-grey;
+    border-radius: 15px;
+    height: 5%;
+    top: 94%;
+    width: 25%;
+  }
+  .camera {
+    border: 1px solid $dark-grey;
+    border-radius: 50%;
+    height: 3.6%;
+    left: 30%;
+    top: 6%;
+    width: 6.4%;
+    .lens {
+      border: 0.5px solid $mid-grey;
+      border-radius: 50%;
+      height: 70%;
+      opacity: 0.3;
+      width: 70%;
+    }
+  }
+  .mic {
+    background-color: #111211;
+    border: 1px solid #4a4a4a;
+    border-radius: 15px;
+    height: 1%;
+    top: 6%;
+    width: 20%;
+  }
+}
+
+//Default screen
+.screen {
+  height: 76%;
+  left: 50%;
+  position: absolute;
+  top: 12%;
+  transform: translateX(-50%);
+  width: 90%;
+}
+
+//Home page
+.default {
+  background: $light;
+  .title,
+  .info {border-bottom: 1px solid $pale-grey;}
+  //Action buttons in home page
+  .button-area {
+    height: 23%;
+    left: 50%;
+    position: absolute;
+    top: 77%;
+    transform: translateX(-50%);
+    width: 100%;
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    div {
+      background-color: $light;
+      border-radius: 50%;
+      border: 8px solid $pale-grey;
+      text-align: center;
+      text-shadow: 2px 2px $pale-grey;
+      &:active {background-color: $pale-grey;}
+      &:hover {z-index: 1;}
+    }
+    .major-btn {
+      height: 75%;
+      width: 25%;
+    }
+    .minor-btn {
+      height: 50%;
+      width: 17%;
+    }
+    .like {
+      color: $like;
+      font-size: 2.5em;
+      left: 64%;
+      &:active,
+      &:hover {
+        border-color: $like;
+      }
+    }
+    .dislike {
+      color: $dislike;
+      left: 36%;
+      &:active,
+      &:hover {
+        border-color: $dislike;
+      }
+    }
+    .refresh {
+      color: $refresh;
+      left: 12.5%;
+      top: 40%;
+      &:active,
+      &:hover {
+        border-color: $refresh;
+      }
+    }
+    .tweet {
+      color: $tweet;
+      left: 87.5%;
+      top: 40%;
+      &:active,
+      &:hover {
+        border-color: $tweet;
+      }
+    }
+  }
+}
+//Liked list
+.overlay {
+  background: $accent;
+  .title {color: $light;}
+  //Liked content
+  .content {
+    border: 5px solid $light;
+    border-bottom: 0px;
+    border-radius: 5px 5px 0px 0px;
+    box-sizing: border-box;
+  }
+  //Navigation buttons in liked list
+  .select {
+    color: $light;
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    transition: transform 0.5s;
+    width: 30%;
+    &.next {left: 55%;}
+    &.prev {right: 55%;}
+  }
+  //Navigation animation to disable
+  .fade {
+    opacity: 0.3;
+    &:hover {
+      cursor: default;
+    }
+  }
+  //Navigation animation to enable
+  .show {
+    opacity: 1;
+    &:active {
+      color: $pale-grey !important;
+    }
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.25);
+    }
+  } //PALE GREY
+}
+
+//Header at screentop
+.title {
+  color: $accent;
+  font-family: ChaletNewYork, sans-serif;
+  font-size: 36px;
+  margin-top: 2%;
+  text-align: center;
+  span {
+    font-family: "Slabo 27px", monospace;
+  }
+}
+//Image/quote area
+.content {
+  background-color: $dark;
+  background-image: url();
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  height: 53%;
+  left: 50%;
+  position: absolute;
+  top: 12%;
+  transform: translateX(-50%);
+  width: 96%;
+  .quote {
+    color: $light;
+    font-family: Pacifico;
+    font-size: 24px;
+    margin: 0px 20px 0px 20px;
+    position: absolute;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+//Text below image/quote
+.info {
+  background-color: $light;
+  border-radius: 0px 0px 5px 5px;
+  font-family: Quicksand;
+  height: 10%;
+  left: 50%;
+  position: absolute;
+  text-align: left;
+  text-indent: 10px;
+  top: 65%;
+  transform: translateX(-50%);
+  width: 96%;
+  //Profile name or person, and age
+  .user {
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: -25%;
+    span {
+      font-weight: normal;
+    }
+  }
+  //User location
+  .location {
+    color: $mid-grey;
+    font-size: 13px;
+    position: absolute;
+    top: 25%;
+  }
+}
+
+//LikeList button
+.screen-toggle {
+  font-size: 1.5em;
+  left: 8%;
+  position: absolute;
+  text-align: center;
+  top: 14.5%;
+  z-index: 2;
+  &.fa-heart{
+    color: $accent;
+  }
+  &.fa-times{
+    color: $light;
+    margin-left: -2px;
+  }
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}

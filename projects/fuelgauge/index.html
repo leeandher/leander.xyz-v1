@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>freeCodeCamp - Pomodoro Clock</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pomodoro Clock</title>
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <!-- Page title -->
+<div class='title'>
+  <p>PRODUCTIVITY</p>
+  <p>FUEL GAUGE</p>
+</div>
+<!-- Settings for timer -->
+<div class='main setter'>
+  <form>
+    <!-- Input area for setting work time -->
+    <div class='section' id='work'>
+      <p>SET WORK TIME</p>
+      <div class='numSet'>
+        <input id='w-h' max='23' min='0' placeholder='00' type='number'>
+        <span>:</span>
+        <input id='w-m' max='59' min='0' placeholder='25' type='number'>
+        <span>:</span>
+        <input id='w-s' max='59' min='0' placeholder='00' type='number'>
+      </div>
+    </div>
+    <!-- Input area for setting break time -->
+    <div class='section' id='break'>
+      <p>SET BREAK TIME</p>
+      <div class='numSet'>
+        <input id='b-h' max='23' min='0' placeholder='00' type='number'>
+        <span>:</span>
+        <input id='b-m' max='59' min='0' placeholder='05' type='number'>
+        <span>:</span>
+        <input id='b-s' max='59' min='0' placeholder='00' type='number'>
+      </div>
+      <input class='d-none' type='submit'>
+    </div>
+  </form>
+</div>
+<!-- Actual timer widget -->
+<div class='main timer off d-none'>
+  <!-- Loop for notches -->
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='bar'></div>
+  <div class='label center'></div>
+  <div class='needle'></div>
+  <div class='base center'></div>
+  <div class='time'></div>
+</div>
+<!-- Reset button -->
+<button class='btn btn-reset d-none'>RESET</button>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
