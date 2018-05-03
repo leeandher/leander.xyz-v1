@@ -27,19 +27,6 @@
     margin: 15px;
     .title {
       font-weight: var(--bold);
-      font-size: 35%;
-    }
-    .date {font-weight: var(--reg);}
-    .summary {font-weight: var(--thin);}
-    .tags {
-      margin-top: 5px;
-      font-weight: var(--reg);
-      span {
-        display: inline-block;
-        background-color: var(--mid);
-        padding: 0 15px;
-        margin: 3px 5px;
-      }
     }
     &:hover {border-color: var(--dark);}
   }
@@ -50,6 +37,34 @@
     font-weight: var(--bold);
     text-shadow: 2px 2px var(--dark);
     color: var(--light);
+  }
+}
+
+.blog {
+  .title {font-size: 35%;}
+  .date {font-weight: var(--reg);}
+  .summary {font-weight: var(--thin);}
+  .tags {
+    margin-top: 5px;
+    font-weight: var(--reg);
+    span {
+      display: inline-block;
+      background-color: var(--mid);
+      padding: 0 15px;
+      margin: 3px 5px;
+    }
+  }
+}
+.note {
+  .title {
+    text-align: center;
+  }
+
+  ul {
+    font-size: 30%;
+    list-style: none;
+    max-width: 75%;
+    margin: 0 auto;
   }
 }
 

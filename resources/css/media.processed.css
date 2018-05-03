@@ -34,27 +34,6 @@
 
 #archive .blog .title, #archive .note .title {
   font-weight: var(--bold);
-  font-size: 35%;
-}
-
-#archive .blog .date, #archive .note .date {
-  font-weight: var(--reg);
-}
-
-#archive .blog .summary, #archive .note .summary {
-  font-weight: var(--thin);
-}
-
-#archive .blog .tags, #archive .note .tags {
-  margin-top: 5px;
-  font-weight: var(--reg);
-}
-
-#archive .blog .tags span, #archive .note .tags span {
-  display: inline-block;
-  background-color: var(--mid);
-  padding: 0 15px;
-  margin: 3px 5px;
 }
 
 #archive .blog:hover, #archive .note:hover {
@@ -68,6 +47,41 @@
   font-weight: var(--bold);
   text-shadow: 2px 2px var(--dark);
   color: var(--light);
+}
+
+.blog .title {
+  font-size: 35%;
+}
+
+.blog .date {
+  font-weight: var(--reg);
+}
+
+.blog .summary {
+  font-weight: var(--thin);
+}
+
+.blog .tags {
+  margin-top: 5px;
+  font-weight: var(--reg);
+}
+
+.blog .tags span {
+  display: inline-block;
+  background-color: var(--mid);
+  padding: 0 15px;
+  margin: 3px 5px;
+}
+
+.note .title {
+  text-align: center;
+}
+
+.note ul {
+  font-size: 30%;
+  list-style: none;
+  max-width: 75%;
+  margin: 0 auto;
 }
 
 #utility {
