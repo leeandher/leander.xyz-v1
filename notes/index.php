@@ -24,7 +24,7 @@
         <div class="center" id="page-title">Notes</div>
       </div>
     </div>
-    <!--FILTER SECTION-->
+    <!--FILTER SECTION
     <div class="text-small" id="utility">
       <button class="btn-tag">concepts</button>
       <button class="btn-tag">reference</button>
@@ -33,7 +33,7 @@
       <button class="btn-tag">css</button>
       <button class="btn-tag">javascript</button>
       <button class="btn-tag">react</button>
-    </div>
+    </div>-->
     <!--ARTICLE SECTION-->
     <div class="section" id="archive">
       <div class="content">
@@ -46,45 +46,6 @@
               <span>concepts</span>
               <span>javascript</span>
               <span>react</span>
-            </div>
-          </a>
-          <a class="media light round" id="note-2" href="#">
-            <div class="title">2 Lorem ipsum dolor sit amet</div>
-            <div class="date text">Lorem ipsum</div>
-            <div class="summary text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel fermentum lectus, molestie finibus orci. Integer tristique nunc augue, pharetra interdum nunc mollis rhoncus. Nunc sed eleifend quam, non pharetra ante. Curabitur nec tincidunt arcu. In sit amet turpis sit amet augue consectetur scelerisque. Vivamus convallis sapien sed mauris placerat, at tincidunt odio pellentesque. Vestibulum eleifend sit amet felis ut semper. Vestibulum commodo pulvinar molestie. Mauris tempus convallis quam id faucibus. Duis a porttitor nibh.</div>
-            <div class="tags text-small">
-              <span>html</span>
-              <span>css</span>
-              <span>tricks</span>
-            </div>
-          </a>
-          <a class="media light round" id="note-3" href="#">
-            <div class="title">3 Lorem ipsum dolor sit amet</div>
-            <div class="date text">Lorem ipsum</div>
-            <div class="summary text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel fermentum lectus, molestie finibus orci. Integer tristique nunc augue, pharetra interdum nunc mollis rhoncus. Nunc sed eleifend quam, non pharetra ante. Curabitur nec tincidunt arcu. In sit amet turpis sit amet augue consectetur scelerisque. Vivamus convallis sapien sed mauris placerat, at tincidunt odio pellentesque. Vestibulum eleifend sit amet felis ut semper. Vestibulum commodo pulvinar molestie. Mauris tempus convallis quam id faucibus. Duis a porttitor nibh.</div>
-            <div class="tags text-small">
-              <span>html</span>
-              <span>concepts</span>
-              <span>css</span>
-            </div>
-          </a>
-          <a class="media light round" id="note-4" href="#">
-            <div class="title">4 Lorem ipsum dolor sit amet</div>
-            <div class="date text">Lorem ipsum</div>
-            <div class="summary text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel fermentum lectus, molestie finibus orci. Integer tristique nunc augue, pharetra interdum nunc mollis rhoncus. Nunc sed eleifend quam, non pharetra ante. Curabitur nec tincidunt arcu. In sit amet turpis sit amet augue consectetur scelerisque. Vivamus convallis sapien sed mauris placerat, at tincidunt odio pellentesque. Vestibulum eleifend sit amet felis ut semper. Vestibulum commodo pulvinar molestie. Mauris tempus convallis quam id faucibus. Duis a porttitor nibh.</div>
-            <div class="tags text-small">
-              <span>reference</span>
-              <span>tricks</span>
-              <span>javascript</span>
-            </div>
-          </a>
-          <a class="media light round" id="note-5" href="#">
-            <div class="title">5 Lorem ipsum dolor sit amet</div>
-            <div class="date text">Lorem ipsum</div>
-            <div class="summary text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel fermentum lectus, molestie finibus orci. Integer tristique nunc augue, pharetra interdum nunc mollis rhoncus. Nunc sed eleifend quam, non pharetra ante. Curabitur nec tincidunt arcu. In sit amet turpis sit amet augue consectetur scelerisque. Vivamus convallis sapien sed mauris placerat, at tincidunt odio pellentesque. Vestibulum eleifend sit amet felis ut semper. Vestibulum commodo pulvinar molestie. Mauris tempus convallis quam id faucibus. Duis a porttitor nibh.</div>
-            <div class="tags text-small">
-              <span>react</span>
-              <span>javascript</span>
             </div>
           </a>
         </div>
