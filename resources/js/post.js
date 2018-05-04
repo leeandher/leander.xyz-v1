@@ -9,3 +9,7 @@ $('#copy').click(function() {
   window.setTimeout(function() { $('#copy').css('background-color', 'transparent'); },500);
   document.body.removeChild(textArea);
 });
+
+var newMD = marked($('.markdown').text());
+console.log(newMD)
+$('.markdown').html(marked( $('.markdown').text() ))

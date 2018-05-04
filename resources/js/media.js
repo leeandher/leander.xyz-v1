@@ -8,11 +8,11 @@ $('#utility .btn-tag').click(function() {
   $('#utility').children('button').each(function() {
     if (this.classList.contains('enabled')) filters.push(this.innerHTML);
   });
-  
+
   //Default to displaying everything (no filters)
   $('.media').css('display', 'block');
   $('#error').css('display', 'none');
-  
+
   //If there are filters enabled
   if (filters.length) {
     //Disable every article

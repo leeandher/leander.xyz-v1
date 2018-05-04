@@ -149,3 +149,13 @@ body {background-color: var(--dark);}
     margin: 5px;
   }
 }
+
+.markdown {
+  ul {
+    list-style-position: inside;
+  }
+  h2
+  code {
+    font-size: 75%;
+  }
+}

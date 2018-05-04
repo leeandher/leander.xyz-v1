@@ -11,6 +11,7 @@
     $path = $_SERVER['DOCUMENT_ROOT'];
     $path .= "/inc/header.php";
     require_once($path);
+    echo '<link rel="stylesheet" type="text/css" href="/resources/css/post.processed.css">';
   ?>
 
 
@@ -30,9 +31,9 @@
           $note_post = new Note($note_data);
     ?>
     <!--TITLE SECTION-->
-    <div class="section dark" id="post-head">
+    <div class="section dark" id="post-head"
       <div class="content">
-        <div id="post-quote"><?php echo $note_data['title']; ?></div>
+        <div id="post-quote"><?php echo $note_data['category']; ?></div>
       </div>
     </div>
 
@@ -90,7 +91,7 @@
             }
 
           ?>
-          <!-- <a class="note light round" id="note-1" href="#">
+          <<a class="note light round" id="note-1" href="#">
             <div class="title">React</div>
             <ul>
               <li>boaskdfioaa</li>
@@ -111,6 +112,8 @@
       $path .= "/inc/footer.php";
       require_once($path);
     ?>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.19/marked.min.js"></script>
+
     <script src="/resources/js/post.js"></script>
 
   </body>
