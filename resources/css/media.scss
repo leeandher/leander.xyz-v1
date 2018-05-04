@@ -57,13 +57,14 @@
 }
 .note {
   .title {
+    font-size: 85%;
     text-align: center;
+    text-shadow: 2px 2px var(--accent);
   }
-
   ul {
     font-size: 30%;
     list-style: none;
-    max-width: 75%;
+    max-width: 600px;
     margin: 0 auto;
   }
 }

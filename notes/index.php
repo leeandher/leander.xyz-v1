@@ -25,14 +25,14 @@
     <?php
       if (isset($_GET['viewNote'])) {
           $title = $_GET['viewNote'];
-          $article_data = DB::getArticleData($title);
-          if (!$article_data) header('Location: .');
-          $blog_post = new Article($article_data);
+          $note_data = DB::getNoteData($title);
+          if (!$note_data) header('Location: .');
+          $note_post = new Note($note_data);
     ?>
     <!--TITLE SECTION-->
     <div class="section dark" id="post-head">
       <div class="content">
-        <div id="post-quote"><?php echo $article_data['quote']; ?></div>
+        <div id="post-quote"><?php echo $note_data['title']; ?></div>
       </div>
     </div>
 
@@ -45,13 +45,13 @@
         <div id="post-share">
           <?php
 
-            $blog_post->createShareLinks ();
+            $note_post->createShareLinks ();
 
           ?>
         </div>
         <?php
 
-          $blog_post->viewArticle ();
+          $note_post->viewNote ();
 
         ?>
       </div>
@@ -80,17 +80,26 @@
     <div class="section" id="archive">
       <div class="content">
         <div class="flex-group">
-          <a class="note light round" id="note-1" href="#">
-            <div class="title">1 Lorem ipsum dolor sit amet</div>
+          <?php
+
+            $note_all_data = DB::getAllNoteData();
+
+            foreach ($note_all_data as $single_note) {
+              $post = new Note($single_note);
+              $post->preview ();
+            }
+
+          ?>
+          <!-- <a class="note light round" id="note-1" href="#">
+            <div class="title">React</div>
             <ul>
               <li>boaskdfioaa</li>
               <li>dfasdf</li>
               <li>asdfasd</li>
               <li>asdfads</li>
             </ul>
-          </a>
+          </a> -->
         </div>
-        <div id="error">No results, sorry!</div>
       </div>
     </div>
     <?php
