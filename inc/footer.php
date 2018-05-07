@@ -14,7 +14,7 @@
         <a href="/index.php">Home</a> |
         <a href="/projects/index.php">Projects</a> |
         <a href="/blog/index.php">Blog</a> |
-        <a href="/notes/index.php">Notes</a> |
+        <a href="https://github.com/leeandher/programming-notes">Notes</a> |
         <a href="/resume/index.php">Resume</a>
       </ul>
     </div>

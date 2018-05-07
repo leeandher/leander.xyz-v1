@@ -223,12 +223,12 @@
           <div class="resume-item">
             <div class="subtitle"><span class="light">My Top Picks</span></div>
             <div class="thumbnail-wrapper">
-              <a href="../projects/index.php#proj-0" target="_blank"><img src="../resources/images/projects/tictactoe.jpg" alt="Tic Tac Toe Thumbnail"/></a>
-              <a href="../projects/index.php#proj-3" target="_blank"><img src="../resources/images/projects/calculator.jpg" alt="JavaScript Calculator Thumbnail"/></a>
-              <a href="../projects/index.php#proj-6" target="_blank"><img src="../resources/images/projects/wikiview.jpg" alt="Wikipedia Viewer Thumbnail"/></a>
-              <a class="hide-on-resize" href="../projects/index.php#proj-1" target="_blank"><img src="../resources/images/projects/simon.jpg" alt="Simon Game Thumbnail"/></a>
-              <a class="hide-on-resize" href="../projects/index.php#proj-4" target="_blank"><img src="../resources/images/projects/liveontwitch.jpg" alt="Twitch.tv Stream Client Thumbnail"/></a>
-              <a class="hide-on-resize" href="../projects/index.php#proj-2" target="_blank"><img src="../resources/images/projects/fuelgauge.jpg" alt="Pomodoro Clock Thumbnail"/></a>
+              <a href="../projects/index.php#proj-0" target="_blank"><img src="../resources/images/projects/thumbnails/tictactoe_thumb.jpg" alt="Tic Tac Toe Thumbnail"/></a>
+              <a href="../projects/index.php#proj-3" target="_blank"><img src="../resources/images/projects/thumbnails/calculator_thumb.jpg" alt="JavaScript Calculator Thumbnail"/></a>
+              <a href="../projects/index.php#proj-6" target="_blank"><img src="../resources/images/projects/thumbnails/wikiview_thumb.jpg" alt="Wikipedia Viewer Thumbnail"/></a>
+              <a class="hide-on-resize" href="../projects/index.php#proj-1" target="_blank"><img src="../resources/images/projects/thumbnails/simon_thumb.jpg" alt="Simon Game Thumbnail"/></a>
+              <a class="hide-on-resize" href="../projects/index.php#proj-4" target="_blank"><img src="../resources/images/projects/thumbnails/liveontwitch_thumb.jpg" alt="Twitch.tv Stream Client Thumbnail"/></a>
+              <a class="hide-on-resize" href="../projects/index.php#proj-2" target="_blank"><img src="../resources/images/projects/thumbnails/fuelgauge_thumb.jpg" alt="Pomodoro Clock Thumbnail"/></a>
             </div>
             <div class="subtitle"><span class="light"><i><a href="../projects/index.php" target="_blank">See More</a></i></span></div>
           </div>
@@ -251,6 +251,12 @@
             <div class="item-desc">An entrance scholarship of $2000.00 for incoming students with an admission average greater than &gt;90%</div>
           </div>
           <hr />
+          <div class="resume-item">
+            <h2>10 Days of JS - 5 Stars</h2>
+            <div class="item-location"><a href="https://uwaterloo.ca/" target="_blank">HackerRank.com</a></div>
+            <div class="item-date emphasis">Apr 2018</div>
+            <div class="item-desc">Completed all 25 challenges in the skill umbrella to improve my JavaScript capabilities</div>
+          </div>
         </div>
         <button class="close-area text-small round">Close Section</button>
       </div>
