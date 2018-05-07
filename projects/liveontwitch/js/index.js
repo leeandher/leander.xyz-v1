@@ -1,9 +1,9 @@
 //Initate streamers array with default names
 var streamers = [
   //Full List
-  "brownman",   
+  "brownman",
   "captainsparklez",
-  "colinnorthway",  
+  "colinnorthway",
   "cretetion",
   "dochollis",
   //5
@@ -11,20 +11,20 @@ var streamers = [
   "eleaguetv",
   "emerald_activities",
   "esl_csgo",
-  "esl_sc2",  
+  "esl_sc2",
   //10
   "freeCodeCamp",
   "gosu",
   "hyperrpg",
   "iijeriichoii",
-  "imaqtpie", 
+  "imaqtpie",
   //15
   "joshog",
   "kittyplays",
-  "lirik",  
-  "locxion",  
+  "lirik",
+  "locxion",
   "markiplier",
-  //20 
+  //20
   "nightblue3",
   "ninja",
   "noobs2ninjas",
@@ -34,13 +34,13 @@ var streamers = [
   "ogamingsc2",
   "omgitsfirefoxx",
   "riotgames",
-  "shroud", 
-  "sodapoppin", 
+  "shroud",
+  "sodapoppin",
   //30
   "summit1g",
   "the_monotonist",
   "timthetatman",
-  "vrdevschool", 
+  "vrdevschool",
   "vrscout",
   "zimtok5tv"
   //36
@@ -189,7 +189,7 @@ $(document).ready(function() {
 
 //Checks if all AJAXRequests have been completed
 $(document).ajaxComplete(function() {
-  if (reqCount == streamers.length * 3) {
+  if (reqCount >= streamers.length * 2) {
     populate();
     if (invalidEntry) {
       $("#add-streamer").attr('placeholder','INVALID ENTRY');
@@ -248,16 +248,16 @@ $("#filter-all").click(function() {
 $("#filter-online").click(function() {
   toggleSet("#filter-online", "#filters");
   for (i = 0; i < streamers.length; i++) {
-    !twitchData[i].isLive ? 
-      $("#result" + i).addClass("d-none") : 
+    !twitchData[i].isLive ?
+      $("#result" + i).addClass("d-none") :
       $("#result" + i).removeClass("d-none");
   }
 });
 $("#filter-offline").click(function() {
   toggleSet("#filter-offline", "#filters");
   for (i = 0; i < streamers.length; i++) {
-    twitchData[i].isLive ? 
-      $("#result" + i).addClass("d-none") : 
+    twitchData[i].isLive ?
+      $("#result" + i).addClass("d-none") :
       $("#result" + i).removeClass("d-none");
   }
 });

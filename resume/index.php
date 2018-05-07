@@ -223,12 +223,12 @@
           <div class="resume-item">
             <div class="subtitle"><span class="light">My Top Picks</span></div>
             <div class="thumbnail-wrapper">
-              <a href="../projects/index.html#proj-0" target="_blank"><img src="../resources/images/projects/tictactoe.png" alt="Tic Tac Toe Thumbnail"/></a>
-              <a href="../projects/index.html#proj-3" target="_blank"><img src="../resources/images/projects/wikiview.png" alt="JavaScript Calculator Thumbnail"/></a>
-              <a href="../projects/index.html#proj-6" target="_blank"><img src="../resources/images/projects/liveontwitch.png" alt="Wikipedia Viewer Thumbnail"/></a>
-              <a class="hide-on-resize" href="../projects/index.html#proj-1" target="_blank"><img src="../resources/images/projects/simon.png" alt="Simon Game Thumbnail"/></a>
-              <a class="hide-on-resize" href="../projects/index.html#proj-4" target="_blank"><img src="../resources/images/projects/calculator.png" alt="Twitch.tv Stream Client Thumbnail"/></a>
-              <a class="hide-on-resize" href="../projects/index.html#proj-2" target="_blank"><img src="../resources/images/projects/fuelgauge.png" alt="Pomodoro Clock Thumbnail"/></a>
+              <a href="../projects/index.php#proj-0" target="_blank"><img src="../resources/images/projects/tictactoe.jpg" alt="Tic Tac Toe Thumbnail"/></a>
+              <a href="../projects/index.php#proj-3" target="_blank"><img src="../resources/images/projects/calculator.jpg" alt="JavaScript Calculator Thumbnail"/></a>
+              <a href="../projects/index.php#proj-6" target="_blank"><img src="../resources/images/projects/wikiview.jpg" alt="Wikipedia Viewer Thumbnail"/></a>
+              <a class="hide-on-resize" href="../projects/index.php#proj-1" target="_blank"><img src="../resources/images/projects/simon.jpg" alt="Simon Game Thumbnail"/></a>
+              <a class="hide-on-resize" href="../projects/index.php#proj-4" target="_blank"><img src="../resources/images/projects/liveontwitch.jpg" alt="Twitch.tv Stream Client Thumbnail"/></a>
+              <a class="hide-on-resize" href="../projects/index.php#proj-2" target="_blank"><img src="../resources/images/projects/fuelgauge.jpg" alt="Pomodoro Clock Thumbnail"/></a>
             </div>
             <div class="subtitle"><span class="light"><i><a href="../projects/index.php" target="_blank">See More</a></i></span></div>
           </div>
