@@ -17,7 +17,6 @@
       $path .= "/inc/navbar.html";
       require_once($path);
     ?>
-
     <!--TITLE SECTION-->
     <div class="section dark" id="head">
       <div class="content">
@@ -223,12 +222,12 @@
           <div class="resume-item">
             <div class="subtitle"><span class="light">My Top Picks</span></div>
             <div class="thumbnail-wrapper">
-              <a href="../projects/index.php#proj-0" target="_blank"><img src="../resources/images/projects/thumbnails/tictactoe_thumb.jpg" alt="Tic Tac Toe Thumbnail"/></a>
-              <a href="../projects/index.php#proj-3" target="_blank"><img src="../resources/images/projects/thumbnails/calculator_thumb.jpg" alt="JavaScript Calculator Thumbnail"/></a>
-              <a href="../projects/index.php#proj-6" target="_blank"><img src="../resources/images/projects/thumbnails/wikiview_thumb.jpg" alt="Wikipedia Viewer Thumbnail"/></a>
-              <a class="hide-on-resize" href="../projects/index.php#proj-1" target="_blank"><img src="../resources/images/projects/thumbnails/simon_thumb.jpg" alt="Simon Game Thumbnail"/></a>
-              <a class="hide-on-resize" href="../projects/index.php#proj-4" target="_blank"><img src="../resources/images/projects/thumbnails/liveontwitch_thumb.jpg" alt="Twitch.tv Stream Client Thumbnail"/></a>
-              <a class="hide-on-resize" href="../projects/index.php#proj-2" target="_blank"><img src="../resources/images/projects/thumbnails/fuelgauge_thumb.jpg" alt="Pomodoro Clock Thumbnail"/></a>
+              <a href="../projects/index.php#proj-0" target="_blank"><img src="../resources/images/projects/thumbnails/tictactoe_thumb.JPG" alt="Tic Tac Toe Thumbnail"/></a>
+              <a href="../projects/index.php#proj-3" target="_blank"><img src="../resources/images/projects/thumbnails/calculator_thumb.JPG" alt="JavaScript Calculator Thumbnail"/></a>
+              <a href="../projects/index.php#proj-6" target="_blank"><img src="../resources/images/projects/thumbnails/wikiview_thumb.JPG" alt="Wikipedia Viewer Thumbnail"/></a>
+              <a class="hide-on-resize" href="../projects/index.php#proj-1" target="_blank"><img src="../resources/images/projects/thumbnails/simon_thumb.JPG" alt="Simon Game Thumbnail"/></a>
+              <a class="hide-on-resize" href="../projects/index.php#proj-4" target="_blank"><img src="../resources/images/projects/thumbnails/liveontwitch_thumb.JPG" alt="Twitch.tv Stream Client Thumbnail"/></a>
+              <a class="hide-on-resize" href="../projects/index.php#proj-2" target="_blank"><img src="../resources/images/projects/thumbnails/fuelgauge_thumb.JPG" alt="Pomodoro Clock Thumbnail"/></a>
             </div>
             <div class="subtitle"><span class="light"><i><a href="../projects/index.php" target="_blank">See More</a></i></span></div>
           </div>
