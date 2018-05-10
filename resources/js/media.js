@@ -19,14 +19,12 @@ $('#utility .btn-tag').click(function() {
     var itemsShown = 0;
     $('.media').css('display', 'none');
     //Loop through media
-    for (var i = 1; i <= $('#directory .flex-group').children().length; i++) {
+    for (var i = 1; i <= $('#archive .flex-group').children().length; i++) {
       //Gather media's tags
       var mediaTags = [];
       $(pageItemId + i + ' .tags').children().each(function() {
         mediaTags.push(this.innerHTML);
       });
-      console.clear();
-      console.log();
       //Checks if this media should be shown, and follows through
       var checkThisMedia = filters.every(function(x) {
         return mediaTags.includes(x);

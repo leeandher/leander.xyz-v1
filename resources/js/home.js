@@ -27,11 +27,16 @@ var projectShowCase = [
   'weather',
   'wikiview',
   'quotes'
-];
+].map(function(x) {
+  var img = new Image();
+  img.src = '/resources/images/projects/' + x + '.JPG';
+  return img;
+});
 
 var currLoop = 0;
-var timer = setInterval(function() {
-  $('#projects .bg').css('background-image', 'url(/resources/images/projects/' + projectShowCase[currLoop] + '.JPG)');
+$('#projects .bg').css('background-image', 'url(' + projectShowCase[currLoop].src + ')');
+window.setInterval(function() {
   currLoop ++;
   if (currLoop === projectShowCase.length) currLoop = 0;
+  $('#projects .bg').css('background-image', 'url(' + projectShowCase[currLoop].src + ')');
 }, 5000)

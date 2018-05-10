@@ -31,6 +31,8 @@
 
 #error #response {
   text-align: center;
+  position: relative;
+  padding: 10px;
 }
 
 #error #response a {

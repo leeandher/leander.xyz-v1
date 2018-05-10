@@ -112,7 +112,7 @@
       $path .= "/inc/footer.php";
       require_once($path);
     ?>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.19/marked.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.19/marked.min.js"></script> -->
 
     <script src="/resources/js/post.js"></script>
 

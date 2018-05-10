@@ -10,6 +10,6 @@ function softScroll(selector) {
 
 $('#toggler').click(function() {
   $(this).toggleClass('show');
-  var heightVal = $(this).hasClass('show') ? $(window).height()*0.5 : '0px';
+  var heightVal = $(this).hasClass('show') ? '675px' : '0px';
   $('#collapse-nav').css('max-height', heightVal);
 });
