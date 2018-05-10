@@ -115,8 +115,8 @@
         <div class="heading">Some recent happenings</div>
         <div class="flex-group">
           <div class="card light round flex-item" id="curr-proj">
-            <div class="subheading">Get this site up and running</div>
-            <p class="text-small" id="curr-proj-summary">While I have plenty of front-end style projects that involve making webpages and webapps, getting this site fully functional and secure is my first <b>backend dev</b> project. I want to figure out how mail servers, PHP scripts, and MySQL databases work together. I guess I'm my own full stack developer, and it's hard, but I've never been one to back down from a challenge!</p>
+            <div class="subheading">Explore the MERN Tech Stack</div>
+            <p class="text-small" id="curr-proj-summary">As of now, all of my projects have dealt almost entirely with client-side HTML5, CSS3, and JS, with whatever libraries I deemed appropriate. If I plan on developping more robust and functional web apps, I want to explore the MERN tech stack: <b>MongoDB</b>, <b>Express</b>, <b>React.js</b> and <b>Node.js</b>. This will be my first attempt with fullstack JavaScript, but I can already see the appeal in getting rid of PHP and MySQL from my experience developping this site. Regardless, I have a lot on my plate, but what's life without a big project or two.</p>
           </div>
         </div>
         <div class="flex-group">

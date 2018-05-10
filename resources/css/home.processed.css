@@ -163,6 +163,7 @@
 
 #media #curr-proj .subheading:before {
   content: "Current Project: ";
+  font-weight: var(--thin);
 }
 
 #contact {

@@ -50,7 +50,7 @@
             </ul>
             <b>Ongoing Learning:</b>
             <ul>
-              <li>Git Command Line <em class="small">(Without GitHub GUI)</em></li>
+              <li>Git Command Line Interface<em class="small">(Git Bash)</em></li>
               <li>React.js <em class="small">(Redux, Data Visualization)</em></li>
               <li>Node.js <em class="small">(NPM, Replacing PHP)</em></li>
             </ul>
