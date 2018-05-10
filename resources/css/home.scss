@@ -124,7 +124,9 @@
     a {
       -webkit-box-shadow: inherit;
               box-shadow: inherit;
-      padding: 5px 10px;
+      padding: 10px 20px;
+      //letter-spacing: 1px;
+      font-size: 35%;
       text-shadow: none;
       &:hover {
         color: var(--light);
@@ -138,18 +140,9 @@
   .subheading {
     font-size: 30%;
     text-decoration: none;
-    &:before {
-      font-weight: var(--thin);
-    }
   }
   #curr-proj .subheading:before {
     content: "Current Project: ";
-  }
-  #curr-blog .subheading:before {
-    content: "Latest Blog: ";
-  }
-  #curr-note .subheading:before {
-    content: "Latest Note: ";
   }
 }
 

@@ -31,7 +31,7 @@ var projectShowCase = [
 
 var currLoop = 0;
 var timer = setInterval(function() {
-  $('#projects .bg').css('background-image', 'url(/resources/images/projects/' + projectShowCase[currLoop] + '.png)');
+  $('#projects .bg').css('background-image', 'url(/resources/images/projects/' + projectShowCase[currLoop] + '.JPG)');
   currLoop ++;
   if (currLoop === projectShowCase.length) currLoop = 0;
 }, 5000)

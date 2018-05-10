@@ -28,7 +28,8 @@ body {
   left: 50%;
   position: absolute;
   top: 50%;
-  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
 }
 //Page title
 .title {
@@ -79,6 +80,18 @@ body {
     outline: none;
     text-align: center;
     //Default text
+    &::-webkit-input-placeholder {
+      color: $accents;
+    }
+    //Default text
+    &:-ms-input-placeholder {
+      color: $accents;
+    }
+    //Default text
+    &::-ms-input-placeholder {
+      color: $accents;
+    }
+    //Default text
     &::placeholder {
       color: $accents;
     }
@@ -107,7 +120,9 @@ body {
     height: 3px;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%) rotate(-30deg);
+    -webkit-transform: translateY(-50%) rotate(-30deg);
+            transform: translateY(-50%) rotate(-30deg);
+    -webkit-transition: all 1s;
     transition: all 1s;
     width: 100%;
     //Visible part of the needle
@@ -142,7 +157,8 @@ body {
   //Looping through rotating notches
   @for $i from 1 through 49 {
     .bar:nth-of-type(#{$i}) {
-      transform: rotate(-30deg + ($i - 1)*5);
+      -webkit-transform: rotate(-30deg + ($i - 1)*5);
+              transform: rotate(-30deg + ($i - 1)*5);
     }
   }
 }
@@ -153,6 +169,7 @@ body {
 }
 //Countdown display
 .time {
+  color: white !important;
   font-size: 100%;
   margin: 0;
   position: absolute;
@@ -170,7 +187,8 @@ body {
   margin-top: 10px;
   outline: none;
   &:active, &:focus {
-    box-shadow: 0 0 0 0.2rem rgba(126,166,170,0.5);
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(126,166,170,0.5);
+            box-shadow: 0 0 0 0.2rem rgba(126,166,170,0.5);
   }
   &:hover {
     color: white;

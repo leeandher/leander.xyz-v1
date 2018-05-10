@@ -142,7 +142,8 @@
 #media .card a {
   -webkit-box-shadow: inherit;
   box-shadow: inherit;
-  padding: 5px 10px;
+  padding: 10px 20px;
+  font-size: 35%;
   text-shadow: none;
 }
 
@@ -160,20 +161,8 @@
   text-decoration: none;
 }
 
-#media .subheading:before {
-  font-weight: var(--thin);
-}
-
 #media #curr-proj .subheading:before {
   content: "Current Project: ";
-}
-
-#media #curr-blog .subheading:before {
-  content: "Latest Blog: ";
-}
-
-#media #curr-note .subheading:before {
-  content: "Latest Note: ";
 }
 
 #contact {

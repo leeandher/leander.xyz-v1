@@ -10,9 +10,9 @@ $(".fa-angle-down").click(function() {
 
 //Convert between C and F
 $("button").click(function() {
-  unit = 
+  unit =
     unit == "C" ? "F" : "C";
-  currentTemp = 
+  currentTemp =
     unit=="C" ? (currentTemp-32)/1.8 : currentTemp*1.8+32;
   $(".temperature").text(Math.round(currentTemp*10)/10 + String.fromCharCode(176) + unit);
 });
@@ -31,7 +31,7 @@ function findData() {
     ); //End .getJSON
   }, function(error) {
     //Error function
-    errText = 
+    errText =
       error.code == error.PERMISSION_DENIED ?
       'Please enable location services!':
       'Something went wrong :/';
@@ -46,12 +46,12 @@ function setData(data) {
   $(".category").text(data.weather[0].main);
   setBackground(data.weather[0].main);
   $(".description").text(data.weather[0].description);
-  var lat = 
+  var lat =
     data.coord.lat >= 0 ?
     data.coord.lat + String.fromCharCode(176) + ' N':
     data.coord.lat*-1 + String.fromCharCode(176) + ' S';
   $(".lat").text(lat);
-  var lon = 
+  var lon =
     data.coord.lon >= 0 ?
     data.coord.lon + String.fromCharCode(176) + ' E':
     data.coord.lon*-1 + String.fromCharCode(176) + ' W';

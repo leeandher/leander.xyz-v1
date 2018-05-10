@@ -120,15 +120,15 @@
           </div>
         </div>
         <div class="flex-group">
-          <div class="card light round flex-item" id="curr-blog">
-            <div class="subheading">My Latest Blog Post</div>
-            <p class="text-small" id="curr-blog-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+          <div class="card light round flex-item">
+            <div class="subheading">My Personal Blog</div>
+            <p class="text-small" id="curr-blog-summary">In my opinion, I think everyone should find and claim their corner of the internet. Sure, you can make endless facebook posts, twitter updates and all the rest, but what's the harm in being custom? I decided that I wanted to have my own blog for posting to my heart's content on my own accord. I am by no means a professional writer, but I'd like to think I have some interesting stuff to say. While most of the updates are learning, code or progress related, I plan on adding some fun stuff in the near future. I mean, wouldn't you love to know what I thought of Infinity War? Anyway, the link below will take you to my blog page to get nice little snapshot of my life.</p>
             <a class="text-small light round" href="/blog/index.php">See my <b>Blog</b></a>
           </div>
-          <div class="card light round flex-item" id="curr-note">
-            <div class="subheading">My Latest Note</div>
-            <p class="text-small" id="curr-note-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-            <a class="text-small light round" target="_blank" href="https://github.com/leeandher/programming-notes">See my <b>Notes</b></a>
+          <div class="card light round flex-item">
+            <div class="subheading">My Online Notebook</div>
+            <p class="text-small" id="curr-note-summary">It's easy to sit and watch tutorials for hours and think you  grasp a concept just because you've heard someone else explain it, but from my experience that's never true. Explaining something in your own words forces you to understand it, in order to articulate it properly. Whenever I feel as though something I'm learning something I'll need for future reference or maybe a difficult topic, I record notes in Markdown. These are made both for my own self-improvement, and anyone else looking for clear and concise explanations. The Check out the link below to view all those sweet, simple notes.</p>
+            <a class="text-small light round" target="_blank" href="https://github.com/leeandher/programming-notes">Read my <b>Notes</b></a>
           </div>
         </div>
       </div>
