@@ -2,13 +2,15 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .center-text {
   position: relative;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   text-align: center;
 }
 
@@ -36,6 +38,7 @@
   max-width: 250px;
 }
 .modal-dialog .modal-footer .btn {
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 .modal-dialog .modal-footer .fa-facebook-f:focus, .modal-dialog .modal-footer .fa-facebook-f:hover {
@@ -69,7 +72,8 @@
   background: #00C851;
 }
 .header label input:checked + .switch:before {
-  transform: translateX(32px);
+  -webkit-transform: translateX(32px);
+          transform: translateX(32px);
 }
 .header label .switch {
   background: rgba(25, 25, 25, 0.75);
@@ -78,6 +82,7 @@
   display: block;
   height: 26px;
   position: relative;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   width: 60px;
 }
@@ -89,6 +94,7 @@
   height: 17px;
   left: 3px;
   position: absolute;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   top: 2.5px;
   width: 17px;
@@ -114,6 +120,7 @@ body {
   outline: none;
   font-family: Lora, serif;
   background: transparent;
+  -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
@@ -134,11 +141,13 @@ a:focus {
   padding: 10px;
   position: relative;
   text-decoration: none !important;
+  -webkit-transition: all 0.7s;
   transition: all 0.7s;
   width: 90%;
 }
 .head.location {
-  transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
 }
 
 form {
@@ -159,11 +168,13 @@ form input {
   margin: 0 auto;
   padding: 10px;
   text-align: center;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   width: 60%;
 }
 form input:focus {
-  box-shadow: 0px 0px 5px #191919;
+  -webkit-box-shadow: 0px 0px 5px #191919;
+          box-shadow: 0px 0px 5px #191919;
   outline: none;
 }
 form .rand {
@@ -181,6 +192,7 @@ form .rand {
   margin: 15px;
   min-width: 320px;
   padding: 10px;
+  -webkit-transition: all 0.35s;
   transition: all 0.35s;
 }
 .col-md .sub {
@@ -190,7 +202,9 @@ form .rand {
 .col-md:hover, .col-md:focus {
   outline: none;
   border: 1.5px solid white;
-  box-shadow: 3px 3px 5px #191919;
+  -webkit-box-shadow: 3px 3px 5px #191919;
+          box-shadow: 3px 3px 5px #191919;
   text-decoration: none;
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
