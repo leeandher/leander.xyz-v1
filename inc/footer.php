@@ -18,7 +18,7 @@
         <a href="/resume/index.php">Resume</a>
       </ul>
     </div>
-    <p class="text-small"> Hand coded by: <span class="emphasis">your's truly</span> :)</p>
+    <p class="text-small" style=""> Hand coded by: <span class="emphasis">your's truly</span> :)</p>
   </div>
 </footer>
 

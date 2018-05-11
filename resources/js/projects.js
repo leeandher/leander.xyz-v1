@@ -10,8 +10,8 @@ var Project = function(title, date, desc, languages, additional, concepts, linkU
   this.languages = languages;
   this.additional = additional;
   this.concepts = concepts;
-  this.bg = 'url("/resources/images/projects/'+ linkUrl +'.png")';
-  this.link = linkUrl;//'subdir/' + linkUrl;
+  this.bg = 'url("/resources/images/projects/'+ linkUrl +'.JPG")';
+  this.link = linkUrl;
 }
 
 function applyProject(proj, order) {
@@ -31,7 +31,7 @@ function applyProject(proj, order) {
 
 var projectArr = [
   new Project(
-    'Random Quote Machine', 
+    'Random Quote Machine',
     'February 04, 2018',
     "A webpage styled as a mobile phone with the Tinder app open that cycles through different lame pick-up lines, names, locations, and background images.",
     ['HTML5', 'CSS3', 'JavaScript'],
@@ -40,7 +40,7 @@ var projectArr = [
     'quotes'
   ),
   new Project(
-    'Wikipedia Viewer', 
+    'Wikipedia Viewer',
     'February 07, 2018',
     "A front-end face that accesses the Wikipedia API to search for results and display in a clean format. Accepts and input and displays the top 20 results.",
     ['HTML5', 'CSS3', 'JavaScript'],
@@ -49,7 +49,7 @@ var projectArr = [
     'wikiview'
   ),
   new Project(
-    'Local Weather App', 
+    'Local Weather App',
     'February 10, 2018',
     "A basic weather app which accesses the OpenWeatherMap API through FCC's glitch.me using the geolocation in the user's browser and displays statistics and information about the weather in their location.",
     ['HTML5', 'CSS3', 'JavaScript'],
@@ -58,7 +58,7 @@ var projectArr = [
     'weather'
   ),
   new Project(
-    'Twitch.tv Stream Client', 
+    'Twitch.tv Stream Client',
     'February 15, 2018',
     "A webpage with an array of Twitch.tv streamers which accesses the Twitch.tv API through FCC's glitch.me and displays information about the streamer's current status and profile. There are also filters/sorts which dynamically affect the data shown.",
     ['HTML5', 'CSS3', 'JavaScript'],
@@ -67,7 +67,7 @@ var projectArr = [
     'liveontwitch'
   ),
   new Project(
-    'JavaScript Calculator', 
+    'JavaScript Calculator',
     'March 06, 2018',
     "A calculator app that runs entirely on complex hand-coded JavaScript. It is meant to be a desktop calculator which ignores BEDMAS so performs operations linearly. It scales responsively for mobile and does not implore the 300ms delay, allowing for faster inputs.",
     ['HTML5', 'CSS3', 'JavaScript'],
@@ -76,7 +76,7 @@ var projectArr = [
     'calculator'
   ),
   new Project(
-    'Pomodoro Clock', 
+    'Pomodoro Clock',
     'March 12, 2018',
     "A timer using the pomodoro productivity technique, of set break and work timers to regiment time spent allocated to tasks. It is styled as a fuel gauge which empties and refills on work periods and break periods respectively.",
     ['HTML5', 'CSS3', 'JavaScript'],
@@ -85,7 +85,7 @@ var projectArr = [
     'fuelgauge'
   ),
   new Project(
-    'Simon Game', 
+    'Simon Game',
     'March 15, 2018',
     "A recreation of the famous toy which calls on the user's memory of a sequence of button presses in order to win. A few additonal features have been added, such as strict-mode, spin-mode, no-repeat mode and multiple colour schemes.",
     ['HTML5', 'CSS3', 'JavaScript'],
@@ -94,7 +94,7 @@ var projectArr = [
     'simon'
   ),
   new Project(
-    'Tic-Tac-Toe', 
+    'Tic-Tac-Toe',
     'March 21, 2018',
     "A implementation of Tic-Tac-Toe with multiple settings. It allows for Player vs. Player (with names, colours, and shape selection) and Player vs. AI (with everything else, and AI difficulty settings). One of the difficulty settings is 'Impossible' which uses the minimax algorithm for an unbeatable Tic-Tac-Toe AI.",
     ['HTML5', 'CSS3', 'JavaScript'],

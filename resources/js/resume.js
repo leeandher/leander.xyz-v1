@@ -19,9 +19,3 @@ $('.close-area').click(function() {
   assignInnerTabIndeces(thisSectionId);
   $('html, body').animate({scrollTop: $(thisSectionId).offset().top-52}, 200);
 });
-
-
-//Working on this section
-console.clear();
-$('html, body').animate({scrollTop: $('#projects').offset().top-52}, 0);
-$('#projects .fold-head').click();

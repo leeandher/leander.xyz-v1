@@ -141,6 +141,11 @@
   }
 }
 
+#intention .major {
+  font-style: italic;
+  font-weight: var(--bold);
+}
+
 #summary {
   .flex-group {
     .flex-item {min-width: 250px; margin: 0 10px;}
@@ -168,5 +173,12 @@
     margin: 10px;
     border: 2px solid var(--dark);
     background-color: var(--accent);
+  }
+}
+
+#details {
+  ul {
+    margin-left: 20px;
+    list-style-position: outside;
   }
 }

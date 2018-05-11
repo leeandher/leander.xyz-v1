@@ -48,7 +48,7 @@
             <pre>  <b>awaitingWorkTermLength</b>: 8 || 4, <span>//4 or 8 months</span></pre>
             <pre>  <b>hardWorker</b>: true,</pre>
             <pre>  <b>teamPlayer</b>: true,</pre>
-            <pre>  <b>isPerfect</b>: false, <span>//Should never be true</span></pre>
+            <pre>  <b>isPerfect</b>: false, <span>//Should never return true</span></pre>
             <pre>}</pre>
           </div>
           <p>

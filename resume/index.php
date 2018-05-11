@@ -24,6 +24,8 @@
       </div>
     </div>
 
+
+
     <!--SUMMARY SECTION-->
     <div class="section resume-area" id="summary">
       <div class="fold-head light">
@@ -63,7 +65,26 @@
               <li>Fluent in <b>French</b>, both written and oral</li>
               <li>Extensive charity work experience with all ages and abilities</li>
               <li>Devoted, hard-working team member, excelling in self-regulation and commitment</li>
+              <li>I'm completely willing to learn new something specific that I'm missing, to become a better candidate. If there's something you wish I knew, <a href="../#contact" class="emphasis">send me a message</a> and I'll start reading!</li>
             </ul>
+          </div>
+        </div>
+        <button class="close-area text-small round">Close Section</button>
+      </div>
+    </div>
+
+    <!--INTENTION SECTION-->
+    <div class="section resume-area" id="intention">
+      <div class="fold-head light">
+        <div class="wrap">Intention</div>
+      </div>
+      <div class="content">
+        <div class="resume-info round light text-small">
+          <div class="resume-item">
+            <div class="item-desc">
+              <p class="indent">I'm an engineering student, making an effort to break into the programming world. <b>My drive to learn new, difficult technologies, motivates me to ask questions, take on more projects, and challenge myself to try things often outside of my comfort zone.</b> So far, this dedication has given me a functional site, and many proud projects/achievements to share with you, but regardless, the future is brighter.</p>
+              <br />
+              <p class="major">Given the opportunity to work with your company, I intend to prove myself by way of results, enthusiasm and hard work.</p></div>
           </div>
         </div>
         <button class="close-area text-small round">Close Section</button>
@@ -81,21 +102,21 @@
           <div class="resume-item">
             <h2>Nanotechnology Engineering</h2>
             <div class="item-location"><a href="https://uwaterloo.ca/" target="_blank">University of Waterloo - Waterloo, ON</a></div>
-            <div class="item-date emphasis">Sept 2016 - Present</div>
+            <div class="item-date emphasis">Sep 2016 - Present</div>
             <div class="item-desc indent"> Currently a candidate for a B.A.Sc. Honors Nanotechnology Engineering at the University of Waterloo. My program gives me the opportunity to work with/study the latest and greatest in tech, research and science, while learning the fundamentals of engineering. </div>
           </div>
           <div class="subtitle"><span>Online Courses</span></div>
           <div class="flex-group">
             <!--FCC Front End-->
             <div class="resume-item flex-item">
-              <h2>Front End Development Course</h2>
+              <h2>Front End Development Certification</h2>
               <div class="item-location"><a href="https://www.freecodecamp.org" target="_blank">FreeCodeCamp.org</a></div>
               <div class="item-date emphasis">Jan 2018 - Mar 2018</div>
               <div class="item-desc indent"> During my free time of my second coop term, I decided that I wanted to get back into the programming world, and searched for some good courses/resources online. About 2.5 months later, I'd completed a series of projects/challengs in this intensive course covering the basics of web development.</div>
             </div>
             <!--FCC Data Viz-->
             <div class="resume-item flex-item">
-              <h2>Data Visualization Course</h2>
+              <h2>Data Visualization Certification</h2>
               <div class="item-location"><a href="https://www.freecodecamp.org" target="_blank">FreeCodeCamp.org</a></div>
               <div class="item-date emphasis">May 2018 - Present</div>
               <div class="item-desc indent"> Another intensive FCC course which covers manipulating data, and implementing more complicated user interfaces. It focuses less so on things like web pages, and templates, and more on web apps and components using SASS, D3 and ReactJS!</div>
@@ -111,14 +132,14 @@
             <div class="resume-item flex-item">
               <h2>The Complete Web Developer Course</h2>
               <div class="item-location"><a href="https://www.udemy.com/thecompletewebdeveloper/" target="_blank">Udemy.com</a></div>
-              <div class="item-date emphasis">April 2018</div>
+              <div class="item-date emphasis">Apr 2018</div>
               <div class="item-desc indent"> A well-rounded web developer course which I mainly used as a resource for PHP, MySQL and phpMyAdmin usage tutorials. Using what I learned from this site I was able to configure the back-end for this very site while maintaining good PDO structure, and a secure database/login system. </div>
             </div>
             <!--KhanAcademy CS-->
             <div class="resume-item flex-item">
               <h2>Computer Science Subject</h2>
               <div class="item-location"><a href="https://www.khanacdemy.com" target="_blank">KhanAcademy.org</a></div>
-              <div class="item-date emphasis">April 2018 - Present</div>
+              <div class="item-date emphasis">Apr 2018 - Present</div>
               <div class="item-desc indent">My first abstract course that isn't language specific. It covers 'Algorithms', 'Cryptography', 'Information Theory' and 'The Internet', in practical explanatory articles/modules, taught by two Dartmouth College professors. In my opinion, it's the most well-rounded, free 'CS 101'-style course out there right now.</div>
             </div>
             <!--JS 30-->
@@ -132,7 +153,7 @@
             <div class="resume-item flex-item">
               <h2>React Bootcamp</h2>
               <div class="item-location"><a href="https://www.youtube.com/watch?v=8GXXGJRDMdQ&list=PLqrUy7kON1mfWjiu0GWQhefWSx38v0UGo" target="_blank">YouTube - TylerMcGinnis.com</a></div>
-              <div class="item-date emphasis">April 2018</div>
+              <div class="item-date emphasis">Apr 2018</div>
               <div class="item-desc indent">A promotional livestreamed React bootcamp that was held on YouTube walking viewers through a series of concepts, lectures and challenges having to do with ReactJS. It was taught by Tyler McGiniss, professional instructor and Google Developer Expert.</div>
             </div>
           </div>
@@ -151,7 +172,7 @@
           <div class="resume-item">
             <h2>Data Analysis and Process Automation</h2>
             <div class="item-location"><a href="https://www.curtisswrightds.com/" target="_blank">Curtiss Wright Defense Solutions - Ottawa, ON</a></div>
-            <div class="item-date emphasis">Jan 2018 - April 2018</div>
+            <div class="item-date emphasis">Jan 2018 - Apr 2018</div>
             <ul class="item-list">
               <li><b>Automated daily report process</b> to provide up-to-date spreadsheets/data for upper management</li>
               <li><b>Revised legacy scripts</b> to provide new functionality and more reliable data sources</li>
@@ -172,6 +193,31 @@
               <li><b>Presented findings and analytics</b> to upper management to identify weak areas for economic improvement</li>
             </ul>
             <div class="item-desc"><span class="emphasis">Skills Improved: </span>MS Excel, MS Access, MS Visio, Presentation Skills</div>
+          </div>
+        </div>
+        <button class="close-area text-small round">Close Section</button>
+      </div>
+    </div>
+
+    <!--PROJECTS SECTION-->
+    <div class="section resume-area" id="projects">
+      <div class="fold-head light">
+        <div class="wrap">Projects</div>
+      </div>
+      <div class="content">
+        <div class="resume-info round light text-small">
+          <div class="resume-item">
+            <div class="subtitle"><span class="light">My Top Picks</span></div>
+            <div class="thumbnail-wrapper">
+              <a href="../projects/index.php#proj-0" target="_blank"><img src="../resources/images/projects/thumbnails/tictactoe_thumb.JPG" alt="Tic Tac Toe Thumbnail"/></a>
+              <a href="../projects/index.php#proj-3" target="_blank"><img src="../resources/images/projects/thumbnails/calculator_thumb.JPG" alt="JavaScript Calculator Thumbnail"/></a>
+              <a href="../projects/index.php#proj-6" target="_blank"><img src="../resources/images/projects/thumbnails/wikiview_thumb.JPG" alt="Wikipedia Viewer Thumbnail"/></a>
+              <a class="hide-on-resize" href="../projects/index.php#proj-1" target="_blank"><img src="../resources/images/projects/thumbnails/simon_thumb.JPG" alt="Simon Game Thumbnail"/></a>
+              <a class="hide-on-resize" href="../projects/index.php#proj-4" target="_blank"><img src="../resources/images/projects/thumbnails/liveontwitch_thumb.JPG" alt="Twitch.tv Stream Client Thumbnail"/></a>
+              <a class="hide-on-resize" href="../projects/index.php#proj-2" target="_blank"><img src="../resources/images/projects/thumbnails/fuelgauge_thumb.JPG" alt="Pomodoro Clock Thumbnail"/></a>
+            </div>
+            <div class="subtitle"><span class="light"><i><a href="../projects/index.php" target="_blank">See More</a></i></span></div>
+            <div class="item-desc">Over at <a href="../projects" class="emphasis">Projects</a>, you can see links to live demo projects, and the source code; however; if we're going to get meta, this whole site is another one of my side projects. I love hearing feedback, so feel free to tell me what you think by heading over to my <a href="../#contact" class="emphasis">Contact</a> section!</div>
           </div>
         </div>
         <button class="close-area text-small round">Close Section</button>
@@ -212,30 +258,6 @@
       </div>
     </div>
 
-    <!--PROJECTS SECTION-->
-    <div class="section resume-area" id="projects">
-      <div class="fold-head light">
-        <div class="wrap">Projects</div>
-      </div>
-      <div class="content">
-        <div class="resume-info round light text-small">
-          <div class="resume-item">
-            <div class="subtitle"><span class="light">My Top Picks</span></div>
-            <div class="thumbnail-wrapper">
-              <a href="../projects/index.php#proj-0" target="_blank"><img src="../resources/images/projects/thumbnails/tictactoe_thumb.JPG" alt="Tic Tac Toe Thumbnail"/></a>
-              <a href="../projects/index.php#proj-3" target="_blank"><img src="../resources/images/projects/thumbnails/calculator_thumb.JPG" alt="JavaScript Calculator Thumbnail"/></a>
-              <a href="../projects/index.php#proj-6" target="_blank"><img src="../resources/images/projects/thumbnails/wikiview_thumb.JPG" alt="Wikipedia Viewer Thumbnail"/></a>
-              <a class="hide-on-resize" href="../projects/index.php#proj-1" target="_blank"><img src="../resources/images/projects/thumbnails/simon_thumb.JPG" alt="Simon Game Thumbnail"/></a>
-              <a class="hide-on-resize" href="../projects/index.php#proj-4" target="_blank"><img src="../resources/images/projects/thumbnails/liveontwitch_thumb.JPG" alt="Twitch.tv Stream Client Thumbnail"/></a>
-              <a class="hide-on-resize" href="../projects/index.php#proj-2" target="_blank"><img src="../resources/images/projects/thumbnails/fuelgauge_thumb.JPG" alt="Pomodoro Clock Thumbnail"/></a>
-            </div>
-            <div class="subtitle"><span class="light"><i><a href="../projects/index.php" target="_blank">See More</a></i></span></div>
-          </div>
-        </div>
-        <button class="close-area text-small round">Close Section</button>
-      </div>
-    </div>
-
     <!--ACHIEVEMENTS SECTION-->
     <div class="section resume-area" id="achievements">
       <div class="fold-head light">
@@ -264,10 +286,18 @@
     <!--DETAILS SECTION-->
     <div class="section resume-area" id="details">
       <div class="fold-head light">
-        <div class="wrap">Details</div>
+        <div class="wrap">Extra Details</div>
       </div>
       <div class="content">
-        <div class="resume-info round light text">LINKS TO PROFILES
+        <div class="resume-info round light text-small">
+          <ul>
+            <li>People usually don't believe me on this, but this website has <span class="emphasis">no Bootstrap or copy/paste from Bootstrap files</span>; the responsiveness is all me!</li>
+            <li>My favorite programming lanuage is <span class="emphasis">JavaScript</span> for sure, even if it has a bunch of <a href="https://charlieharvey.org.uk/page/javascript_the_weird_parts" target="_blank">weird quirks</a></li>
+            <li>I am 100% a <span class="emphasis">dog</span> person.</li>
+            <li>I'm a home grown <span class="emphasis">Mississauga</span> kid, and know my way around the GTA.</li>
+            <li></li>
+            <li>oakeaoifaoisefioase</li>
+          </ul>
         </div>
         <button class="close-area text-small round">Close Section</button>
       </div>

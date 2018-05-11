@@ -2,11 +2,9 @@
 
 
     use PHPMailer\PHPMailer\PHPMailer;
-    use PHPMailer\PHPMailer\Exception;
 
     if ( isset( $_POST['sender'] ) ) {
       $path = $_SERVER['DOCUMENT_ROOT'];
-      require $path . '/inc/PHPMailer/Exception.php';
       require $path . '/inc/PHPMailer/PHPMailer.php';
       require $path . '/inc/PHPMailer/SMTP.php';
       require '../etc/mail-config.php';
