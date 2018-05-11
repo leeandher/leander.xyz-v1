@@ -24,7 +24,7 @@
         <div class="center dark">
           <div id="code">403</div>
           <div class="text" id="response">
-            <div id="reponse"> Sorry! You don't have permssion to access that.</div>
+            <p id="reponse"> Sorry! You don't have permission to access that</p><br />
             <a href="/index.php" class="round"><i class="fas fa-arrow-left"></i> Home</a>
           </div>
         </div>
