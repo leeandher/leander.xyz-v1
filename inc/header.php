@@ -7,12 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!--STYLESHEETS-->
-  <!--Font Awesome
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">-->
+  <!--Font Awesome-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
   <!--Site Default-->
   <link rel="stylesheet" type="text/css" href="/resources/css/base.processed.css">
-  
+
   <!--PAGE SPECIFIC STYLESHEET-->
   <?php
     echo '<link rel="stylesheet" type="text/css" href="/resources/css/'.$pageName.'.processed.css">';

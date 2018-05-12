@@ -1,4 +1,4 @@
-<!--FOOTER-->
+<!--FOOTER SECTION-->
 <footer class="section dark">
   <div class="content">
     <div class="subheading">Find me online</div>
@@ -26,8 +26,9 @@
 <!--SCRIPTS-->
 <!--jQuery-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!--Navbar-->
+<!--Navigation Bar-->
 <script src="/inc/js/navbar.js"></script>
+<!--Page Specific-->
 <?php
   echo '<script src="/resources/js/'.$pageName.'.js"></script>';
 ?>
