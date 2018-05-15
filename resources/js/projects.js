@@ -44,8 +44,8 @@ var projectArr = [
     'February 07, 2018',
     "A front-end face that accesses the Wikipedia API to search for results and display in a clean format. Accepts and input and displays the top 20 results.",
     ['HTML5', 'CSS3', 'JavaScript'],
-    ['Bootstrap 4', 'Haml', 'SCSS', 'JQuery', 'Popper.js'],
-    ['String manipulation', 'Live Response'],
+    ['JSON APIs', 'Bootstrap 4', 'Haml', 'SCSS', 'JQuery', 'Popper.js'],
+    ['String Manipulation', 'Live Response'],
     'wikiview'
   ),
   new Project(

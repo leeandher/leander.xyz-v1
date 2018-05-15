@@ -24,8 +24,6 @@
       </div>
     </div>
 
-
-
     <!--SUMMARY SECTION-->
     <div class="section resume-area" id="summary">
       <div class="fold-head light">
@@ -35,26 +33,28 @@
         <div class="resume-info round light text-small flex-group">
           <div class="flex-item" id="prog-qual">
             <h2>Language Overview</h2>
-            <b>Proficienct with:</b>
+            <b>Proficient with:</b>
             <ul>
               <li>HTML <em class="small">(Haml, HTML5)</em></li>
-              <li>CSS <em class="small">(Bootstrap, Flexbox, Responsiveness)</em></li>
-              <li>JavaScript <em class="small">(React, jQuery, AJAX, APIs, Babel)</em></li>
+              <li>CSS <em class="small">(Bootstrap, Keyframes, Responsiveness)</em></li>
+              <li>JavaScript <em class="small">(jQuery, AJAX, JSON APIs, Babel)</em></li>
               <li>PHP <em class="small">(OOP, phpMyAdmin, PDO)</em></li>
               <li>SQL <em class="small">(MS Access, MySQL, PHP Injection)</em></li>
               <li>VBA <em class="small">(MS Excel, MS Access)</em></li>
+              <li>Git <em class="small">(CLI, Bash, GitHub)</em></li>
             </ul>
             <b>Academic Experience with:</b>
             <ul>
               <li>Matlab <em class="small">(Data Visualization, ODEs/PDEs)</em></li>
-              <li>Python <em class="small">(NumPy, Basic Algorithms, Logic)</em></li>
-              <li>Java <em class="small">(OOP. Basic structure and good practices)</em></li>
+              <li>Python <em class="small">(NumPy, Automation, Algorithm Logic)</em></li>
+              <li>Java <em class="small">(OOP. Scope, Structure/Practices)</em></li>
             </ul>
             <b>Ongoing Learning:</b>
             <ul>
-              <li>Git Command Line Interface<em class="small">(Git Bash)</em></li>
               <li>React.js <em class="small">(Redux, Data Visualization)</em></li>
               <li>Node.js <em class="small">(NPM, Replacing PHP)</em></li>
+              <li>Express.js <em class="small">(Implementing with Node.js)</em></li>
+              <li>MongoDB <em class="small">(Using JSON DBs)</em></li>
             </ul>
           </div>
           <div class="flex-item" id="soft-qual">
@@ -119,11 +119,11 @@
               <h2>Data Visualization Certification</h2>
               <div class="item-location"><a href="https://www.freecodecamp.org" target="_blank">FreeCodeCamp.org</a></div>
               <div class="item-date emphasis">May 2018 - Present</div>
-              <div class="item-desc indent"> Another intensive FCC course which covers manipulating data, and implementing more complicated user interfaces. It focuses less so on things like web pages, and templates, and more on web apps and components using SASS, D3 and ReactJS!</div>
+              <div class="item-desc indent"> Another intensive FCC course which covers manipulating data, and implementing more complicated user interfaces. It focuses less so on things like web pages, and templates, and more on web apps and components using SASS, D3 and React.js!</div>
             </div>
             <!--Codecademy React-->
             <div class="resume-item flex-item">
-              <h2>Learn ReactJS Course</h2>
+              <h2>Learn React.js Course</h2>
               <div class="item-location"><a href="https://www.codecademy.com" target="_blank">Codecademy.com</a></div>
               <div class="item-date emphasis">Apr 2018</div>
               <div class="item-desc indent"> An introductory course to using ReactJS which was basic in nature, but coupled with a few textbooks and an online bootcamp, solidified my understanding of the lightweight JavaScript framework.</div>
@@ -151,10 +151,10 @@
             </div>
             <!--React Bootcamp-->
             <div class="resume-item flex-item">
-              <h2>React Bootcamp</h2>
+              <h2>React.js Bootcamp</h2>
               <div class="item-location"><a href="https://www.youtube.com/watch?v=8GXXGJRDMdQ&list=PLqrUy7kON1mfWjiu0GWQhefWSx38v0UGo" target="_blank">YouTube - TylerMcGinnis.com</a></div>
               <div class="item-date emphasis">Apr 2018</div>
-              <div class="item-desc indent">A promotional livestreamed React bootcamp that was held on YouTube walking viewers through a series of concepts, lectures and challenges having to do with ReactJS. It was taught by Tyler McGiniss, professional instructor and Google Developer Expert.</div>
+              <div class="item-desc indent">A promotional livestreamed React bootcamp that was held on YouTube walking viewers through a series of concepts, lectures and challenges having to do with React.js. It was taught by Tyler McGiniss, professional instructor and Google Developer Expert.</div>
             </div>
           </div>
         </div>
@@ -192,7 +192,7 @@
               <li><b>Compiled weekly efficiency reports</b> and statistical summaries of machine productivity</li>
               <li><b>Presented findings and analytics</b> to upper management to identify weak areas for economic improvement</li>
             </ul>
-            <div class="item-desc"><span class="emphasis">Skills Improved: </span>MS Excel, MS Access, MS Visio, Presentation Skills</div>
+            <div class="item-desc"><span class="emphasis">Skills Improved: </span>MS Excel, MS Access, MS Visio, VBA, Presentation Skills</div>
           </div>
         </div>
         <button class="close-area text-small round">Close Section</button>
@@ -217,7 +217,7 @@
               <a class="hide-on-resize" href="../projects/index.php#proj-2" target="_blank"><img src="../resources/images/projects/thumbnails/fuelgauge_thumb.JPG" alt="Pomodoro Clock Thumbnail"/></a>
             </div>
             <div class="subtitle"><span class="light"><i><a href="../projects/index.php" target="_blank">See More</a></i></span></div>
-            <div class="item-desc">Over at <a href="../projects" class="emphasis">Projects</a>, you can see links to live demo projects, and the source code; however; if we're going to get meta, this whole site is another one of my side projects. I love hearing feedback, so feel free to tell me what you think by heading over to my <a href="../#contact" class="emphasis">Contact</a> section!</div>
+            <div class="item-desc">Over at <a href="../projects" class="emphasis">Projects</a>, you can see links to live demo projects, and the source code, however, if we're going to get meta, this whole site is another one of my side projects. I love hearing feedback, so feel free to tell me what you think by heading over to my <a href="../#contact" class="emphasis">Contact</a> section!</div>
           </div>
         </div>
         <button class="close-area text-small round">Close Section</button>
@@ -295,7 +295,7 @@
             <li>My favorite programming lanuage is <span class="emphasis">JavaScript</span> for sure, even if it has a bunch of <a href="https://charlieharvey.org.uk/page/javascript_the_weird_parts" target="_blank">weird quirks</a></li>
             <li>I am 100% a <span class="emphasis">dog</span> person.</li>
             <li>I'm a home grown <span class="emphasis">Mississauga</span> kid, and know my way around the GTA.</li>
-            <li></li>
+            <li>add link to pdf</li>
             <li>oakeaoifaoisefioase</li>
           </ul>
         </div>
@@ -303,8 +303,6 @@
       </div>
     </div>
 
-
-    <!--FOOTER SECTION-->
     <?php
       $path = $_SERVER['DOCUMENT_ROOT'];
       $path .= "/inc/footer.php";

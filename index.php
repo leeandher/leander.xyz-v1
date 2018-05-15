@@ -24,7 +24,7 @@
           <span class="emphasis" id="name">Leander Rodrigues</span>.
           <div id="subtitle">
             I'm an undergrad
-            <span class="emphasis">engineer</span>, and aspiring
+            <span class="emphasis">engineer</span>, and an aspiring
             <span class="emphasis">programmer</span>.
           </div>
         </div>
@@ -130,7 +130,7 @@
           <!--NOTE SECTION-->
           <div class="card light round flex-item">
             <div class="subheading">My Online Notebook</div>
-            <p class="text-small" id="curr-note-summary">It's easy to sit and watch tutorials for hours and think you  grasp a concept just because you've heard someone else explain it, but from my experience that's never true. Explaining something in your own words forces you to understand it, in order to articulate it properly. Whenever I feel as though something I'm learning something I'll need for future reference or maybe a difficult topic, I record notes in Markdown. These are made both for my own self-improvement, and anyone else looking for clear and concise explanations. The Check out the link below to view all those sweet, simple notes.</p>
+            <p class="text-small" id="curr-note-summary">It's easy to sit and watch tutorials for hours and think you  grasp a concept just because you've heard someone else explain it, but from my experience that's never true. Explaining something in your own words forces you to understand it, in order to articulate it properly. Whenever I feel as though something I'm learning something I'll need for future reference or maybe a difficult topic, I record notes in Markdown. These are made both for my own self-improvement, and anyone else looking for clear and concise explanations. Check out the link below to view all those sweet, simple notes.</p>
             <a class="text-small light round" target="_blank" href="https://github.com/leeandher/programming-notes">Read my <b>Notes</b></a>
           </div>
         </div>

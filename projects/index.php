@@ -7,12 +7,12 @@
     $path = $_SERVER['DOCUMENT_ROOT'];
     $path .= "/inc/header.php";
     require_once($path);
-  ?>  
+  ?>
 
 
   <body>
     <!--NAVIGATION-->
-    <?php 
+    <?php
       $path = $_SERVER['DOCUMENT_ROOT'];
       $path .= "/inc/navbar.html";
       require_once($path);
@@ -216,7 +216,7 @@
 
 
     <!--FOOTER SECTION-->
-    <?php 
+    <?php
       $path = $_SERVER['DOCUMENT_ROOT'];
       $path .= "/inc/footer.php";
       require_once($path);
