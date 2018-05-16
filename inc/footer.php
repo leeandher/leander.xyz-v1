@@ -4,8 +4,9 @@
     <div class="subheading">Find me online</div>
     <div id="links">
       <a class="fab fa-github" href="https://github.com/leeandher"></a>
-      <a class="far fa-envelope" href="mailto:me@leander.xyz"></a>
+      <a class="fas fa-heading" href="https://www.hackerrank.com/leeandher"></a>
       <a class="fab fa-linkedin-in" href="https://www.linkedin.com/in/leander-rodrigues"></a>
+      <a class="far fa-envelope" href="mailto:me@leander.xyz"></a>
       <a class="fab fa-codepen" href="https://codepen.io/leeandher"></a>
       <a class="fab fa-free-code-camp" href="https://www.freecodecamp.org/leeandher"></a>
     </div>

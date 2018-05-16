@@ -25,6 +25,11 @@
     </div>
 
     <!--SUMMARY SECTION-->
+    <div class="section dark" id="preface">
+      <div class="content">
+        <p class="text-small"> Welcome to my resume page! To navigate, click any header to see the information inside. There is also a summarized, printable, <a class="emphasis" href="Leander Rodrigues - Resume.pdf" target="_blank">PDF version available here</a>. If you have any questions, comments or just like what you see, be sure to let me know through <a class="emphasis" href="../#home">my contact form</a>.</p>
+      </div>
+    </div>
     <div class="section resume-area" id="summary">
       <div class="fold-head light">
         <div class="wrap">Summary of Qualifications</div>
@@ -274,7 +279,7 @@
           <hr />
           <div class="resume-item">
             <h2>10 Days of JS - 5 Stars</h2>
-            <div class="item-location"><a href="https://uwaterloo.ca/" target="_blank">HackerRank.com</a></div>
+            <div class="item-location"><a href="https://hackerrank.com/leeandher" target="_blank">HackerRank.com</a></div>
             <div class="item-date emphasis">Apr 2018</div>
             <div class="item-desc">Completed all 25 challenges in the skill umbrella to improve my JavaScript capabilities</div>
           </div>
@@ -292,11 +297,11 @@
         <div class="resume-info round light text-small">
           <ul>
             <li>People usually don't believe me on this, but this website has <span class="emphasis">no Bootstrap or copy/paste from Bootstrap files</span>; the responsiveness is all me!</li>
-            <li>My favorite programming lanuage is <span class="emphasis">JavaScript</span> for sure, even if it has a bunch of <a href="https://charlieharvey.org.uk/page/javascript_the_weird_parts" target="_blank">weird quirks</a></li>
+            <li>My preferred text-editor right now is <a href="https://atom.io" target="_blank" class="emphasis">Atom</a> by GitHub, mainly because of the built-in Markdown previewing, Git integration, and entensive number of open-source packages (like SASS Compilers, and Auto-Prefixers)</li>
+            <li>My favorite programming lanuage is <span class="emphasis">JavaScript</span> for sure, even if it has a bunch of <a class="emphasis" href="https://charlieharvey.org.uk/page/javascript_the_weird_parts" target="_blank">weird quirks</a></li>
+            <li>I'm a total <span class="emphasis">podcast junkie</span>, I'm subscribed to about 25 as of this moment.</li>
             <li>I am 100% a <span class="emphasis">dog</span> person.</li>
-            <li>I'm a home grown <span class="emphasis">Mississauga</span> kid, and know my way around the GTA.</li>
-            <li>add link to pdf</li>
-            <li>oakeaoifaoisefioase</li>
+            <li>I'd say I have a good <span class="emphasis">sense of humour</span>. Check out <a class="emphasis" href="../joke/index.html" target="_blank">v0.00001 of this site's homepage</a> that I played around with early January 2018, and see for yourself.</li>
           </ul>
         </div>
         <button class="close-area text-small round">Close Section</button>

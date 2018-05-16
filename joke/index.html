@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>leander.xyz - v0.00001</title>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Monda'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+  <!--Navigation Bar-->
+<nav class="navbar navbar-expand-md fixed-top" role="navigation">
+  <!--Branding-->
+  <a class="navbar-brand" onclick='$("html, body").animate({scrollTop: 0},"slow");' href=#home>
+    <!--Logo-->
+    <img src="https://www.dropbox.com/s/ymhxosc22ssey13/portfolio_logo.png?raw=1" width="30" height="30" alt="">
+  </a>
+  <!--Hamburger-->
+  <div class="goBars" onclick="toggleNav();" id="cell" data-toggle="collapse" data-target="#collapseNav">
+    <div id="bar1"></div>
+    <div id="bar2"></div>
+    <div id="bar3"></div>
+  </div>
+  <!--Menu-->
+  <div class="collapse navbar-collapse justify-content-end" id="collapseNav">
+    <ul class="navbar-nav nav-pills">
+      <li class="nav-item"><a href=#home class="nav-link">Home</a></li>
+      <li class="nav-item"><a href=#aboutMe class="nav-link">About Me</a></li>
+      <li class="nav-item"><a href=#portfolio class="nav-link">Portfolio</a></li>
+      <li class="nav-item"><a href=#contact class="nav-link">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!--Home Section-->
+<div class="container-fluid" id="home">
+  <p class="title">
+    Hi, My name is <span class="notice">Leander Rodrigues</span>.
+    <br> I'm <span class="notice">mediocre</span> at some things, and <span class="notice">sh*tty</span> at the rest.
+  </p>
+</div>
+<!--About Me Section-->
+<div class="container-fluid" id="aboutMe">
+  <p class="subtitle">Look at me</p>
+  <p class="text indent">
+    If I'm gonna be honest, there isn't much that's special or unique about me that isn't gonna make you sad. I can barely do math and science stuff, I get sad when I get confused, and I haven't eaten a vegetable in like a month. If I had to describe myself in one word, it'd be:  mistake, but not in like a sad way, more of like a, "oh look honey, tax benefits" kinda way.
+  </p>
+  <p class="text indent">
+  On the bright side, I'm supposed to be having the time of my life as a go-getting college student so that's pretty lit I guess. This is the "best time of my life", so that's cool, but only if I don't think about it too much, because then I get sad. I'm stuDYING Nanotechnology Engineering at the University of Waterloo and it's just as fun as it sounds! I hate it but they'll eventually get me a job so that's cool.
+  </p>
+<p class="text indent">
+  I guess I should like talk about my hobbies or whatever. I'm really into movies and video games, those are probably the big two. I'm not really unique or special, I'm kinda like the general gross college boy copy pasted into a short, fatter, disfunctional human being. That being said, I'll kick your ass at Titanfall.
+  </p>
+<!--   <p class="text indent">
+    I found a song that I feel like really summarizes everything I'm trying to communicate to you. I'm going to say ahead of time, if you don't enjoy it then I'm sorry for existing. I'll do my best.
+  </p>
+  <button class="btn btn-round fa fa-lg fa-play toggleSong"></button> -->
+</div>
+<!--Portfolio Section-->
+<div class="container-fluid" id="portfolio">
+  <p class="subtitle">Look at my sh*t</p>
+  <p class="text-center">
+    Here you can see a showcase of some of my previous work!<br>If it's empty, it means I gave up, and it'll never be completed.<br>It's society's fault, not mine, so don't try to convince me.
+  </p>
+  <div class="row">
+    <div class="col-md">
+      <strong>My First Project</strong>
+      <p>This is my default description for my project, or lack there of.</p>
+      <small>Uses: HTML5, CSS3, JavaScript</small>
+    </div>
+    <div class="col-md">
+      <img src="https://goo.gl/iMUJNG" alt="">
+    </div>
+    <div class="col-md">
+      <img src="https://goo.gl/iMUJNG" alt="">
+    </div>
+    <div class="col-md">
+      <strong>My Second Project</strong>
+      <p>This is my default description for my project, or lack there of.</p>
+      <small>Uses: HTML5, CSS3, JavaScript</small>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md">
+      <strong>My Third Project</strong>
+      <p>This is my default description for my project, or lack there of.</p>
+      <small>Uses: HTML5, CSS3, JavaScript</small>
+    </div>
+    <div class="col-md">
+      <img src="https://goo.gl/iMUJNG" alt="">
+    </div>
+    <div class="col-md">
+      <img src="https://goo.gl/iMUJNG" alt="">
+    </div>
+    <div class="col-md">
+      <strong>My Fourth Project</strong>
+      <p>This is my default description for my project, or lack there of.</p>
+      <small>Uses: HTML5, CSS3, JavaScript</small>
+    </div>
+  </div>
+</div>
+<!--Contact Section-->
+<div class="container-fluid" id="contact">
+  <p class="subtitle">Reach out fam</p>
+  <p class="text indent">If you want to get in touch, don't be afraid. I've never bit anyone that didn't deserve it. Just leave me your info below and I'll geft back to you whenever I decide to put down the controller and/or close my 4 tabs of Reddit, 6 tabs of <del>porn</del> Christian Rock, and my
+    2 bookmarked tabs: Netflix and wikihow.com/Talk-to-a-Girl (Spoiler: it doesn't work and Clifford Blossom killed his son).
+  </p>
+  <br>
+  <form action="">
+    <div class="form-group">
+      <label class="text">Name</label>
+      <input class="form-control" type="text" placeholder="e.g. YourNameHere Rodrigues">
+    </div>
+    <div class="form-group">
+      <label class="text">Email address:</label>
+      <input class="form-control" type="email" placeholder="ThisIsAn@example.com">
+    </div>
+    <div class="form-group">
+      <label class="text">Subject:</label>
+      <input class="form-control" type="text" placeholder="I'd like to leave you a compliment">
+    </div>
+    <div class="form-group">
+      <label class="text">Message:</label>
+      <textarea class="form-control" placeholder="Your color scheme is dope. Let's be friends, I hear you need some of those. Your craiglist ad offered pizza. You smell. You have no sense of style past 2004.  Plaid is dead. On the bright side, you are in the middle of nowhere so none of your friends have to feel bad for not visiting anymore. He He He. Still though, dope color scheme."
+        rows="5"></textarea>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <button class="btn btn-contact" type="submit">Send
+      </button>
+      </div>
+      <div class="col-md-6">
+        <button class="btn btn-contact" type="reset">Clear
+      </button>
+      </div>
+    </div>
+  </form>
+</div>
+<!--Footer Section-->
+<div class="container-fluid" id="footer">
+  <p>Feel free to stalk me below</p>
+  <div class="row">
+    <div class="col-md">
+      <p>the boring stuff</p>
+      <button class="btn btn-round fa fa-lg fa-envelope-o">
+      </button>
+      <button class="btn btn-round fa fa-lg fa-linkedin">
+      </button>
+      <button class="btn btn-round fa fa-lg fa-github">
+      </button>
+      <button class="btn btn-round fa fa-lg fa-codepen">
+      </button>
+      <button class="btn btn-round fa fa-lg fa-free-code-camp">
+      </button>
+    </div>
+    <div class="col-md">
+      <p>the less boring stuff</p>
+      <button class="btn btn-round fa fa-lg fa-facebook">
+      </button>
+      <button class="btn btn-round fa fa-lg fa-twitter">
+      </button>
+      <button class="btn btn-round fa fa-lg fa-snapchat-ghost" data-toggle="modal" data-target="#sc-modal">
+      </button>
+<!--       <div class="modal fade" tabindex="-1" id="sc-modal">
+        <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-body">
+          <img src="https://www.dropbox.com/s/ottzkbdj6tz6hct/snapcode.jpg?raw=1" alt="my snapcode"/>
+        </div>
+        </div>
+        </div>
+      </div> -->
+      <button class="btn btn-round fa fa-lg fa-instagram">
+      </button>
+      <button class="btn btn-round fa fa-lg fa-steam">
+      </button>
+    </div>
+  </div>
+  <p class="align-bottom" style="padding-top: 100px;">
+    Written and Coded by: <a class="notice" href=#>Leander Rodrigues</a>
+  <p>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+
+
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

@@ -168,9 +168,12 @@
   left: 7.5px;
 }
 
-#intention .major {
-  font-style: italic;
-  font-weight: var(--bold);
+#preface .content {
+  max-width: 750px;
+}
+
+#preface .content p {
+  text-align: center;
 }
 
 #summary .flex-group .flex-item {
@@ -192,6 +195,11 @@
   -webkit-box-flex: 4;
   -ms-flex: 4;
   flex: 4;
+}
+
+#intention .major {
+  font-style: italic;
+  font-weight: var(--bold);
 }
 
 #projects .thumbnail-wrapper {

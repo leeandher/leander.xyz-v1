@@ -141,9 +141,13 @@
   }
 }
 
-#intention .major {
-  font-style: italic;
-  font-weight: var(--bold);
+#preface {
+  .content {
+    max-width: 750px;
+    p {
+      text-align: center;
+    }
+  }
 }
 
 #summary {
@@ -153,6 +157,11 @@
   ul {list-style-position: inside}
   #prog-qual {-webkit-box-flex: 3;-ms-flex: 3;flex: 3}
   #soft-qual {-webkit-box-flex: 4;-ms-flex: 4;flex: 4}
+}
+
+#intention .major {
+  font-style: italic;
+  font-weight: var(--bold);
 }
 
 #projects {
