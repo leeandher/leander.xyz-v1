@@ -281,7 +281,7 @@
             <h2>10 Days of JS - 5 Stars</h2>
             <div class="item-location"><a href="https://hackerrank.com/leeandher" target="_blank">HackerRank.com</a></div>
             <div class="item-date emphasis">Apr 2018</div>
-            <div class="item-desc">Completed all 25 challenges in the skill umbrella to improve my JavaScript capabilities</div>
+            <div class="item-desc">Completed all 25 challenges in the skill umbrella to improve my JavaScript capabilities.</div>
           </div>
         </div>
         <button class="close-area text-small round">Close Section</button>
