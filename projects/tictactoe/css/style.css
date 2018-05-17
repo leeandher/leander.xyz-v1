@@ -2,7 +2,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 body {
@@ -38,6 +39,7 @@ body {
   bottom: 0;
   width: 10%;
   border-left: 1px solid #ebebeb;
+  background-color: #191919;
 }
 .select .btn-float.enable {
   border-left: 1px solid #191919;
@@ -63,15 +65,25 @@ body {
 .select input[type="text"] {
   padding: 6px 8px;
   width: 70%;
-  background-color: transparent;
+  background-color: #191919;
   outline: none;
   border: 0;
+  -webkit-transition: all 0.25s;
   transition: all 0.25s;
   color: #ebebeb;
 }
 .select input[type="text"]:active, .select input[type="text"]:focus {
   background: #ebebeb;
   color: #191919;
+}
+.select input[type="text"]::-webkit-input-placeholder {
+  opacity: 0.7;
+}
+.select input[type="text"]:-ms-input-placeholder {
+  opacity: 0.7;
+}
+.select input[type="text"]::-ms-input-placeholder {
+  opacity: 0.7;
 }
 .select input[type="text"]::placeholder {
   opacity: 0.7;
@@ -83,6 +95,7 @@ body {
   background-color: transparent;
   color: #ebebeb;
   border: 2px solid #ebebeb;
+  -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }
 .btn.enable, .btn:focus {
@@ -109,6 +122,7 @@ body {
 .game .display {
   font-size: 100%;
   padding: 20px;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 .game .board {
@@ -121,11 +135,14 @@ body {
   border-collapse: separate;
   border-spacing: 10px;
   background-color: #ebebeb;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: -10px;
 }
 .game .board .gameover {
   display: none;
+  -webkit-transition: all 1s;
   transition: all 1s;
   opacity: 0;
   height: 100%;
@@ -139,6 +156,7 @@ body {
 }
 
 .nought {
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   height: 0;
   width: 0;
@@ -153,6 +171,7 @@ body {
 }
 
 .cross {
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   position: relative;
   opacity: 0;
@@ -164,17 +183,21 @@ body {
   background-color: inherit;
 }
 .cross .cross-bar.c1 {
-  transform: translate(-50%, -50%) rotate(45deg);
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
 }
 .cross .cross-bar.c2 {
-  transform: translate(-50%, -50%) rotate(135deg);
+  -webkit-transform: translate(-50%, -50%) rotate(135deg);
+          transform: translate(-50%, -50%) rotate(135deg);
 }
 .cross.appear {
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
   opacity: 1;
 }
 
 .cell {
+  -webkit-transition: all 1s;
   transition: all 1s;
   background-color: #191919;
   text-align: center;

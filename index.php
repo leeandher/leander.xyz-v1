@@ -52,11 +52,10 @@
           </div>
           <!--DESCRIPTION-->
           <p>
-          <code>Hello world</code>, my name is Leander Rodrigues and this is my landing page! I grew up in the suburbs of Mississauga ON, but left home in 2016, after my acceptance to the <em>University of Waterloo</em>. I'm in the second year/fourth term of my <em>Nanotechnology Engineering</em> degree and trying to balance those responsibilities with my obsession for computer programming. I am constantly on the look out for new languages, frameworks and libraries to experiment with and try to take on more projects to expand my horizon. Just for the record, since I started coding, JavaScript has definitely been my favourite language, even if it has <a href="http://blog.mgechev.com/2013/02/22/javascript-the-weird-parts/" target="_blank">it's ugly bits</a>.
+          <code>Hello world</code>, my name is Leander Rodrigues and you've stumbled upon my landing page, so welcome! Take your time to peruse my work and stay a while. So a little bit about me, I'm currently enrolled at the <em>University of Waterloo</em>, but I grew up in suburbs of Mississauga, Ontario. I was accepted into this newfangled program, made for only the coolest of cats: <em>Nanotechnology Engineering</em>. It seemed like an obvious choice for someone like yours truly, since it sounds fancy, and I wanted to work with the latest and greatest in tech. As time goes by (I'm finishing up my second year!), it has definitely gone more towards the 'nano' and less towards the 'technology', so I figured now would be a good a time as any to pivot.</p><br />
+          <p>This site, and all its shiny buttons, animations, and links are a testament to my efforts to <em>break into the programmer scene</em>. My determination coupled with countless online resources has let me do some really cool stuff that I'd love for you (whoever you may be) to see (because it'll only grow my massive ego). While my education background is anything but <em> traditional</em>, I choose to embrace that weirdness, and redirect it into my work.</p>
           </p><br />
-          <p>
-          In my down time, you'll pretty much always catch me with headphones on, either listening to 24/7 background music (for coding), some podcasts I love (for idle time), or my friends screaming in my ears (for gaming). If I'm not going through a mountain of homework, working on a self-imposed project, or talking to my friends online, I'm probably asleep or dead.
-        </p>
+          <p>On the lighter side, I'm a pretty cool guy (if I do say so myself) outside of work. In my down time, you'll pretty much always catch me with headphones on. I'm either listening to tunez (mandatory letter  'z'), podcasts, or my friends scream at me in Discord. If you need someone to game with, someone to rip into bad movies with, or just someone to explain why dogs > cats, I'm definitely your guy. Aside from thaat, i f I'm not going through a mountain of homework, working on a self-imposed project, or talking to/arguing with my friends online, It's pretty safe to say I'm asleep or dead.</p>
         </div>
         <div class="subheading">Experience with</div>
         <!--TECH ICONS-->
@@ -70,24 +69,24 @@
           <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
             <img class="round" src="/resources/images/about/javascript.png" alt="JavaScript Logo"/>
           </a>
-          <a href="https://getbootstrap.com/" target="_blank">
-            <img class="round" src="/resources/images/about/bootstrap4.png" alt="Bootstrap Logo"/>
+          <a href="https://reactjs.org/" target="_blank">
+            <img class="round" src="/resources/images/about/reactjs.png" alt="React.js Logo"/>
+          </a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX" target="_blank">
+            <img class="round" src="/resources/images/about/ajax.png" alt="AJAX Logo"/>
           </a>
           <a href="http://www.php.net/" target="_blank">
             <img class="round" src="/resources/images/about/php.png" alt="PHP Logo"/>
+          </a>
+          <a href="https://getbootstrap.com/" target="_blank">
+            <img class="round" src="/resources/images/about/bootstrap4.png" alt="Bootstrap Logo"/>
           </a>
           <!-- NODE ICON, FOR WHEN I'M READY
           <a href="https://nodejs.org/en/" target="_blank">
             <img class="round" src="https://leander.xyz/resources/images/about/nodejs.png" alt="Node.js Logo"/>
           </a>-->
-          <a href="https://reactjs.org/" target="_blank">
-            <img class="round" src="/resources/images/about/reactjs.png" alt="ReactJS Logo"/>
-          </a>
           <a href="https://jquery.com/" target="_blank">
             <img class="round" src="/resources/images/about/jquery.png" alt="JQuery Logo"/>
-          </a>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX" target="_blank">
-            <img class="round" src="/resources/images/about/ajax.png" alt="AJAX Logo"/>
           </a>
           <a href="https://docs.microsoft.com/en-us/sql/" target="_blank">
             <img class="round" src="/resources/images/about/sql.png" alt="SQL Logo"/>
@@ -118,19 +117,19 @@
         <!--CURRENT PROJECT-->
         <div class="card light round flex-item" id="curr-proj">
           <div class="subheading">Explore the MERN Tech Stack</div>
-          <p class="text-small" id="curr-proj-summary">As of now, all of my projects have dealt almost entirely with client-side HTML5, CSS3, and JS, with whatever libraries I deemed appropriate. If I plan on developping more robust and functional web apps, I want to explore the MERN tech stack: <b>MongoDB</b>, <b>Express</b>, <b>React.js</b> and <b>Node.js</b>. This will be my first attempt with fullstack JavaScript, but I can already see the appeal in getting rid of PHP and MySQL from my experience developping this site. Regardless, I have a lot on my plate, but what's life without a big project or two.</p>
+          <p class="text-small" id="curr-proj-summary">So far, most of my web app projects are exclusively client-side (HTML, CSS, JS), with help from some open-source libraries. If I plan on developing more robust, complicated, and fancy web apps, I want to try exploring the MERN tech stack: <b>MongoDB</b>, <b>Express</b>, <b>React.js</b> and <b>Node.js</b>. This will be my first attempt with fullstack JavaScript, but from designing this site, I can already see the appeal in replacing PHP and MySQL. Regardless, I have a lot on my plate, but what's life without a big project or two?</p>
         </div>
         <div class="flex-group">
           <!--BLOG SECTION-->
           <div class="card light round flex-item">
             <div class="subheading">My Personal Blog</div>
-            <p class="text-small" id="curr-blog-summary">In my opinion, I think everyone should find and claim their corner of the internet. Sure, you can make endless facebook posts, twitter updates and all the rest, but what's the harm in being custom? I decided that I wanted to have my own blog for posting to my heart's content on my own accord. I am by no means a professional writer, but I'd like to think I have some interesting stuff to say. While most of the updates are learning, code or progress related, I plan on adding some fun stuff in the near future. I mean, wouldn't you love to know what I thought of Infinity War? Anyway, the link below will take you to my blog page to get nice little snapshot of my life.</p>
+            <p class="text-small" id="curr-blog-summary">In my opinion, I think everyone should claim their personal little corner of the internet. Sure, you can make some facebook posts, twitter updates, and snapchat stories that no one will remember, but what's the harm in being unique? I decided that if I wanted to publish my thoughts, I was going to do it in the most 'me' way possible: a custom blog. I am by no means a professional writer (yet), but I'd like to think I have some interesting stuff to say. So far, most of the updates are programming/project related, but I plan on adding some fun stuff in the near future! I mean, who wouldn't want to hear videogame and movie reviews from some random college kid on the internet? Anyway, the link below will take you to my blog page to get nice little snapshot of my life.</p>
             <a class="text-small light round" href="/blog/index.php">See my <b>Blog</b></a>
           </div>
           <!--NOTE SECTION-->
           <div class="card light round flex-item">
             <div class="subheading">My Online Notebook</div>
-            <p class="text-small" id="curr-note-summary">It's easy to sit and watch tutorials for hours and think you  grasp a concept just because you've heard someone else explain it, but from my experience that's never true. Explaining something in your own words forces you to understand it, in order to articulate it properly. Whenever I feel as though something I'm learning something I'll need for future reference or maybe a difficult topic, I record notes in Markdown. These are made both for my own self-improvement, and anyone else looking for clear and concise explanations. Check out the link below to view all those sweet, simple notes.</p>
+            <p class="text-small" id="curr-note-summary">From my experience, watching tutorials or reading through someone else's code to try and learn something usually backfires. I sit there, watching a smart guy explain his smart thing, and my monkey brain thinks 'Oh, so it's THAT easy', before I stare blankly at a text-editor for an hour. Instead, I've decided to force myself to <em>really understand</em> what I watch/read by writing some Notes (in Markdown). If I think something is difficult, or just critically important, I try to <em> make a note of it </em> (hehe). There's not much in terms of broad topics right now, but I plan on writing some more in the near future. These notes are written casually and mainly directed towards beginners, but hey, I don't judge. The link below will take you to my GitHub repository for all those sweet, simple, notes.</p>
             <a class="text-small light round" target="_blank" href="https://github.com/leeandher/programming-notes">Read my <b>Notes</b></a>
           </div>
         </div>

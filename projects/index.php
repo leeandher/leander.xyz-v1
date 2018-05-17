@@ -29,9 +29,9 @@
     <div class="section light" id="preface">
       <div class="content">
         <div class="subheading">Intention</div>
-        <p class="text-small">Welcome to my project dashboard! Here you can see a quick snapshot of each of my projects sorted from oldest to most recent ascending.</p>
-        <p class="text-small">Just a heads up, keep in mind that as you get further away from the present, you will see more and more poor code structure, and practices, which I have left for evidence of growth. I still have a lot to learn and improve upon, even in my most recent work.</p>
-        <p class="text-small">While I don't regret showcasing the outdated ugly, spaghetti code, I do remind you that it is not representative of my current abilites.</p>
+        <p class="text-small">Welcome to my project dashboard! Here you can see an archive of all the programming projects that I've completed. They're sorted by newest to oldest descending.</p>
+        <p class="text-small">These projects are all functional, but some may have poorer, uglier code than others. This is just so that in the long run, I have concrete evidence of my growth as a programmer and I can look back on some of the source code and cringe in the future. Even now, I still have a lot to improve upon, but I guess I'm just going through my 'awkward teenage years' in my coding career.</p>
+        <p class="text-small">If you want to get a feel for my coding style, the most recent projects, and this site's source code, are far more representative than anything else. Other than that, take a look, laugh a bit (hopefully), and <a style="text-decoration: underline var(--accent)" href="../index.php#contact">send me some feedback</a> if you notice something I could improve!</p>
       </div>
     </div>
 
