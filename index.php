@@ -72,6 +72,9 @@
           <a href="https://reactjs.org/" target="_blank">
             <img class="round" src="/resources/images/about/reactjs.png" alt="React.js Logo"/>
           </a>
+          <a href="https://git-scm.com/" target="_blank">
+            <img class="round" src="/resources/images/about/git.png" alt="Git Logo"/>
+          </a>
           <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX" target="_blank">
             <img class="round" src="/resources/images/about/ajax.png" alt="AJAX Logo"/>
           </a>
