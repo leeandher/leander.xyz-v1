@@ -30,7 +30,7 @@
       <div class="content">
         <div class="subheading">Intention</div>
         <p class="text-small">Welcome to my project dashboard! Here you can see an archive of all the programming projects that I've completed. They're sorted by newest to oldest descending.</p>
-        <p class="text-small">These projects are all functional, but some may have poorer, uglier code than others. This is just so that in the long run, I have concrete evidence of my growth as a programmer and I can look back on some of the source code and cringe in the future. Even now, I still have a lot to improve upon, but I guess I'm just going through my 'awkward teenage years' in my coding career.</p>
+        <p class="text-small">These projects are all functional, but some may have poorer, uglier code than others. This is just so that in the long run, I have concrete evidence of my growth as a programmer. Plus, I can look back on some of the source code and cringe at what I decided was 'good code'. Even now, I still have a lot to improve upon, but I guess I'm just going through my 'awkward teenage years' in my coding career.</p>
         <p class="text-small">If you want to get a feel for my coding style, the most recent projects, and this site's source code, are far more representative than anything else. Both live demo links and source code are available for each project. Other than that, take a look, laugh a bit (hopefully), and <a style="text-decoration: underline var(--accent)" href="../index.php#contact">send me some feedback</a> if you notice something I could improve!</p>
       </div>
     </div>
