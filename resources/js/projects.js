@@ -60,7 +60,7 @@ var projectArr = [
   new Project(
     'Twitch.tv Stream Client',
     'February 15, 2018',
-    "Videogame Livestreaming is the new hotness. If you want to stay up-to-date with all your favourite streamers, this Twitch.tv client I developed is going to be your best friend. It grabs a bunch of useful information about the streamer's current status (from the Twitch.tv API) and puts it all in one convenient dashboard. Add, sort, and filter dynamically to your heart's content. GLHF!",
+    "Videogame livestreaming is the new hotness. If you want to stay up-to-date with all your favourite streamers, this Twitch.tv client I developed is going to be your best friend. It grabs a bunch of useful information about the streamer's current status (from the Twitch.tv API) and puts it all in one convenient dashboard. Add, sort, and filter dynamically to your heart's content. GLHF!",
     ['HTML5', 'CSS3', 'JavaScript'],
     ['Bootstrap 4', 'Haml', 'SCSS', 'JQuery'],
     ['JSON APIs', 'AJAX', 'Commercial APIs', 'Live Response'],
@@ -78,7 +78,7 @@ var projectArr = [
   new Project(
     'Pomodoro Clock',
     'March 12, 2018',
-    "If you have trouble staying productive, one of the most common recommendations is to try the Pomodoro Technique. You specify break, and work timers to regulate the time you spend on <i>Facebook</i> against the time you spend with your <i>face in the books</i>. Decide your own times, and click start to see a stylized productivity fuel gauge with depletes and refills endlessly. Finally a way to write that book you keep talking about.",
+    "If you have trouble staying productive, one of the most common recommendations is to try the Pomodoro Technique. You specify break, and work timers to regulate the time you spend on <i>Facebook</i> against the time you spend with your <i>face in the books</i>. Decide your own times, and click start to see a stylized productivity fuel gauge which depletes and refills endlessly. Finally a way to write that book you keep talking about.",
     ['HTML5', 'CSS3', 'JavaScript'],
     ['Bootstrap 4', 'Haml', 'SCSS', 'JQuery'],
     ['JS Timing Functions'],
@@ -87,7 +87,7 @@ var projectArr = [
   new Project(
     'Simon Game',
     'March 15, 2018',
-    "Back in 1978, Milton Bradley distributed this electronic memory game to distract children and give their parents some breathing room. This faithful re-creation of said game, has all the fun features of the original plus my own <i>spin</i> on things (The joke is that one of my features is spin-mode). Turning on your sound helps quite a bit, and if you manage to get to 20, Congratulations! Send me a link to a screenshot and I'll comment your name into the source code.",
+    "Back in 1978, Milton Bradley distributed this electronic memory game to distract children and give their parents some breathing room. This faithful re-creation of said game, has all the fun features of the original plus my own <i>spin</i> on things (the joke is that one of my features is spin-mode). Turning on your sound helps quite a bit, and if you manage to get to 20, congratulations! Send me a link to a screenshot and I'll comment your name into the source code.",
     ['HTML5', 'CSS3', 'JavaScript'],
     ['Bootstrap 4', 'Haml', 'SCSS', 'JQuery'],
     ['Array Manipulation','Web Audio API'],
@@ -96,7 +96,7 @@ var projectArr = [
   new Project(
     'Tic-Tac-Toe',
     'March 21, 2018',
-    "It's time to grab a pal and showdown in the greatest strategy game of 1300 BCE. If you don't have a partner, I've got you covered: AI. This implementation of Tic-Tac-Toe (Naughts and Crosses, if you prefer) allows for both Player vs. Player and Player vs. AI. My AI even has difficulty settings, for you to hone your TTT Skills, however, avoid the 'Impossible' difficulty, unless you wan't TacTic Bot to show you how Terminator should have ended.",
+    "It's time to grab a pal and showdown in the greatest strategy game of 1300 BCE. If you don't have a partner, I've got you covered: AI. This implementation of Tic-Tac-Toe (Naughts and Crosses, if you prefer) allows for both Player vs. Player and Player vs. AI. My AI even has difficulty settings, for you to hone your TTT Skills, however, avoid the 'Impossible' difficulty, unless you want TacTic Bot to show you how Terminator should have ended.",
     ['HTML5', 'CSS3', 'JavaScript'],
     ['Bootstrap 4', 'Haml', 'SCSS', 'JQuery'],
     ['AI Algorithmic Logic'],
