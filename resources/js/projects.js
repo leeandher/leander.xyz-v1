@@ -42,7 +42,7 @@ var projectArr = [
   new Project(
     'Wikipedia Viewer',
     'February 07, 2018',
-    "Even though Wikipedia might be humanities greatest collaborations (excluding Space Jam (1996)), I still think the website itself could use some sprucing up. This viewer app accesses the Wikipedia Query API to display upto 20 results for a cleaner, refined viewing experience. Click on any of your search results for even more information.",
+    "Even though Wikipedia might be humanities greatest collaborations (excluding Space Jam (1996)), I still think the website itself could use some sprucing up. This viewer app accesses the Wikipedia Query API to display up to 20 results for a cleaner, and more refined viewing experience. Click on any of your search results for even more information!",
     ['HTML5', 'CSS3', 'JavaScript'],
     ['JSON APIs', 'Bootstrap 4', 'Haml', 'SCSS', 'JQuery', 'Popper.js'],
     ['String Manipulation', 'Live API Call/Response'],
@@ -51,7 +51,7 @@ var projectArr = [
   new Project(
     'Local Weather App',
     'February 10, 2018',
-    "Let's be honest, the outdoors is a scary, unforgiving place. If you're like me, you want to know what it's like out there without having to risk a lightning strike, heat stroke, or social interaction. That's why I build this Weather App, which calls upon the OpenWeatherMap API to tell you about that horrible place we call 'outside'. <br /><br /> <b>NOTE:</b> The API is routed through freeCodeCamp.org to avoid Authentication, and can sometimes return incorrect data. A couple 'refreshes' usually does the trick.",
+    "Let's be honest, the outdoors is a scary, unforgiving place. If you're like me, you want to know what it's like out there without having to risk a lightning strike, heat stroke, or social interaction. That's why I built this Weather App. It calls upon the OpenWeatherMap API to tell you about that horrible place we call 'outside'. <br /><br /> <b>NOTE:</b> The API is routed through freeCodeCamp.org to avoid authentication, and can sometimes return incorrect data. A couple 'refreshes' usually does the trick.",
     ['HTML5', 'CSS3', 'JavaScript'],
     ['JSON APIs', 'Bootstrap 4', 'Haml', 'SCSS', 'JQuery'],
     ['HTML5 Geolocation', 'Data Management'],
@@ -60,7 +60,7 @@ var projectArr = [
   new Project(
     'Twitch.tv Stream Client',
     'February 15, 2018',
-    "Videogame livestreaming is the new hotness. If you want to stay up-to-date with all your favourite streamers, this Twitch.tv client I developed is going to be your best friend. It grabs a bunch of useful information about the streamer's current status (from the Twitch.tv API) and puts it all in one convenient dashboard. Add, sort, and filter dynamically to your heart's content. GLHF!",
+    "Videogame livestreaming is the new hotness. If you want to stay up-to-date with all your favourite streamers, this Twitch.tv client I developed is going to be your best friend. It grabs a bunch of useful information about the streamer's current status (from the Twitch.tv API) and puts it all in one convenient dashboard. Dynamically Add, sort, and filter to your heart's content. GLHF!",
     ['HTML5', 'CSS3', 'JavaScript'],
     ['Bootstrap 4', 'Haml', 'SCSS', 'JQuery'],
     ['JSON APIs', 'AJAX', 'Commercial APIs', 'Live Response'],
@@ -78,7 +78,7 @@ var projectArr = [
   new Project(
     'Pomodoro Clock',
     'March 12, 2018',
-    "If you have trouble staying productive, one of the most common recommendations is to try the Pomodoro Technique. You specify break, and work timers to regulate the time you spend on <i>Facebook</i> against the time you spend with your <i>face in the books</i>. Decide your own times, and click start to see a stylized productivity fuel gauge which depletes and refills endlessly. Finally a way to write that book you keep talking about.",
+    "If you have trouble staying productive, one of the most common recommendations is to try the Pomodoro Technique. You specify break, and work timers to regulate the time you spend on <i>Facebook</i> versus the time you spend with your <i>face in the books</i>. Decide your own times, and click start to see a stylized productivity fuel gauge which depletes and refills in cycles. Finally a way to write that book you keep talking about.",
     ['HTML5', 'CSS3', 'JavaScript'],
     ['Bootstrap 4', 'Haml', 'SCSS', 'JQuery'],
     ['JS Timing Functions'],
