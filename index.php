@@ -44,7 +44,7 @@
             <pre>  <b>program</b>: 'Nanotechnology Engineering',</pre>
             <pre>  <b>currentSchoolTerm</b>: 4, <span>//2B - second year, second term</span>  </pre>
             <pre>  <b>awaitingWorkTerm</b>: 3, <span>//Completed two 4-month terms</span></pre>
-            <pre>  <b>awaitingWorkTermLength</b>: 8 || 4, <span>//4 or 8 months</span></pre>
+            <pre>  <b>awaitingWorkTermLength</b>: 4 || 8, <span>//4 or 8 months</span></pre>
             <pre>  <b>hardWorker</b>: true,</pre>
             <pre>  <b>teamPlayer</b>: true,</pre>
             <pre>  <b>isPerfect</b>: false, <span>//Should never return true</span></pre>
