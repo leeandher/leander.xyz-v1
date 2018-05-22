@@ -40,8 +40,8 @@
   min-height: 50%;
   &:hover {
     .proj-bg {
-      -webkit-filter: blur(5px) brightness(0.15);
-              filter: blur(5px) brightness(0.15);
+      -webkit-filter: blur(5px) brightness(0.5);
+              filter: blur(5px) brightness(0.5);
     }
     .proj-title {
       color: var(--light);
@@ -57,10 +57,13 @@
     -webkit-transition: inherit;
     transition: inherit;
     background-color: #555555;
-    -webkit-filter: blur(2px) brightness(0.3);
-            filter: blur(2px) brightness(0.3);
+    -webkit-filter: blur(2px) brightness(0.75);
+            filter: blur(2px) brightness(0.75);
     -webkit-box-shadow: 0 0 0 15px var(--dark);
             box-shadow: 0 0 0 15px var(--dark);
+  }
+  .content {
+    background-color: rgba(0, 0, 0, 0.75);
   }
 }
 

@@ -33,3 +33,7 @@
 <?php
   echo '<script src="/resources/js/'.$pageName.'.js"></script>';
 ?>
+<script src="https://unpkg.com/css-vars-ponyfill@1"></script>
+<script>
+  cssVars();
+</script>
