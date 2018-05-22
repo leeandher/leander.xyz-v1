@@ -61,9 +61,11 @@
             filter: blur(2px) brightness(0.75);
     -webkit-box-shadow: 0 0 0 15px var(--dark);
             box-shadow: 0 0 0 15px var(--dark);
-  }
-  .content {
-    background-color: rgba(0, 0, 0, 0.75);
+    div {
+      background-color: rgba(0,0,0,0.75);
+      height: 100%;
+      width: 100%
+    }
   }
 }
 

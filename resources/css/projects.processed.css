@@ -77,8 +77,10 @@
   box-shadow: 0 0 0 15px var(--dark);
 }
 
-.proj-panel .content {
+.proj-panel .proj-bg div {
   background-color: rgba(0, 0, 0, 0.75);
+  height: 100%;
+  width: 100%;
 }
 
 .proj-info {

@@ -54,7 +54,7 @@
 
     <!--PROJECT SECTION-->
     <div class="proj-panel" id="proj-0">
-      <div class="proj-bg"></div>
+      <div class="proj-bg"><div></div></div>
       <div class="content">
         <div class="proj-info">
           <div class="proj-title"></div>
@@ -74,7 +74,7 @@
       </div>
     </div>
     <div class="proj-panel" id="proj-1">
-      <div class="proj-bg"></div>
+      <div class="proj-bg"><div></div></div>
       <div class="content">
         <div class="proj-info">
           <div class="proj-title"></div>
@@ -94,7 +94,7 @@
       </div>
     </div>
     <div class="proj-panel" id="proj-2">
-      <div class="proj-bg"></div>
+      <div class="proj-bg"><div></div></div>
       <div class="content">
         <div class="proj-info">
           <div class="proj-title"></div>
@@ -114,7 +114,7 @@
       </div>
     </div>
     <div class="proj-panel" id="proj-3">
-      <div class="proj-bg"></div>
+      <div class="proj-bg"><div></div></div>
       <div class="content">
         <div class="proj-info">
           <div class="proj-title"></div>
@@ -134,7 +134,7 @@
       </div>
     </div>
     <div class="proj-panel" id="proj-4">
-      <div class="proj-bg"></div>
+      <div class="proj-bg"><div></div></div>
       <div class="content">
         <div class="proj-info">
           <div class="proj-title"></div>
@@ -154,7 +154,7 @@
       </div>
     </div>
     <div class="proj-panel" id="proj-5">
-      <div class="proj-bg"></div>
+      <div class="proj-bg"><div></div></div>
       <div class="content">
         <div class="proj-info">
           <div class="proj-title"></div>
@@ -174,7 +174,7 @@
       </div>
     </div>
     <div class="proj-panel" id="proj-6">
-      <div class="proj-bg"></div>
+      <div class="proj-bg"><div></div></div>
       <div class="content">
         <div class="proj-info">
           <div class="proj-title"></div>
@@ -194,7 +194,7 @@
       </div>
     </div>
     <div class="proj-panel" id="proj-7">
-      <div class="proj-bg"></div>
+      <div class="proj-bg"><div></div></div>
       <div class="content">
         <div class="proj-info">
           <div class="proj-title"></div>
