@@ -166,7 +166,7 @@
             <label class="text" for="visitor-sub">Subject:</label>
             <input type="text" name="subject" id="visitor-sub" required>
             <label class="text" for="visitor-msg">Message:</label>
-            <textarea rows="5" type="text" name="message" id="visitor-msg" required></textarea>
+            <textarea rows="5" type="text" name="message" id="visitor-msg" required data-gramm="false"></textarea>
             <div class="flex-group">
               <button class="flex-item" type='reset'>Clear</button>
               <button class="flex-item" type='submit'>Send</button>
