@@ -3,3 +3,7 @@ RewriteRule ^index\.php$ / [R=301,L]
 RewriteRule ^(.*)/index\.php$ /$1/ [R=301,L]
 ErrorDocument 404 /404.php
 ErrorDocument 403 /403.php
+# 1 Month for most static assets
+<filesMatch ".(jpg|jpeg|png|gif|ico)$">
+Header set Cache-Control "max-age=2592000, public"
+</filesMatch>
