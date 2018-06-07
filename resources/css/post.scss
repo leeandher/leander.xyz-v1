@@ -95,6 +95,10 @@ body {background-color: var(--dark);}
       text-indent: 30px;
       margin: 25px 0;
     }
+    a {
+      text-indent: 0;
+      text-decoration: underline var(--accent);
+    }
   }
 }
 

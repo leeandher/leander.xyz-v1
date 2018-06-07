@@ -108,6 +108,11 @@ body {
   margin: 25px 0;
 }
 
+#post-content .content a {
+  text-indent: 0;
+  text-decoration: underline var(--accent);
+}
+
 #post-share {
   margin: 10px 0 30px 0;
 }
