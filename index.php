@@ -42,9 +42,9 @@
             <pre>  <b>age</b>: 19, <span>//Soon to be 20!</span></pre>
             <pre>  <b>school</b>: 'University of Waterloo',</pre>
             <pre>  <b>program</b>: 'Nanotechnology Engineering',</pre>
-            <pre>  <b>currentSchoolTerm</b>: 4, <span>//2B - second year, second term</span>  </pre>
-            <pre>  <b>awaitingWorkTerm</b>: 3, <span>//Completed two 4-month terms</span></pre>
-            <pre>  <b>awaitingWorkTermLength</b>: 4 || 8, <span>//4 or 8 months</span></pre>
+            <pre>  <b>currentSchoolTerm</b>: 5, <span>//2B - second year, second term</span>  </pre>
+            <pre>  <b>awaitingWorkTerm</b>: 4, <span>//Completed three 4-month terms</span></pre>
+            <pre>  <b>awaitingWorkTermLength</b>: 4 <span>//4 months (Winter 2019)</span></pre>
             <pre>  <b>hardWorker</b>: true,</pre>
             <pre>  <b>teamPlayer</b>: true,</pre>
             <pre>  <b>isPerfect</b>: false, <span>//Should never return true</span></pre>
