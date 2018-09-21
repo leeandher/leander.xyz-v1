@@ -42,9 +42,9 @@
             <pre>  <b>age</b>: 19, <span>//Soon to be 20!</span></pre>
             <pre>  <b>school</b>: 'University of Waterloo',</pre>
             <pre>  <b>program</b>: 'Nanotechnology Engineering',</pre>
+            <pre>  <b>favouriteLanguage</b>: 'JavaScript',</pre>
             <pre>  <b>currentSchoolTerm</b>: 5, <span>//2B - second year, second term</span>  </pre>
             <pre>  <b>awaitingWorkTerm</b>: 4, <span>//Completed three 4-month terms</span></pre>
-            <pre>  <b>awaitingWorkTermLength</b>: 4 <span>//4 months (Winter 2019)</span></pre>
             <pre>  <b>hardWorker</b>: true,</pre>
             <pre>  <b>teamPlayer</b>: true,</pre>
             <pre>  <b>isPerfect</b>: false, <span>//Should never return true</span></pre>
@@ -72,6 +72,12 @@
           <a href="https://reactjs.org/" target="_blank">
             <img class="round" src="/resources/images/about/reactjs.png" alt="React.js Logo"/>
           </a>
+          <a href="https://angularjs.org/" target="_blank">
+            <img class="round" src="/resources/images/about/angularjs.png" alt="Angular.js Logo"/>
+          </a>
+          <a href="https://nodejs.org/en/" target="_blank">
+            <img class="round" src="/resources/images/about/nodejs.png" alt="Node.js Logo"/>
+          </a>
           <a href="https://git-scm.com/" target="_blank">
             <img class="round" src="/resources/images/about/git.png" alt="Git Logo"/>
           </a>
@@ -81,12 +87,8 @@
           <a href="http://www.php.net/" target="_blank">
             <img class="round" src="/resources/images/about/php.png" alt="PHP Logo"/>
           </a>
-          <a href="https://getbootstrap.com/" target="_blank">
+          <!--<a href="https://getbootstrap.com/" target="_blank">
             <img class="round" src="/resources/images/about/bootstrap4.png" alt="Bootstrap Logo"/>
-          </a>
-          <!-- NODE ICON, FOR WHEN I'M READY
-          <a href="https://nodejs.org/en/" target="_blank">
-            <img class="round" src="https://leander.xyz/resources/images/about/nodejs.png" alt="Node.js Logo"/>
           </a>-->
           <a href="https://jquery.com/" target="_blank">
             <img class="round" src="/resources/images/about/jquery.png" alt="JQuery Logo"/>
@@ -94,9 +96,9 @@
           <a href="https://docs.microsoft.com/en-us/sql/" target="_blank">
             <img class="round" src="/resources/images/about/sql.png" alt="SQL Logo"/>
           </a>
-          <a href="https://docs.microsoft.com/en-us/dotnet/visual-basic/getting-started/" target="_blank">
+          <!--<a href="https://docs.microsoft.com/en-us/dotnet/visual-basic/getting-started/" target="_blank">
             <img class="round" src="/resources/images/about/visual-basic.png" alt="VB Logo"/>
-          </a><br />
+          </a>--><br />
           <a href="/projects/index.php" id="and-more">and more!</a>
         </div>
       </div>

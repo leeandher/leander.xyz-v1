@@ -42,10 +42,12 @@
             <ul>
               <li>HTML <em class="small">(Haml, HTML5)</em></li>
               <li>CSS <em class="small">(Bootstrap, Keyframes, Responsiveness)</em></li>
-              <li>JavaScript <em class="small">(jQuery, AJAX, JSON APIs, Babel)</em></li>
+              <li>JavaScript <em class="small">(ES6, AJAX, jQuery, Babel)</em></li>
+              <li>React.js <em class="small">(Redux, Data Visualization)</em></li>
+              <li>Angular.js <em class="small">(Directives, Reusable Components)</em></li>
+              <li>Node.js <em class="small">(NPM, Replacing PHP)</em></li>
               <li>PHP <em class="small">(OOP, phpMyAdmin, PDO)</em></li>
               <li>SQL <em class="small">(MS Access, MySQL, PHP Injection)</em></li>
-              <li>VBA <em class="small">(MS Excel, MS Access)</em></li>
               <li>Git <em class="small">(CLI, Bash, GitHub)</em></li>
             </ul>
             <b>Academic Experience with:</b>
@@ -56,8 +58,6 @@
             </ul>
             <b>Ongoing Learning:</b>
             <ul>
-              <li>React.js <em class="small">(Redux, Data Visualization)</em></li>
-              <li>Node.js <em class="small">(NPM, Replacing PHP)</em></li>
               <li>Express.js <em class="small">(Implementing with Node.js)</em></li>
               <li>MongoDB <em class="small">(Using JSON DBs)</em></li>
             </ul>
@@ -119,13 +119,34 @@
               <div class="item-date emphasis">Jan 2018 - Mar 2018</div>
               <div class="item-desc indent"> During my free time of my second coop term, I decided that I wanted to get back into the programming world, and searched for some good courses/resources online. About 2.5 months later, I'd completed a series of projects/challengs in this intensive course covering the basics of web development.</div>
             </div>
-            <!--FCC Data Viz-->
+            <!--React For Beginners-->
+            <div class="resume-item flex-item">
+              <h2></h2>
+              <div class="item-location"><a href="https://reactforbeginners.com/" target="_blank">ReactForBeginners.com</a></div>
+              <div class="item-date emphasis">Sep 2018 - Present</div>
+              <div class="item-desc indent">A deep-dive project-driven React development course taught by Wes Bos. It covers everything from ES6, to Webpack, and even Firebase Authentication. Without dependecies on any React Libraries the course culminates in a full-blown real-time application focusing on simplicity and readability. </div>
+            </div>
+            <!--Learn Node-->
+            <div class="resume-item flex-item">
+              <h2></h2>
+              <div class="item-location"><a href="https://learnnode.com/" target="_blank">LearnNode.com</a></div>
+              <div class="item-date emphasis">Sep 2018 - Present</div>
+              <div class="item-desc indent">This expansive ba.</div>
+            </div>
+            <!--JS 30-->
+            <div class="resume-item flex-item">
+              <h2>JavaScript 30</h2>
+              <div class="item-location"><a href="https://javascript30.com/" target="_blank">JavaScript30.com</a></div>
+              <div class="item-date emphasis">May 2018 - Present</div>
+              <div class="item-desc indent">A 30 day JavaScript challenge course which focuses on making the most of your pure JS. The code for each challenge does not depend on libraries, frameworks, compilers or boiler plates, just you and your JavaScript abilities. it's a self-paced course but I'm currently trying to complete 1 challenge (minimum) every 2 days, simply because of school/other courses.</div>
+            </div>
+            <!--FCC Data Viz
             <div class="resume-item flex-item">
               <h2>Data Visualization Certification</h2>
               <div class="item-location"><a href="https://www.freecodecamp.org" target="_blank">FreeCodeCamp.org</a></div>
               <div class="item-date emphasis">May 2018 - Present</div>
               <div class="item-desc indent"> Another intensive FCC course which covers manipulating data, and implementing more complicated user interfaces. It focuses less so on things like web pages, and templates, and more on web apps and components using SASS, D3 and React.js!</div>
-            </div>
+            </div>-->
             <!--Codecademy React-->
             <div class="resume-item flex-item">
               <h2>Learn React.js Course</h2>
@@ -139,20 +160,6 @@
               <div class="item-location"><a href="https://www.udemy.com/thecompletewebdeveloper/" target="_blank">Udemy.com</a></div>
               <div class="item-date emphasis">Apr 2018</div>
               <div class="item-desc indent"> A well-rounded web developer course which I mainly used as a resource for PHP, MySQL and phpMyAdmin usage tutorials. Using what I learned from this site I was able to configure the back-end for this very site while maintaining good PDO structure, and a secure database/login system. </div>
-            </div>
-            <!--KhanAcademy CS-->
-            <div class="resume-item flex-item">
-              <h2>Computer Science Subject</h2>
-              <div class="item-location"><a href="https://www.khanacdemy.com" target="_blank">KhanAcademy.org</a></div>
-              <div class="item-date emphasis">Apr 2018 - Present</div>
-              <div class="item-desc indent">My first abstract course that isn't language specific. It covers 'Algorithms', 'Cryptography', 'Information Theory' and 'The Internet', in practical explanatory articles/modules, taught by two Dartmouth College professors. In my opinion, it's the most well-rounded, free 'CS 101'-style course out there right now.</div>
-            </div>
-            <!--JS 30-->
-            <div class="resume-item flex-item">
-              <h2>JavaScript 30</h2>
-              <div class="item-location"><a href="https://javascript30.com/" target="_blank">JavaScript30.com</a></div>
-              <div class="item-date emphasis">May 2018 - Present</div>
-              <div class="item-desc indent">A 30 day JavaScript challenge course which focuses on making the most of your pure JS. The code for each challenge does not depend on libraries, frameworks, compilers or boiler plates, just you and your JavaScript abilities. it's a self-paced course but I'm currently trying to complete 1 challenge (minimum) every 2 days, simply because of school/other courses.</div>
             </div>
             <!--React Bootcamp-->
             <div class="resume-item flex-item">

@@ -39,10 +39,6 @@
   overflow: hidden;
   min-height: 50%;
   &:hover {
-    .proj-bg {
-      -webkit-filter: blur(5px) brightness(0.5);
-              filter: blur(5px) brightness(0.5);
-    }
     .proj-title {
       color: var(--light);
     }
