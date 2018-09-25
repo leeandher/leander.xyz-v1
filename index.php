@@ -38,7 +38,7 @@
         <div class="text" id="description-group">
           <!--SELF-CODE BLOCK-->
           <div class="round" id="self-object">
-            <pre>var <b>leander</b> = {</pre>
+            <pre>let <b>leander</b> = {</pre>
             <pre>  <b>age</b>: 19, <span>//Soon to be 20!</span></pre>
             <pre>  <b>school</b>: 'University of Waterloo',</pre>
             <pre>  <b>program</b>: 'Nanotechnology Engineering',</pre>
@@ -72,14 +72,17 @@
           <a href="https://reactjs.org/" target="_blank">
             <img class="round" src="/resources/images/about/reactjs.png" alt="React.js Logo"/>
           </a>
-          <a href="https://angularjs.org/" target="_blank">
+          <!-- <a href="https://angularjs.org/" target="_blank">
             <img class="round" src="/resources/images/about/angularjs.png" alt="Angular.js Logo"/>
-          </a>
+          </a> -->
           <a href="https://nodejs.org/en/" target="_blank">
             <img class="round" src="/resources/images/about/nodejs.png" alt="Node.js Logo"/>
           </a>
           <a href="https://git-scm.com/" target="_blank">
             <img class="round" src="/resources/images/about/git.png" alt="Git Logo"/>
+          </a>
+          <a href="https://aws.amazon.com/" target="_blank">
+            <img class="round" src="/resources/images/about/aws.png" alt="AWS Logo"/>
           </a>
           <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX" target="_blank">
             <img class="round" src="/resources/images/about/ajax.png" alt="AJAX Logo"/>

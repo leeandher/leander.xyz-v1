@@ -44,9 +44,8 @@
               <li>CSS <em class="small">(Bootstrap, Keyframes, Responsiveness)</em></li>
               <li>JavaScript <em class="small">(ES6, AJAX, jQuery, Babel)</em></li>
               <li>React.js <em class="small">(Redux, Data Visualization)</em></li>
-              <li>Angular.js <em class="small">(Directives, Reusable Components)</em></li>
-              <li>Node.js <em class="small">(NPM, Replacing PHP)</em></li>
-              <li>PHP <em class="small">(OOP, phpMyAdmin, PDO)</em></li>
+              <li>Node.js <em class="small">(NPM, Firebase Authentication)</em></li>
+              <li>PHP <em class="small">(OOP, phpMyAdmin)</em></li>
               <li>SQL <em class="small">(MS Access, MySQL, PHP Injection)</em></li>
               <li>Git <em class="small">(CLI, Bash, GitHub)</em></li>
             </ul>
@@ -58,18 +57,20 @@
             </ul>
             <b>Ongoing Learning:</b>
             <ul>
+              <li>AWS/Docker <em class="small">(Backend Infrastructure)</em></li>
               <li>Express.js <em class="small">(Implementing with Node.js)</em></li>
-              <li>MongoDB <em class="small">(Using JSON DBs)</em></li>
+              <li>MongoDB <em class="small">(For Modern, Scalable DBs)</em></li>
             </ul>
           </div>
           <div class="flex-item" id="soft-qual">
             <h2>Notable Qualifications</h2>
             <ul>
               <li>Well-versed in <b>writing clear documentation</b></li>
-              <li>Academic lab experience in <b>circuit construction</b>, and related electrical components</li>
+              <li>Committed, self-taught <b>full-stack developer</b> with an unconventional, but foundational <b>engineering background</b></li>
+              <li>Energetic hard-worker with <b>diverse history</b> in industry</li>
+              <li>Inquisitve and <b>perpetual student</b>, focusing free-time towards fully-functional, impressive <b>side-projects</b></li>
               <li>Fluent in <b>French</b>, both written and oral</li>
               <li>Extensive charity work experience with all ages and abilities</li>
-              <li>Devoted, hard-working team member, excelling in self-regulation and commitment</li>
               <li>I'm completely willing to learn new something specific that I'm missing, to become a better candidate. If there's something you wish I knew, <a href="../#contact" class="emphasis">send me a message</a> and I'll start reading!</li>
             </ul>
           </div>
@@ -182,6 +183,21 @@
       <div class="content">
         <div class="resume-info round light text-small">
           <div class="resume-item">
+            <h2>Advanced App Engineering Senior Analyst</h2>
+            <div class="item-location"><a href="https://www.accenture.com/" target="_blank">Accenture - Toronto, ON</a></div>
+            <div class="item-date emphasis">Currently!</div>
+            <ul class="item-list">
+              <li><b>Deployed reusable components in React.js</b> through peer
+programming and test-driven development</li>
+              <li><b>Designed client-facing widgets</b> for Virtual Agents to satisfy
+dynamic, natural language use cases</li>
+              <li><b>Received certified, formal training</b> in DevOps, Agile
+Development and Design Thinking</li>
+            </ul>
+            <div class="item-desc"><span class="emphasis">Skills Improved: </span>ES6 JavaScript, React.js, Node.js, DynamoDB, AWS</div>
+          </div>
+          <hr />
+          <div class="resume-item">
             <h2>Data Analysis and Process Automation</h2>
             <div class="item-location"><a href="https://www.curtisswrightds.com/" target="_blank">Curtiss Wright Defense Solutions - Ottawa, ON</a></div>
             <div class="item-date emphasis">Jan 2018 - Apr 2018</div>
@@ -282,6 +298,13 @@
             <div class="item-location"><a href="https://uwaterloo.ca/" target="_blank">University of Waterloo - Waterloo, ON</a></div>
             <div class="item-date emphasis">Sep 2016</div>
             <div class="item-desc">An entrance scholarship of $2000.00 for incoming students with an admission average greater than &gt;90%</div>
+          </div>
+          <hr />
+          <div class="resume-item">
+            <h2>IC Agile Professional Certification</h2>
+            <div class="item-location"><a href="https://icagile.com/" target="_blank">International Consortium for Agile</a></div>
+            <div class="item-date emphasis">Sep 2018</div>
+            <div class="item-desc">A certification given for completing multiple professional training modules/sessions through a certified instructutor pertaining to modern, collaborative Agile development.</div>
           </div>
           <hr />
           <div class="resume-item">
