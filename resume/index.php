@@ -122,23 +122,23 @@
             </div>
             <!--React For Beginners-->
             <div class="resume-item flex-item">
-              <h2></h2>
+              <h2>React For Beginners</h2>
               <div class="item-location"><a href="https://reactforbeginners.com/" target="_blank">ReactForBeginners.com</a></div>
-              <div class="item-date emphasis">Sep 2018 - Present</div>
+              <div class="item-date emphasis">Ongoing</div>
               <div class="item-desc indent">A deep-dive project-driven React development course taught by Wes Bos. It covers everything from ES6, to Webpack, and even Firebase Authentication. Without dependecies on any React Libraries the course culminates in a full-blown real-time application focusing on simplicity and readability. </div>
             </div>
             <!--Learn Node-->
             <div class="resume-item flex-item">
-              <h2></h2>
+              <h2>Learn Node</h2>
               <div class="item-location"><a href="https://learnnode.com/" target="_blank">LearnNode.com</a></div>
-              <div class="item-date emphasis">Sep 2018 - Present</div>
-              <div class="item-desc indent">This expansive ba.</div>
+              <div class="item-date emphasis">Ongoing</div>
+              <div class="item-desc indent">This course explores the professional, modern use cases for Node.js, specifically, using Express.js and MongoDB. In the curriculum, a full-blown real-world application is developed with search, geolocation, review and curation capabalities!</div>
             </div>
             <!--JS 30-->
             <div class="resume-item flex-item">
               <h2>JavaScript 30</h2>
               <div class="item-location"><a href="https://javascript30.com/" target="_blank">JavaScript30.com</a></div>
-              <div class="item-date emphasis">May 2018 - Present</div>
+              <div class="item-date emphasis">Aug 2018 - Present</div>
               <div class="item-desc indent">A 30 day JavaScript challenge course which focuses on making the most of your pure JS. The code for each challenge does not depend on libraries, frameworks, compilers or boiler plates, just you and your JavaScript abilities. it's a self-paced course but I'm currently trying to complete 1 challenge (minimum) every 2 days, simply because of school/other courses.</div>
             </div>
             <!--FCC Data Viz
@@ -187,14 +187,11 @@
             <div class="item-location"><a href="https://www.accenture.com/" target="_blank">Accenture - Toronto, ON</a></div>
             <div class="item-date emphasis">Currently!</div>
             <ul class="item-list">
-              <li><b>Deployed reusable components in React.js</b> through peer
-programming and test-driven development</li>
-              <li><b>Designed client-facing widgets</b> for Virtual Agents to satisfy
-dynamic, natural language use cases</li>
-              <li><b>Received certified, formal training</b> in DevOps, Agile
-Development and Design Thinking</li>
+              <li><b>Deployed reusable components in React.js</b> through peer programming and test-driven development</li>
+              <li><b>Designed client-facing widgets</b> for Virtual Agents to satisfy dynamic, natural language use cases</li>
+              <li><b>Received certified, formal training</b> in DevOps, Agile Development and Design Thinking</li>
             </ul>
-            <div class="item-desc"><span class="emphasis">Skills Improved: </span>ES6 JavaScript, React.js, Node.js, DynamoDB, AWS</div>
+            <div class="item-desc"><span class="emphasis">Skills Improved: </span>ES6 JavaScript, React.js, Node.js, DynamoDB, AWS Lambda</div>
           </div>
           <hr />
           <div class="resume-item">
